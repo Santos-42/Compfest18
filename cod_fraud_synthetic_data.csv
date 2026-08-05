@@ -1,0 +1,1001 @@
+order_id,courier_name,customer_name,customer_city,payment_method,item_value,system_status,customer_report,gps_distance_meters,delivery_date
+ORD-46526,Asmuni Rajata,"Julia Firgantoro, M.Ak",Bontang,COD,762995,Failed,Rejected/Unreachable,95,2026-06-30
+ORD-15872,Cakrawala Fujiati,"KH. Dadap Lailasari, S.H.",Padang,COD,314662,Delivered,Received,12,2026-07-09
+ORD-17363,"Zelaya Narpati, S.E.I",Clara Sitompul,Malang,COD,532417,Delivered,Received,9,2026-07-20
+ORD-51429,Mustika Maryadi,Tami Purnawati,Padangpanjang,COD,549545,Delivered,Not Received,3767,2026-06-30
+ORD-24008,Aisyah Pangestu,Cici Maheswara,Prabumulih,COD,1033708,Delivered,Received,28,2026-07-20
+ORD-66329,"dr. Cindy Utami, S.Farm",Koko Rahayu,Gorontalo,COD,685744,Delivered,Received,43,2026-07-26
+ORD-85660,Mutia Hutapea,R. Balijan Purnawati,Bandung,COD,342692,Delivered,Received,23,2026-07-17
+ORD-32344,Putri Putra,"Oman Nashiruddin, S.E.",Kotamobagu,COD,446127,Delivered,Received,27,2026-07-16
+ORD-60908,Muni Samosir,"Puti Ratih Pradipta, M.Farm",Tual,COD,366226,Delivered,Received,19,2026-07-11
+ORD-33728,"Dr. Emin Susanti, M.Ak",Endah Samosir,Lubuklinggau,COD,665017,Delivered,Received,21,2026-07-22
+ORD-69396,"Puput Widiastuti, M.Ak","Opan Suartini, S.I.Kom",Palu,COD,808335,Delivered,Received,16,2026-07-27
+ORD-39191,Ir. Elisa Saragih,"Juli Manullang, M.TI.",Singkawang,COD,930033,Delivered,Received,15,2026-07-24
+ORD-68121,Halim Damanik,"KH. Cakrabirawa Iswahyudi, S.H.",Subulussalam,COD,1424747,Delivered,Received,27,2026-07-18
+ORD-17386,"Cornelia Halim, M.Farm","R. Shakila Rahimah, S.Ked",Denpasar,COD,358650,Delivered,Received,47,2026-07-26
+ORD-54985,Prasetya Pradipta,Yono Mulyani,Tasikmalaya,COD,772985,Delivered,Received,31,2026-07-05
+ORD-14231,Gandi Suwarno,Ulva Mayasari,Padang,COD,1468811,Delivered,Not Received,4429,2026-07-14
+ORD-58956,Anggabaya Mandasari,"Tugiman Nasyidah, S.Psi",Kota Administrasi Jakarta Pusat,COD,1311832,Delivered,Received,25,2026-07-20
+ORD-74891,Raden Sitompul,Kiandra Sitorus,Palembang,COD,433479,Delivered,Received,16,2026-07-14
+ORD-16609,"Ir. Prayogo Halim, S.Gz",Ghaliyati Wijayanti,Kota Administrasi Jakarta Utara,COD,209920,Delivered,Received,14,2026-07-23
+ORD-39219,Mala Mandala,Ir. Yessi Sihombing,Singkawang,COD,1265535,Delivered,Received,22,2026-07-18
+ORD-63836,"R. Cawisadi Mahendra, S.Gz","Ir. Jasmin Firmansyah, S.Gz",Solok,COD,935949,Delivered,Received,25,2026-07-14
+ORD-96332,Ifa Nasyidah,"Intan Wastuti, M.Farm",Pasuruan,COD,237792,Delivered,Received,9,2026-07-21
+ORD-85817,Ibun Prasetyo,"Atma Halimah, S.T.",Malang,COD,632419,Failed,Rejected/Unreachable,77,2026-07-02
+ORD-50555,Bagya Mangunsong,Anastasia Yuniar,Semarang,COD,1299187,Delivered,Received,46,2026-07-09
+ORD-51183,Dr. Julia Hastuti,Eli Santoso,Malang,COD,1291707,Failed,Rejected/Unreachable,26,2026-07-03
+ORD-48760,Raden Mayasari,Tira Setiawan,Sabang,COD,954552,Delivered,Received,46,2026-07-04
+ORD-84303,"Gawati Siregar, S.Pd","Tgk. Cici Zulaika, M.M.",Manado,COD,202007,Failed,Rejected/Unreachable,25,2026-07-24
+ORD-77633,Luwes Permadi,Satya Budiyanto,Singkawang,COD,722509,Delivered,Not Received,2108,2026-07-22
+ORD-43709,Tgk. Zamira Gunawan,Tgk. Nasim Hassanah,Tidore Kepulauan,COD,1490601,Delivered,Received,20,2026-07-02
+ORD-81946,Rini Pudjiastuti,Patricia Maheswara,Madiun,COD,766677,Delivered,Received,26,2026-07-10
+ORD-33418,Vanya Usada,Keisha Jailani,Denpasar,COD,1267305,Delivered,Received,25,2026-07-02
+ORD-52394,"Tgk. Johan Samosir, S.Sos",Ir. Karma Nasyidah,Padangpanjang,COD,1272382,Delivered,Received,12,2026-07-21
+ORD-89472,Dina Hasanah,Cut Janet Kurniawan,Parepare,COD,956262,Failed,Rejected/Unreachable,18,2026-06-30
+ORD-50865,Tiara Lestari,"Paris Hassanah, S.I.Kom",Tebingtinggi,COD,794724,Delivered,Received,12,2026-07-24
+ORD-17896,Widya Megantara,"Lala Andriani, M.M.",Kupang,COD,144010,Delivered,Received,35,2026-07-11
+ORD-39912,Kala Mulyani,Opung Kusumo,Kotamobagu,COD,556618,Failed,Rejected/Unreachable,47,2026-07-09
+ORD-47192,Vicky Laksmiwati,Opung Hutasoit,Kota Administrasi Jakarta Timur,COD,1267791,Delivered,Received,7,2026-06-30
+ORD-74221,Mala Agustina,"Kiandra Suartini, M.Farm",Palembang,COD,371286,Delivered,Received,45,2026-07-13
+ORD-11228,Asirwada Prayoga,Daliono Maulana,Padang Sidempuan,COD,879980,Delivered,Received,49,2026-07-08
+ORD-76010,Suci Samosir,Embuh Nuraini,Tebingtinggi,COD,542935,Delivered,Received,35,2026-07-10
+ORD-17235,Ganda Simanjuntak,"Rahmi Widiastuti, M.TI.",Tangerang,COD,265391,Delivered,Received,38,2026-07-26
+ORD-99863,"Hj. Dewi Mangunsong, S.Kom",Galih Hutagalung,Tasikmalaya,COD,1314710,Delivered,Received,43,2026-07-14
+ORD-75945,"Balidin Latupono, M.Pd",Purwadi Wijayanti,Bontang,COD,936190,Delivered,Received,21,2026-07-14
+ORD-31347,Gilang Hardiansyah,"Fitria Uyainah, M.M.",Palu,COD,1297216,Delivered,Received,26,2026-07-08
+ORD-62860,"H. Radika Irawan, S.Farm",Emong Mayasari,Bukittinggi,COD,966954,Delivered,Received,11,2026-07-21
+ORD-63537,"Drs. Galur Suryono, S.Pt",Dr. Wani Farida,Serang,COD,142505,Delivered,Received,23,2026-07-15
+ORD-29487,R.M. Candrakanta Pratiwi,"dr. Raina Hutasoit, M.M.",Bengkulu,COD,995731,Delivered,Received,29,2026-06-30
+ORD-50785,Gara Usamah,"Puti Zaenab Sitompul, M.TI.",Depok,COD,1425399,Delivered,Received,18,2026-06-29
+ORD-10879,Martaka Halim,Nurul Maheswara,Dumai,COD,759634,Delivered,Received,8,2026-07-24
+ORD-76942,Saiful Prakasa,"drg. Raisa Hidayat, S.Pt",Pekanbaru,COD,732151,Failed,Rejected/Unreachable,16,2026-06-29
+ORD-42891,"Talia Suryatmi, S.Gz",Gawati Sitorus,Tomohon,COD,857996,Delivered,Received,24,2026-07-09
+ORD-43785,Vega Sirait,Cinthia Tampubolon,Padang,COD,1294614,Delivered,Received,13,2026-07-11
+ORD-16980,"Mursinin Rajasa, M.Pd",Wakiman Usamah,Semarang,COD,1360827,Delivered,Received,23,2026-07-05
+ORD-42053,"Tgk. Narji Simbolon, S.Sos",Yance Tampubolon,Kota Administrasi Jakarta Timur,COD,1475373,Delivered,Received,48,2026-07-25
+ORD-16527,"Yessi Namaga, M.Pd",drg. Kawaya Hastuti,Sungai Penuh,COD,1175823,Delivered,Received,30,2026-07-16
+ORD-90935,Kasim Wahyudin,"Mala Mayasari, S.H.",Subulussalam,COD,114291,Delivered,Received,21,2026-07-24
+ORD-43820,"Alambana Pranowo, S.Gz",Johan Wacana,Kotamobagu,COD,110729,Delivered,Received,39,2026-07-02
+ORD-96372,Cornelia Hasanah,Unjani Anggriawan,Tarakan,COD,934483,Failed,Rejected/Unreachable,83,2026-07-06
+ORD-87185,Kawaca Wulandari,Dt. Gara Kurniawan,Padangpanjang,COD,1100777,Delivered,Received,18,2026-07-07
+ORD-36117,"dr. Yuliana Setiawan, S.H.",Kamidin Siregar,Pangkalpinang,COD,1138761,Failed,Rejected/Unreachable,71,2026-07-22
+ORD-50223,Martaka Rahayu,Winda Dongoran,Tual,COD,962678,Delivered,Received,6,2026-06-30
+ORD-73924,"Talia Utami, S.Ked",Jati Iswahyudi,Manado,COD,1294724,Failed,Rejected/Unreachable,45,2026-06-28
+ORD-45263,Lidya Saragih,Melinda Siregar,Kendari,COD,1218147,Delivered,Received,9,2026-06-30
+ORD-49584,Ir. Yuni Hasanah,Wulan Hutagalung,Sawahlunto,COD,1107132,Delivered,Received,29,2026-07-26
+ORD-17605,"Uchita Wibowo, S.I.Kom",Farhunnisa Laksmiwati,Yogyakarta,COD,1408944,Failed,Rejected/Unreachable,67,2026-07-03
+ORD-85115,Cawisono Suryatmi,Yuliana Kuswoyo,Sukabumi,COD,311937,Delivered,Received,12,2026-07-13
+ORD-27317,"Drs. Darimin Firmansyah, M.Ak","drg. Jamal Farida, S.Farm",Batam,COD,128205,Delivered,Received,5,2026-06-30
+ORD-44694,Michelle Anggraini,Gandi Rahayu,Tomohon,COD,1317062,Delivered,Received,29,2026-07-04
+ORD-65997,"KH. Manah Salahudin, S.Farm",Daniswara Laksmiwati,Sabang,COD,1243853,Delivered,Received,48,2026-07-09
+ORD-69724,Dr. Talia Kusumo,R.M. Pangeran Safitri,Samarinda,COD,598008,Delivered,Received,17,2026-07-21
+ORD-51026,R.M. Soleh Maulana,Dt. Bakianto Oktaviani,Bandung,COD,1184347,Delivered,Received,27,2026-06-30
+ORD-21125,Dinda Prayoga,"Tgk. Gara Usada, M.TI.",Tangerang Selatan,COD,356791,Delivered,Received,43,2026-07-18
+ORD-48862,"Dr. Shakila Simanjuntak, S.Pt",dr. Daruna Usada,Ambon,COD,126950,Delivered,Received,14,2026-07-21
+ORD-80342,"Mulya Laksita, S.E.I","Dr. Hasim Kurniawan, M.Ak",Jambi,COD,994283,Delivered,Received,25,2026-07-22
+ORD-60014,Sabar Mulyani,"R. Citra Halim, S.IP",Banjar,COD,1430922,Delivered,Received,31,2026-07-03
+ORD-91351,Tgk. Lamar Najmudin,Karsana Hidayat,Banjarbaru,COD,228293,Delivered,Received,19,2026-07-17
+ORD-63673,Drs. Naradi Wastuti,Mujur Maulana,Sukabumi,COD,1460778,Delivered,Received,9,2026-07-08
+ORD-12845,"Mala Tarihoran, M.Ak",Hadi Dabukke,Surakarta,COD,173561,Delivered,Received,27,2026-07-04
+ORD-24524,Zelda Purwanti,"Kezia Nuraini, S.Farm",Banjarbaru,COD,1189192,Delivered,Received,43,2026-07-18
+ORD-71229,Yani Sinaga,Ida Tampubolon,Padangpanjang,COD,607837,Delivered,Received,50,2026-07-10
+ORD-38117,Eka Hidayanto,Eko Lestari,Tidore Kepulauan,COD,1459808,Delivered,Received,30,2026-06-28
+ORD-89506,Latika Putra,Bakidin Wibowo,Kupang,COD,427226,Delivered,Received,28,2026-07-05
+ORD-91845,Ganep Prastuti,"Jamalia Puspasari, S.I.Kom",Palopo,COD,598996,Delivered,Received,39,2026-07-19
+ORD-93834,Kawaca Adriansyah,"Wirda Wacana, S.H.",Bogor,COD,270925,Failed,Rejected/Unreachable,98,2026-07-24
+ORD-60355,Bakidin Kusumo,Laras Ramadan,Depok,COD,471342,Delivered,Received,27,2026-07-03
+ORD-61217,Hj. Melinda Lazuardi,"Mursita Lazuardi, M.Kom.",Bitung,COD,1490509,Delivered,Received,48,2026-07-23
+ORD-50589,H. Uda Purwanti,"Catur Wasita, S.I.Kom",Mataram,COD,189698,Delivered,Received,47,2026-07-12
+ORD-79199,Kezia Putra,Hj. Intan Salahudin,Madiun,COD,1025673,Delivered,Received,48,2026-07-27
+ORD-23943,dr. Dodo Najmudin,Hana Pudjiastuti,Banjarmasin,COD,454204,Delivered,Received,46,2026-07-25
+ORD-42816,H. Galiono Manullang,Jasmani Puspasari,Sukabumi,COD,192435,Delivered,Received,26,2026-07-14
+ORD-16118,"Oman Winarsih, M.Kom.",Sabrina Anggriawan,Kediri,COD,751588,Delivered,Received,36,2026-07-22
+ORD-89239,Aurora Iswahyudi,"Hani Pertiwi, S.IP",Bukittinggi,COD,84163,Delivered,Received,21,2026-07-12
+ORD-67469,dr. Lamar Thamrin,Darmanto Laksita,Bandar Lampung,COD,1305228,Delivered,Received,49,2026-07-17
+ORD-78333,Candra Hutagalung,Hj. Tiara Suwarno,Kota Administrasi Jakarta Barat,COD,1085122,Delivered,Received,21,2026-07-27
+ORD-88029,"Lintang Sitorus, S.Pt",Mustika Pangestu,Blitar,COD,353193,Delivered,Received,26,2026-07-16
+ORD-97984,"Makara Iswahyudi, S.Psi",drg. Jagapati Yuniar,Ternate,COD,1429080,Delivered,Received,11,2026-07-03
+ORD-65861,Ella Nasyidah,Uli Wahyudin,Bandar Lampung,COD,1060776,Delivered,Received,18,2026-07-11
+ORD-32921,Siska Maheswara,Dartono Hasanah,Sawahlunto,COD,855939,Delivered,Received,39,2026-06-30
+ORD-34600,Niyaga Hidayanto,Wardaya Mayasari,Ternate,COD,738444,Delivered,Received,40,2026-07-04
+ORD-62559,Almira Mardhiyah,Wirda Maulana,Metro,COD,1469211,Delivered,Received,32,2026-07-27
+ORD-60780,Lantar Astuti,Ratih Zulkarnain,Padang Sidempuan,COD,1002181,Delivered,Received,31,2026-07-11
+ORD-96777,"T. Cakrawangsa Ardianto, S.IP","Zalindra Fujiati, M.Farm",Bekasi,COD,1146306,Delivered,Received,16,2026-07-19
+ORD-32007,drg. Raisa Hakim,Radit Purwanti,Kediri,COD,924952,Delivered,Received,34,2026-07-08
+ORD-67866,"KH. Ganda Pudjiastuti, S.Pd",drg. Usyi Damanik,Kota Administrasi Jakarta Timur,COD,481817,Failed,Rejected/Unreachable,48,2026-07-05
+ORD-24585,Hasim Prasetya,Praba Najmudin,Pariaman,COD,684934,Delivered,Received,40,2026-07-13
+ORD-88069,Lidya Firgantoro,Rahmi Mulyani,Padangpanjang,COD,756192,Delivered,Received,43,2026-06-29
+ORD-11677,Bakiman Hassanah,Catur Sihombing,Solok,COD,943867,Delivered,Received,12,2026-07-22
+ORD-82221,Padma Mardhiyah,Aswani Padmasari,Pontianak,COD,616968,Delivered,Received,13,2026-07-04
+ORD-22409,Dr. Vanya Sihombing,"Dr. Kasim Mandala, S.H.",Kota Administrasi Jakarta Utara,COD,818803,Delivered,Received,47,2026-07-22
+ORD-53803,Gading Astuti,Arsipatra Waskita,Parepare,COD,335873,Delivered,Received,28,2026-07-07
+ORD-83001,"Dt. Kenes Simanjuntak, M.Pd","Vinsen Pratama, M.Farm",Mojokerto,COD,1450073,Failed,Rejected/Unreachable,38,2026-07-25
+ORD-94056,Farhunnisa Suwarno,Latika Habibi,Cilegon,COD,1005075,Delivered,Received,33,2026-07-23
+ORD-36425,Drs. Taufan Hakim,Rahayu Widodo,Pontianak,COD,981717,Failed,Rejected/Unreachable,33,2026-07-21
+ORD-38898,"Farah Hidayat, S.Psi","Hj. Maimunah Susanti, S.E.",Malang,COD,275993,Delivered,Received,13,2026-07-27
+ORD-99678,Dariati Suwarno,Umaya Mangunsong,Palu,COD,459855,Delivered,Received,17,2026-07-27
+ORD-56275,Mulyono Purwanti,Jabal Narpati,Probolinggo,COD,1302171,Delivered,Not Received,4894,2026-07-08
+ORD-49036,Rina Uyainah,Ira Jailani,Denpasar,COD,185053,Delivered,Received,21,2026-07-06
+ORD-59940,Kasiyah Saefullah,Prayogo Fujiati,Balikpapan,COD,1084817,Failed,Rejected/Unreachable,45,2026-07-25
+ORD-27964,Soleh Wijayanti,Fathonah Napitupulu,Cilegon,COD,976636,Delivered,Received,26,2026-07-16
+ORD-99463,Zulfa Nurdiyanti,Nadine Mayasari,Magelang,COD,318630,Delivered,Not Received,3718,2026-07-15
+ORD-58386,Gilda Tamba,Amalia Widodo,Banjarmasin,COD,855131,Delivered,Received,16,2026-07-21
+ORD-21846,Abyasa Damanik,Oliva Permata,Palangkaraya,COD,1086739,Delivered,Received,29,2026-07-20
+ORD-70687,Safina Anggraini,drg. Waluyo Mardhiyah,Lhokseumawe,COD,292111,Delivered,Received,39,2026-07-13
+ORD-53869,Harto Farida,"Cut Hesti Sihombing, S.E.",Binjai,COD,358327,Failed,Rejected/Unreachable,25,2026-07-04
+ORD-48733,Arta Laksita,Zamira Tamba,Batam,COD,219017,Delivered,Received,31,2026-07-22
+ORD-13628,"Endah Kuswoyo, M.Ak",Siti Purnawati,Sukabumi,COD,1352726,Delivered,Received,41,2026-07-16
+ORD-37973,Laswi Dabukke,"Ella Tarihoran, S.Kom",Makassar,COD,909136,Failed,Rejected/Unreachable,38,2026-07-04
+ORD-43492,Lala Pranowo,"Suci Winarsih, S.E.I",Sorong,COD,231161,Delivered,Received,32,2026-07-26
+ORD-83316,Aslijan Hastuti,"Drs. Kasiyah Prasasta, M.Kom.",Medan,COD,1499106,Delivered,Received,17,2026-07-15
+ORD-36967,"Ir. Raina Sudiati, S.I.Kom","drg. Iriana Hutasoit, S.Sos",Pekanbaru,COD,1094045,Delivered,Received,14,2026-07-08
+ORD-67370,"Tgk. Lanang Wasita, S.Pd","Endra Kusmawati, S.IP",Pematangsiantar,COD,117342,Delivered,Received,28,2026-06-30
+ORD-66225,"R.A. Ulya Utama, S.Ked",Danuja Hutapea,Depok,COD,1066387,Delivered,Received,5,2026-07-04
+ORD-64388,"Heru Haryanto, S.Pt",Nilam Januar,Subulussalam,COD,468257,Failed,Rejected/Unreachable,36,2026-07-20
+ORD-26089,Cut Zamira Puspasari,Clara Pranowo,Tidore Kepulauan,COD,463728,Delivered,Received,20,2026-07-01
+ORD-47401,Irnanto Agustina,T. Damu Hardiansyah,Kota Administrasi Jakarta Pusat,COD,302345,Delivered,Received,31,2026-07-26
+ORD-22905,"Upik Marpaung, M.M.","Kasiyah Dabukke, S.Ked",Cimahi,COD,1456616,Delivered,Received,42,2026-07-14
+ORD-18835,Shakila Permadi,"Ir. Ira Rahimah, M.Kom.",Banjar,COD,581586,Failed,Rejected/Unreachable,83,2026-07-20
+ORD-93672,Bakianto Tarihoran,Drs. Zahra Saptono,Bitung,COD,841778,Delivered,Received,22,2026-07-07
+ORD-52615,Tgk. Jail Usamah,Ika Fujiati,Banda Aceh,COD,1082356,Delivered,Received,5,2026-07-17
+ORD-72844,Jasmin Laksita,Faizah Suartini,Depok,COD,502644,Delivered,Received,8,2026-07-08
+ORD-90120,R.A. Tiara Samosir,"Dr. Padma Nurdiyanti, M.Pd",Magelang,COD,955468,Delivered,Received,49,2026-07-14
+ORD-91023,"Wirda Sitompul, S.E.","dr. Unjani Budiyanto, M.TI.",Bekasi,COD,297595,Delivered,Received,19,2026-06-30
+ORD-90791,Martani Melani,"Darsirah Yulianti, S.Pd",Pagaralam,COD,1279576,Delivered,Received,33,2026-07-07
+ORD-12008,Juli Namaga,Cahyono Yuliarti,Tidore Kepulauan,COD,1436943,Delivered,Received,50,2026-07-17
+ORD-58147,dr. Kania Santoso,"Opan Hariyah, S.H.",Semarang,COD,555467,Delivered,Received,36,2026-07-05
+ORD-83772,"R. Ade Firgantoro, S.Farm",Dt. Kasim Susanti,Padang,COD,472910,Delivered,Received,32,2026-07-17
+ORD-80265,Joko Siregar,Olivia Najmudin,Jayapura,COD,153605,Delivered,Received,12,2026-07-13
+ORD-24081,Dasa Nababan,"Tgk. Enteng Widiastuti, S.Kom",Bontang,COD,736227,Delivered,Received,18,2026-07-17
+ORD-42909,Farhunnisa Uyainah,Aisyah Situmorang,Malang,COD,1155713,Delivered,Received,9,2026-07-21
+ORD-87819,Dr. Marwata Anggraini,Shania Nasyiah,Palopo,COD,1000139,Delivered,Received,10,2026-07-03
+ORD-16411,"Dt. Limar Suryatmi, M.TI.",Lukman Firmansyah,Purwokerto,COD,709971,Delivered,Received,14,2026-07-09
+ORD-21427,drg. Karya Irawan,Gamblang Napitupulu,Sawahlunto,COD,250021,Delivered,Not Received,3266,2026-07-20
+ORD-20994,drg. Salsabila Anggriawan,Hj. Genta Sihotang,Pematangsiantar,COD,924272,Failed,Rejected/Unreachable,57,2026-07-17
+ORD-33565,Kajen Tampubolon,Nabila Natsir,Magelang,COD,1249460,Failed,Rejected/Unreachable,8,2026-07-16
+ORD-20855,Kamidin Pradipta,"Dr. Puput Mardhiyah, S.IP",Tebingtinggi,COD,137157,Delivered,Received,33,2026-07-01
+ORD-27099,Ajiman Wibisono,Cakrabirawa Wulandari,Samarinda,COD,472794,Delivered,Received,16,2026-07-19
+ORD-27444,"Bahuwirya Salahudin, S.H.",Shania Padmasari,Tangerang,COD,1144691,Delivered,Received,24,2026-07-06
+ORD-48003,"drg. Drajat Siregar, M.TI.",Rini Namaga,Palu,COD,823485,Failed,Rejected/Unreachable,67,2026-07-08
+ORD-58157,Oni Aryani,Nadia Megantara,Ternate,COD,457411,Delivered,Received,15,2026-06-29
+ORD-64473,R.A. Gina Wasita,Cager Tamba,Madiun,COD,1479856,Delivered,Received,24,2026-07-11
+ORD-93115,Ayu Mandala,Kunthara Narpati,Cirebon,COD,297645,Delivered,Received,43,2026-06-30
+ORD-15887,Zamira Halimah,"Dr. Jatmiko Namaga, S.Pt",Probolinggo,COD,673750,Delivered,Received,5,2026-07-13
+ORD-38894,Danu Hakim,Maya Pertiwi,Samarinda,COD,50084,Delivered,Received,34,2026-07-13
+ORD-99602,Irma Zulaika,"Utama Damanik, S.Psi",Batu,COD,521740,Delivered,Received,15,2026-07-24
+ORD-97183,"Jamalia Thamrin, S.T.",Nardi Permata,Pematangsiantar,COD,188315,Delivered,Received,23,2026-07-15
+ORD-19329,Bagya Laksmiwati,Fitria Haryanto,Madiun,COD,396710,Delivered,Received,38,2026-07-06
+ORD-85559,Tirtayasa Aryani,"Cut Ulya Adriansyah, S.H.",Dumai,COD,1449453,Delivered,Received,25,2026-07-14
+ORD-38914,Zahra Prabowo,"Eva Aryani, S.E.I",Yogyakarta,COD,925373,Delivered,Received,6,2026-07-24
+ORD-44023,"Dr. Rahmi Saputra, M.Kom.","Paris Pratiwi, S.IP",Kota Administrasi Jakarta Utara,COD,1097418,Delivered,Received,40,2026-07-19
+ORD-28134,Nadine Salahudin,Talia Pudjiastuti,Bitung,COD,698238,Delivered,Received,13,2026-07-11
+ORD-48240,"Kasim Winarsih, S.I.Kom","Samiah Pratiwi, S.H.",Padang Sidempuan,COD,493449,Delivered,Received,39,2026-07-04
+ORD-42450,Jefri Safitri,Prayogo Aryani,Meulaboh,COD,806187,Delivered,Received,8,2026-07-12
+ORD-39603,Heru Nashiruddin,Narji Firgantoro,Bekasi,COD,1494887,Delivered,Received,19,2026-07-21
+ORD-71564,"Ibrani Winarsih, M.M.",Aswani Santoso,Bontang,COD,1416861,Failed,Rejected/Unreachable,60,2026-07-21
+ORD-21533,Purwadi Zulaika,Emin Maryadi,Langsa,COD,294422,Delivered,Received,18,2026-07-03
+ORD-84032,Gilda Waluyo,"Drs. Dalima Pratama, M.Ak",Manado,COD,1342788,Delivered,Received,36,2026-07-22
+ORD-64672,"Natalia Mardhiyah, S.Psi",Oman Melani,Salatiga,COD,1281068,Delivered,Received,7,2026-07-16
+ORD-71685,Radika Anggriawan,Jaya Yuniar,Pematangsiantar,COD,246258,Delivered,Received,42,2026-07-15
+ORD-27168,Dt. Kunthara Prastuti,"Hj. Tania Nasyidah, S.I.Kom",Subulussalam,COD,587432,Failed,Rejected/Unreachable,21,2026-07-12
+ORD-73500,Elma Suwarno,Dr. Kasiyah Maryati,Pekalongan,COD,850735,Delivered,Received,37,2026-07-18
+ORD-61399,"Harto Prabowo, S.Gz",Yulia Pudjiastuti,Palangkaraya,COD,1387961,Delivered,Received,31,2026-07-23
+ORD-48439,Siti Marpaung,Eluh Prayoga,Mataram,COD,425964,Delivered,Received,50,2026-07-27
+ORD-52918,Silvia Pradipta,Ika Zulkarnain,Denpasar,COD,1375118,Delivered,Received,50,2026-07-16
+ORD-99910,Atma Hutapea,Calista Kuswandari,Sawahlunto,COD,399228,Delivered,Received,15,2026-07-06
+ORD-21206,Hj. Rika Purwanti,"T. Empluk Tampubolon, S.H.",Purwokerto,COD,911720,Delivered,Received,31,2026-07-16
+ORD-88663,Bella Nasyiah,"Maida Mahendra, S.T.",Medan,COD,1314205,Delivered,Received,9,2026-07-23
+ORD-95927,Latika Zulkarnain,"Dr. Opung Rahimah, M.Ak",Blitar,COD,1126715,Delivered,Received,14,2026-07-07
+ORD-12572,Yono Maulana,"Dr. Maryadi Wahyuni, S.Gz",Makassar,COD,841342,Delivered,Received,28,2026-07-02
+ORD-73839,"KH. Adika Budiyanto, S.T.",Mujur Ramadan,Salatiga,COD,1291022,Delivered,Received,18,2026-07-25
+ORD-54803,Agnes Damanik,H. Unggul Simbolon,Cilegon,COD,1234738,Delivered,Received,17,2026-07-05
+ORD-22681,Iriana Hartati,Tri Prasetyo,Parepare,COD,655456,Delivered,Received,12,2026-07-10
+ORD-67705,Dr. Anita Mangunsong,Jaga Rahmawati,Bima,COD,852134,Failed,Rejected/Unreachable,60,2026-07-08
+ORD-26218,R.A. Ulva Ramadan,Ian Maheswara,Medan,COD,468039,Delivered,Received,8,2026-07-22
+ORD-12689,Warsa Simbolon,dr. Jagapati Pertiwi,Ternate,COD,299618,Failed,Rejected/Unreachable,36,2026-07-04
+ORD-92366,Adhiarja Padmasari,"Dt. Omar Permata, M.TI.",Serang,COD,599688,Delivered,Received,7,2026-07-18
+ORD-21511,H. Marsito Salahudin,Dt. Dimas Sihombing,Banjarbaru,COD,583187,Delivered,Received,20,2026-07-16
+ORD-64307,Niyaga Tampubolon,dr. Nadia Winarsih,Kota Administrasi Jakarta Timur,COD,130001,Delivered,Received,50,2026-07-11
+ORD-81697,Ganep Pranowo,"Tira Hutasoit, S.Psi",Bitung,COD,546063,Delivered,Received,11,2026-07-05
+ORD-59538,"Ophelia Siregar, M.Ak",Sidiq Winarsih,Banjarmasin,COD,531094,Delivered,Received,8,2026-07-27
+ORD-60829,Drs. Unjani Tampubolon,Sabrina Mayasari,Salatiga,COD,865806,Delivered,Received,34,2026-07-14
+ORD-17027,Nurul Sihombing,Dr. Almira Mardhiyah,Malang,COD,184450,Delivered,Received,44,2026-07-20
+ORD-30445,Nasrullah Kusumo,Ira Oktaviani,Binjai,COD,1032359,Delivered,Received,31,2026-07-19
+ORD-52653,Kamaria Simbolon,dr. Puput Situmorang,Kota Administrasi Jakarta Barat,COD,349480,Failed,Rejected/Unreachable,31,2026-07-27
+ORD-60638,"Makara Hasanah, M.Kom.",Gaduh Zulkarnain,Solok,COD,298350,Delivered,Received,37,2026-07-03
+ORD-30588,"Irsad Ramadan, S.Pt","Jaiman Hidayanto, M.Farm",Pasuruan,COD,1417688,Delivered,Received,12,2026-07-15
+ORD-79714,Kunthara Widodo,Uchita Maryati,Cilegon,COD,1258753,Failed,Rejected/Unreachable,87,2026-07-11
+ORD-18458,Putri Wahyuni,Nadine Hassanah,Sibolga,COD,280585,Delivered,Received,24,2026-07-19
+ORD-21993,"Bakianto Wahyudin, S.H.",Karna Astuti,Binjai,COD,521424,Delivered,Received,12,2026-07-18
+ORD-87966,"Tgk. Febi Safitri, M.Pd",Gasti Wibowo,Magelang,COD,1370690,Delivered,Received,12,2026-06-29
+ORD-70433,Genta Januar,Prakosa Nurdiyanti,Salatiga,COD,424786,Delivered,Received,19,2026-06-28
+ORD-66439,"Diana Wijaya, S.Sos",Harsaya Mangunsong,Padangpanjang,COD,245764,Delivered,Received,7,2026-06-28
+ORD-22756,Ir. Artanto Sudiati,R.M. Gilang Dongoran,Pariaman,COD,592538,Delivered,Received,47,2026-07-24
+ORD-49034,Cemani Megantara,Drs. Cinthia Laksmiwati,Pangkalpinang,COD,1291449,Failed,Rejected/Unreachable,7,2026-06-29
+ORD-65931,Diana Kuswandari,Uchita Santoso,Kota Administrasi Jakarta Pusat,COD,99739,Failed,Rejected/Unreachable,15,2026-07-02
+ORD-85798,drg. Maida Nababan,Kamal Nasyidah,Batu,COD,341540,Delivered,Received,49,2026-06-30
+ORD-66172,Zulaikha Wahyudin,Irsad Saputra,Samarinda,COD,948426,Delivered,Received,12,2026-07-05
+ORD-60473,Tgk. Dirja Budiman,"Ir. Amelia Suryatmi, S.Farm",Batam,COD,1100491,Delivered,Not Received,3808,2026-07-17
+ORD-90525,"Ir. Genta Agustina, S.Pt",Olivia Rajasa,Pangkalpinang,COD,608828,Delivered,Received,20,2026-07-14
+ORD-33795,"Halima Budiman, S.Pt","Dt. Cahyadi Rahmawati, M.Pd",Makassar,COD,143047,Delivered,Received,20,2026-06-30
+ORD-77666,Mujur Halim,Azalea Irawan,Parepare,COD,1369102,Delivered,Received,10,2026-07-21
+ORD-25997,"Hj. Sarah Nugroho, S.Farm",Cindy Dongoran,Bogor,COD,1147051,Delivered,Received,9,2026-07-27
+ORD-85753,"Aisyah Nashiruddin, M.M.",Sabrina Lazuardi,Palu,COD,1219381,Delivered,Received,20,2026-07-04
+ORD-82489,Tgk. Uchita Hakim,Widya Napitupulu,Depok,COD,1207645,Delivered,Received,48,2026-07-09
+ORD-34054,Dt. Bakiman Nashiruddin,Mahdi Pangestu,Manado,COD,837569,Delivered,Received,24,2026-07-06
+ORD-84087,Chelsea Sirait,Puti Cinta Haryanti,Meulaboh,COD,187886,Delivered,Received,6,2026-06-30
+ORD-29041,Intan Rahmawati,Jarwa Wahyudin,Tanjungpinang,COD,1394515,Delivered,Received,23,2026-07-09
+ORD-77629,Caturangga Laksita,"Clara Purnawati, M.TI.",Kota Administrasi Jakarta Barat,COD,1305879,Delivered,Received,8,2026-07-26
+ORD-98686,Tgk. Febi Hutagalung,Ian Rahayu,Manado,COD,491615,Failed,Rejected/Unreachable,54,2026-07-08
+ORD-27762,"Clara Haryanto, M.Farm",Puti Rina Suryatmi,Tidore Kepulauan,COD,948278,Delivered,Received,17,2026-07-16
+ORD-33893,"Adinata Nuraini, M.Pd",Gina Rahimah,Jambi,COD,921535,Delivered,Received,35,2026-07-23
+ORD-87077,R.M. Budi Rahimah,Maimunah Hasanah,Binjai,COD,1205635,Delivered,Received,7,2026-07-21
+ORD-12435,Harimurti Oktaviani,Putri Haryanti,Madiun,COD,473115,Delivered,Received,5,2026-07-26
+ORD-78456,Ian Padmasari,Yunita Nugroho,Tebingtinggi,COD,657458,Failed,Rejected/Unreachable,68,2026-07-13
+ORD-19379,Kiandra Sudiati,Maya Hakim,Tarakan,COD,144040,Delivered,Received,41,2026-06-29
+ORD-58478,Liman Riyanti,Drs. Laila Andriani,Sawahlunto,COD,1016851,Delivered,Received,40,2026-07-26
+ORD-91591,Saiful Usamah,Reza Halim,Banjar,COD,1168886,Delivered,Received,34,2026-07-27
+ORD-85524,"Saiful Widodo, S.Psi","Tedi Namaga, S.Sos",Bandung,COD,327467,Delivered,Received,39,2026-06-30
+ORD-25335,Tgk. Jamalia Gunarto,"drg. Wulan Sihotang, S.T.",Sorong,COD,870867,Delivered,Received,40,2026-06-29
+ORD-37878,Sabri Thamrin,Pranawa Yulianti,Binjai,COD,258471,Failed,Rejected/Unreachable,42,2026-07-16
+ORD-44892,Amelia Pudjiastuti,Bahuwarna Nashiruddin,Tangerang Selatan,COD,982164,Delivered,Received,16,2026-07-27
+ORD-41197,"dr. Hesti Prasetyo, M.Kom.",Ilsa Hidayat,Parepare,COD,265178,Delivered,Received,30,2026-07-23
+ORD-67327,Lala Sihombing,Jamil Anggraini,Malang,COD,742403,Delivered,Received,32,2026-06-28
+ORD-46775,Ir. Yono Mansur,"Dr. Lasmono Palastri, S.Farm",Pematangsiantar,COD,1179062,Delivered,Received,24,2026-06-29
+ORD-32797,Dr. Ratna Hastuti,Jamil Hariyah,Cirebon,COD,407865,Delivered,Received,46,2026-07-07
+ORD-12583,Radika Dongoran,"dr. Kemba Pranowo, S.Gz",Kota Administrasi Jakarta Barat,COD,1140146,Delivered,Received,37,2026-07-14
+ORD-23358,Jaga Usamah,Tina Dabukke,Subulussalam,COD,1016811,Delivered,Received,26,2026-07-11
+ORD-70409,"dr. Farah Sitompul, S.Sos",drg. Yunita Aryani,Tangerang,COD,1468250,Delivered,Received,15,2026-07-18
+ORD-20772,Jane Saptono,Taswir Farida,Metro,COD,1092719,Delivered,Received,24,2026-07-06
+ORD-81848,Zelaya Gunawan,Farhunnisa Agustina,Jayapura,COD,614871,Delivered,Received,16,2026-07-19
+ORD-23638,Drs. Vanya Yuniar,Nadia Wijayanti,Bau-Bau,COD,1460160,Delivered,Received,39,2026-06-30
+ORD-17813,"Hasim Januar, S.Pd",Emong Agustina,Banjar,COD,1436254,Delivered,Received,17,2026-07-17
+ORD-73209,KH. Harto Wibowo,Margana Suartini,Pariaman,COD,109979,Delivered,Received,49,2026-07-10
+ORD-80106,"Ir. Jarwi Mangunsong, M.Farm",Ratna Rajasa,Meulaboh,COD,1098538,Delivered,Received,11,2026-07-20
+ORD-68007,KH. Gilang Santoso,R.A. Dian Melani,Samarinda,COD,460048,Delivered,Received,43,2026-07-13
+ORD-64076,"Bala Wibisono, M.M.",KH. Bancar Handayani,Palembang,COD,345768,Delivered,Received,12,2026-06-28
+ORD-14496,Darsirah Prastuti,Tami Mayasari,Tidore Kepulauan,COD,179990,Delivered,Received,37,2026-06-28
+ORD-53007,"Tgk. Ade Wijayanti, S.E.I",Iriana Haryanti,Sungai Penuh,COD,715644,Delivered,Received,25,2026-07-02
+ORD-64088,Bahuwirya Habibi,"Gabriella Wacana, S.Ked",Palopo,COD,749391,Failed,Rejected/Unreachable,34,2026-07-27
+ORD-29555,"Dacin Anggraini, M.Ak",Vivi Mandala,Tasikmalaya,COD,1110691,Delivered,Received,44,2026-07-14
+ORD-40906,Nadine Firgantoro,R. Elisa Handayani,Kota Administrasi Jakarta Barat,COD,833964,Failed,Rejected/Unreachable,25,2026-07-19
+ORD-55050,Hardana Narpati,Ciaobella Suryatmi,Tasikmalaya,COD,680897,Delivered,Received,14,2026-07-13
+ORD-20861,Reza Thamrin,"Tgk. Clara Suwarno, M.Farm",Sorong,COD,144472,Delivered,Received,33,2026-07-23
+ORD-67877,Gandi Kurniawan,"drg. Diana Maulana, S.Pd",Lubuklinggau,COD,1302657,Delivered,Received,26,2026-07-04
+ORD-84878,Harimurti Rahmawati,Drs. Kezia Budiyanto,Banda Aceh,COD,230337,Delivered,Received,44,2026-07-18
+ORD-53930,Dr. Wulan Mustofa,Kartika Prasetya,Bitung,COD,1495483,Delivered,Received,43,2026-07-03
+ORD-59570,Mila Suartini,Bagas Rahimah,Palangkaraya,COD,213059,Delivered,Received,24,2026-07-02
+ORD-56574,Kasim Hartati,Lantar Hutagalung,Probolinggo,COD,1465585,Failed,Rejected/Unreachable,50,2026-07-14
+ORD-84712,"drg. Uchita Prasetya, S.Pt",Prima Prasasta,Sawahlunto,COD,498154,Failed,Rejected/Unreachable,53,2026-07-06
+ORD-96378,Nasrullah Pradipta,Ir. Ulva Salahudin,Salatiga,COD,1481118,Delivered,Received,34,2026-07-02
+ORD-64267,drg. Ikhsan Riyanti,Safina Lazuardi,Kota Administrasi Jakarta Barat,COD,1282514,Delivered,Received,22,2026-07-20
+ORD-31316,"Tgk. Hardana Mandala, S.Kom",Puti Wibowo,Tasikmalaya,COD,1424988,Delivered,Received,23,2026-07-04
+ORD-33093,Hafshah Wibisono,"Gandi Kuswandari, M.Pd",Subulussalam,COD,1087743,Delivered,Not Received,4938,2026-07-13
+ORD-99682,Kania Sitompul,Vicky Mangunsong,Kota Administrasi Jakarta Selatan,COD,735532,Delivered,Received,22,2026-07-20
+ORD-75010,Ayu Lestari,"Drs. Oliva Halimah, M.TI.",Tarakan,COD,71669,Delivered,Received,27,2026-07-09
+ORD-60241,"Laila Handayani, S.Pd",Putri Mayasari,Mataram,COD,1186149,Delivered,Received,28,2026-07-01
+ORD-58710,Puti Ani Hutasoit,"Harja Sirait, M.M.",Pekalongan,COD,743217,Delivered,Received,7,2026-07-11
+ORD-33487,R. Zizi Samosir,Kairav Wastuti,Semarang,COD,1110263,Delivered,Received,45,2026-07-06
+ORD-75342,Rina Hassanah,Talia Waskita,Gorontalo,COD,1402013,Delivered,Received,34,2026-07-21
+ORD-82106,Dt. Capa Thamrin,Nadia Anggriawan,Sukabumi,COD,1320372,Delivered,Received,33,2026-07-14
+ORD-32954,Marsito Pradipta,"Prabu Sirait, S.E.",Bogor,COD,336284,Delivered,Received,33,2026-07-06
+ORD-47178,Mujur Sihotang,"Dr. Safina Ramadan, M.Ak",Mataram,COD,1130645,Delivered,Received,46,2026-07-07
+ORD-95615,Rika Susanti,"Ir. Adinata Hasanah, S.T.",Tarakan,COD,937463,Failed,Rejected/Unreachable,44,2026-07-13
+ORD-65000,Intan Suryono,Bahuwarna Maulana,Pasuruan,COD,870952,Delivered,Not Received,2594,2026-07-08
+ORD-36495,Calista Sitompul,Mustika Iswahyudi,Depok,COD,1162914,Delivered,Received,44,2026-07-27
+ORD-30255,"Melinda Setiawan, M.Pd",Lega Pertiwi,Palu,COD,96893,Delivered,Received,18,2026-07-04
+ORD-27293,"Tgk. Betania Halimah, S.E.I",Wasis Nugroho,Pariaman,COD,792845,Delivered,Received,25,2026-07-27
+ORD-38699,"dr. Maras Hasanah, S.Pd",Hani Wacana,Kupang,COD,1137940,Delivered,Received,24,2026-07-04
+ORD-83498,"R.M. Cahya Hidayanto, S.Sos",Zulfa Wacana,Probolinggo,COD,332191,Delivered,Received,6,2026-07-17
+ORD-54445,Nrima Saragih,"Puti Febi Pradana, S.Farm",Tasikmalaya,COD,1210090,Delivered,Not Received,4131,2026-07-01
+ORD-87564,"Juli Prayoga, M.Pd","Hj. Lintang Saputra, M.M.",Bau-Bau,COD,912014,Delivered,Received,33,2026-07-07
+ORD-54146,"Karman Pradana, S.T.","Heru Puspita, S.Pd",Cimahi,COD,372775,Delivered,Received,44,2026-07-10
+ORD-82778,"Mustofa Yuniar, S.Ked",Siska Mandasari,Kota Administrasi Jakarta Utara,COD,382269,Delivered,Not Received,2754,2026-07-15
+ORD-56471,"Puti Paris Utama, S.IP",Radika Prastuti,Serang,COD,281522,Delivered,Received,47,2026-07-13
+ORD-29545,Asmadi Riyanti,Puti Dinda Wibowo,Banjarbaru,COD,1444610,Delivered,Received,23,2026-07-03
+ORD-49166,Mala Pradana,"Cut Mutia Prasasta, M.Ak",Solok,COD,624078,Delivered,Received,30,2026-07-13
+ORD-89715,Darimin Pratiwi,"Tgk. Mila Ramadan, S.E.I",Bima,COD,677583,Delivered,Received,35,2026-07-01
+ORD-46322,Zulaikha Winarno,"Febi Wasita, M.M.",Kota Administrasi Jakarta Barat,COD,1188433,Failed,Rejected/Unreachable,24,2026-07-15
+ORD-65541,Julia Firgantoro,Ratih Hariyah,Sawahlunto,COD,1107678,Delivered,Not Received,1999,2026-07-08
+ORD-32180,Oliva Rahayu,Vero Kuswoyo,Jayapura,COD,597725,Delivered,Received,30,2026-06-29
+ORD-98287,Vanesa Thamrin,Talia Mandasari,Sungai Penuh,COD,731874,Failed,Rejected/Unreachable,77,2026-07-09
+ORD-81940,"Harja Nasyidah, M.TI.",Carla Wijaya,Bengkulu,COD,206355,Delivered,Received,35,2026-07-06
+ORD-97861,"Puti Ika Maheswara, S.T.","Drs. Julia Hutapea, M.Ak",Pekalongan,COD,641009,Delivered,Received,31,2026-07-01
+ORD-54791,"Ir. Karja Firgantoro, S.Pt",Hj. Qori Haryanti,Tarakan,COD,1286047,Delivered,Received,26,2026-07-13
+ORD-68105,Jarwadi Wacana,"Rahayu Mandala, S.Pt",Bontang,COD,1429431,Delivered,Received,46,2026-07-18
+ORD-11153,Lantar Prasetyo,Syahrini Dabukke,Mojokerto,COD,1203169,Delivered,Received,23,2026-07-20
+ORD-59748,"drg. Gara Fujiati, S.H.",Lukita Maryadi,Banjar,COD,619287,Delivered,Received,33,2026-07-26
+ORD-71085,Mulyanto Ramadan,Puti Uli Tarihoran,Sukabumi,COD,299498,Failed,Rejected/Unreachable,78,2026-07-06
+ORD-48900,Dinda Sihombing,Ami Waluyo,Cimahi,COD,1468222,Delivered,Received,41,2026-07-11
+ORD-46766,T. Kanda Lestari,Dt. Ian Prastuti,Purwokerto,COD,508697,Delivered,Received,8,2026-07-15
+ORD-71556,Sutan Okto Putra,Lalita Kusumo,Sawahlunto,COD,1274003,Delivered,Not Received,4000,2026-07-25
+ORD-11637,R.M. Saadat Maryati,"Tami Usada, M.Ak",Pangkalpinang,COD,500212,Delivered,Received,16,2026-07-14
+ORD-55635,"Danang Latupono, S.Gz",Cornelia Jailani,Tegal,COD,180139,Delivered,Received,39,2026-07-11
+ORD-42511,drg. Harsanto Nurdiyanti,drg. Amelia Saefullah,Kota Administrasi Jakarta Barat,COD,508197,Delivered,Received,31,2026-06-29
+ORD-12081,Kariman Nasyidah,Ulva Maryati,Palangkaraya,COD,1486562,Delivered,Received,39,2026-06-28
+ORD-54958,Gada Zulaika,"Cut Calista Maulana, S.Sos",Medan,COD,1282241,Delivered,Received,20,2026-07-18
+ORD-48236,Humaira Maheswara,Clara Mardhiyah,Kota Administrasi Jakarta Timur,COD,792071,Failed,Rejected/Unreachable,25,2026-07-14
+ORD-28759,Gawati Uwais,Febi Hastuti,Balikpapan,COD,310019,Delivered,Received,14,2026-06-30
+ORD-65780,"Kayun Uyainah, M.Pd","Melinda Wastuti, S.Psi",Tanjungbalai,COD,1394577,Delivered,Received,8,2026-07-12
+ORD-84287,Jaiman Hidayanto,Janet Maulana,Kota Administrasi Jakarta Barat,COD,934964,Delivered,Received,42,2026-07-19
+ORD-34273,Mursita Natsir,Zahra Sinaga,Salatiga,COD,221803,Delivered,Received,23,2026-07-16
+ORD-15403,Ophelia Waluyo,Latika Yuliarti,Tanjungpinang,COD,758370,Delivered,Received,10,2026-07-10
+ORD-52257,Kusuma Tamba,Ihsan Wastuti,Probolinggo,COD,112989,Delivered,Received,38,2026-07-05
+ORD-53819,"R. Putri Tarihoran, S.Ked","Hairyanto Pranowo, S.IP",Lubuklinggau,COD,974070,Delivered,Received,6,2026-06-30
+ORD-26269,"Cut Paramita Nasyiah, S.Pd","Tgk. Sidiq Maryati, S.IP",Serang,COD,84547,Delivered,Received,40,2026-07-12
+ORD-85640,Opung Yolanda,Dr. Ade Yolanda,Bontang,COD,460040,Delivered,Received,17,2026-07-07
+ORD-64836,Diana Pranowo,Cayadi Prastuti,Payakumbuh,COD,1053732,Delivered,Received,10,2026-07-10
+ORD-43612,Cinthia Kusumo,"drg. Uchita Dongoran, S.T.",Prabumulih,COD,430629,Delivered,Received,33,2026-07-22
+ORD-20670,Labuh Hassanah,Ihsan Dabukke,Bogor,COD,967823,Delivered,Received,29,2026-07-25
+ORD-95184,"Cut Zaenab Kuswoyo, S.E.I",Irwan Habibi,Magelang,COD,1223068,Delivered,Received,38,2026-07-10
+ORD-81807,"Hj. Amelia Zulaika, S.T.",Winda Budiman,Sukabumi,COD,791951,Delivered,Received,43,2026-07-15
+ORD-15974,"Kenes Rajata, M.TI.","Uchita Zulaika, M.TI.",Pasuruan,COD,463138,Delivered,Not Received,4388,2026-07-11
+ORD-74498,R. Sari Najmudin,Talia Mustofa,Tegal,COD,1411635,Delivered,Received,5,2026-07-19
+ORD-91473,Ciaobella Tamba,Jais Suryono,Tasikmalaya,COD,135083,Failed,Rejected/Unreachable,62,2026-07-07
+ORD-29512,Drs. Karen Anggriawan,"Cornelia Tamba, S.Psi",Banda Aceh,COD,273664,Delivered,Received,47,2026-07-14
+ORD-97681,Usyi Waluyo,Ade Nuraini,Banjar,COD,1354205,Delivered,Received,47,2026-06-28
+ORD-32077,Bahuwarna Hutapea,Sadina Mulyani,Tual,COD,728006,Delivered,Received,43,2026-07-01
+ORD-23340,Eka Rahimah,"Jail Siregar, S.H.",Purwokerto,COD,295229,Delivered,Received,8,2026-07-17
+ORD-88243,Marwata Hassanah,"Bakiman Nugroho, S.Gz",Magelang,COD,581813,Delivered,Received,27,2026-07-01
+ORD-35139,"Panca Hassanah, S.Psi",Siti Iswahyudi,Kota Administrasi Jakarta Timur,COD,365245,Delivered,Received,45,2026-07-23
+ORD-26742,Shania Farida,Dimas Iswahyudi,Bekasi,COD,751645,Delivered,Received,37,2026-07-18
+ORD-32489,"Ir. Aurora Narpati, S.IP","drg. Nugraha Mahendra, S.T.",Padang,COD,1293503,Delivered,Received,36,2026-07-09
+ORD-46911,Tami Wijaya,Respati Kusmawati,Bukittinggi,COD,998548,Delivered,Not Received,4045,2026-07-04
+ORD-76912,"KH. Saka Mandasari, S.T.","R.A. Syahrini Yuliarti, S.Pd",Medan,COD,898352,Failed,Rejected/Unreachable,60,2026-07-23
+ORD-64614,"Drs. Wakiman Aryani, M.Farm",Abyasa Prasetyo,Depok,COD,920288,Delivered,Received,24,2026-07-27
+ORD-12568,Latika Kuswandari,Galih Wasita,Pangkalpinang,COD,933122,Delivered,Received,17,2026-07-04
+ORD-99807,"Ir. Damar Wijayanti, S.Ked","Vicky Zulaika, S.T.",Tebingtinggi,COD,1279493,Delivered,Received,5,2026-07-11
+ORD-85303,Dt. Lanjar Winarno,R.A. Almira Aryani,Cilegon,COD,271847,Delivered,Received,45,2026-06-28
+ORD-42517,Citra Zulkarnain,"Tantri Prakasa, S.E.I",Tanjungbalai,COD,220401,Delivered,Received,20,2026-07-17
+ORD-83837,Ophelia Kurniawan,"Rahman Hastuti, M.Pd",Subulussalam,COD,661663,Delivered,Received,21,2026-06-28
+ORD-95041,"Wasis Simanjuntak, S.E.I",Drs. Julia Yulianti,Padangpanjang,COD,1044886,Delivered,Received,23,2026-07-18
+ORD-73340,Fathonah Hassanah,"R. Qori Najmudin, S.H.",Batam,COD,64786,Delivered,Received,24,2026-07-17
+ORD-16381,Jasmin Nasyidah,Aslijan Yuliarti,Banjarmasin,COD,662776,Delivered,Not Received,4609,2026-07-05
+ORD-32732,Endah Anggraini,Dt. Mustika Handayani,Kota Administrasi Jakarta Barat,COD,1341036,Delivered,Received,33,2026-07-09
+ORD-13621,Lamar Natsir,Rini Mahendra,Samarinda,COD,892479,Delivered,Received,46,2026-07-03
+ORD-95480,Puji Rahmawati,Salman Susanti,Pematangsiantar,COD,1379760,Delivered,Received,27,2026-07-15
+ORD-59542,Jail Yolanda,Dacin Maryadi,Sungai Penuh,COD,823612,Delivered,Received,32,2026-07-07
+ORD-98289,"Dirja Budiyanto, S.T.",Oni Salahudin,Prabumulih,COD,76752,Delivered,Received,20,2026-07-11
+ORD-64908,"Melinda Handayani, S.Gz",Harjasa Suryatmi,Pagaralam,COD,920143,Delivered,Received,7,2026-07-05
+ORD-31022,"Jaswadi Sihombing, S.Pt",R.A. Eka Namaga,Prabumulih,COD,353186,Delivered,Received,31,2026-07-21
+ORD-84650,"H. Edi Utama, M.M.",Margana Astuti,Salatiga,COD,809426,Delivered,Received,19,2026-07-10
+ORD-44508,Tugiman Yulianti,"Raihan Susanti, S.E.I",Solok,COD,814116,Delivered,Received,17,2026-07-12
+ORD-60587,"Ira Suryatmi, S.Pd","Rosman Uyainah, S.Kom",Cilegon,COD,1388144,Delivered,Received,35,2026-07-15
+ORD-76121,Rahmi Waskita,Zulfa Sudiati,Padang Sidempuan,COD,1295764,Delivered,Received,7,2026-07-10
+ORD-48235,drg. Eka Firgantoro,Karta Handayani,Kota Administrasi Jakarta Pusat,COD,929385,Delivered,Received,8,2026-07-24
+ORD-32407,Mursita Mangunsong,Cawisadi Pangestu,Salatiga,COD,1428008,Delivered,Received,44,2026-07-18
+ORD-51531,"Lembah Situmorang, S.Farm",Candrakanta Pudjiastuti,Bau-Bau,COD,110771,Delivered,Received,41,2026-07-14
+ORD-74033,Purwa Nuraini,Cecep Hastuti,Palu,COD,782434,Delivered,Received,6,2026-07-13
+ORD-82646,Ganjaran Waluyo,Laswi Pranowo,Sungai Penuh,COD,1382585,Delivered,Received,42,2026-06-29
+ORD-18447,"Dian Suryono, M.Pd","Ganep Salahudin, S.Ked",Tidore Kepulauan,COD,284474,Delivered,Received,28,2026-07-21
+ORD-21166,Dodo Sinaga,Ajeng Utama,Cimahi,COD,938852,Delivered,Received,44,2026-07-15
+ORD-31010,"Drs. Rahayu Nugroho, M.TI.",Raina Dongoran,Jayapura,COD,514360,Delivered,Received,47,2026-07-03
+ORD-93199,"Diana Hutagalung, M.Ak",Vera Kusmawati,Parepare,COD,370946,Delivered,Received,14,2026-07-26
+ORD-20443,Dwi Novitasari,Ibun Rahayu,Salatiga,COD,1062394,Delivered,Received,42,2026-07-27
+ORD-53420,Koko Yulianti,Zahra Habibi,Pekanbaru,COD,1186367,Failed,Rejected/Unreachable,97,2026-06-28
+ORD-61070,Sabrina Nashiruddin,Drs. Rahmi Farida,Sibolga,COD,1037454,Delivered,Received,25,2026-07-26
+ORD-41007,Makara Situmorang,"Bagiya Nainggolan, M.Kom.",Manado,COD,310309,Delivered,Received,23,2026-07-15
+ORD-67203,"Cut Zelaya Astuti, S.E.",Damu Yolanda,Surakarta,COD,50351,Failed,Rejected/Unreachable,52,2026-07-17
+ORD-77537,"Ir. Raisa Irawan, S.IP",Ophelia Setiawan,Sungai Penuh,COD,1399859,Delivered,Received,35,2026-07-10
+ORD-50823,Jaiman Yolanda,"Tgk. Kiandra Mardhiyah, M.Pd",Purwokerto,COD,431232,Delivered,Received,32,2026-06-29
+ORD-65628,Ami Wastuti,Unjani Permata,Dumai,COD,377827,Delivered,Received,7,2026-07-25
+ORD-60683,"Sutan Manah Kurniawan, S.IP","T. Limar Riyanti, M.Ak",Tasikmalaya,COD,1033732,Delivered,Received,6,2026-07-13
+ORD-85511,Jagaraga Pertiwi,"Gandi Prabowo, S.E.I",Pariaman,COD,990012,Delivered,Received,45,2026-07-10
+ORD-78887,"H. Dartono Hutapea, M.Ak",Dr. Mulya Prakasa,Bogor,COD,375328,Delivered,Received,15,2026-07-08
+ORD-16011,Karimah Usada,"Jono Setiawan, S.Sos",Tual,COD,1429651,Failed,Rejected/Unreachable,54,2026-07-16
+ORD-34122,Cayadi Marpaung,"T. Agus Hutapea, S.Farm",Cilegon,COD,478974,Delivered,Received,19,2026-07-05
+ORD-51906,"Drs. Violet Safitri, S.Pd",dr. Laswi Utama,Medan,COD,794973,Failed,Rejected/Unreachable,38,2026-07-08
+ORD-52299,drg. Asman Riyanti,"Restu Wulandari, S.Sos",Tarakan,COD,1117096,Delivered,Received,10,2026-07-16
+ORD-50100,"Embuh Santoso, S.E.","dr. Ciaobella Siregar, M.M.",Surabaya,COD,156788,Delivered,Received,45,2026-07-06
+ORD-67774,"Dt. Adinata Firgantoro, M.Farm",Cahya Jailani,Yogyakarta,COD,1061360,Delivered,Received,26,2026-07-16
+ORD-91510,"Zulaikha Budiman, S.I.Kom","Hasna Pradana, S.T.",Bengkulu,COD,850225,Delivered,Not Received,2439,2026-07-09
+ORD-21998,Pangeran Hidayanto,Sutan Rusman Marbun,Bekasi,COD,983943,Delivered,Received,25,2026-07-06
+ORD-78438,Zamira Sitompul,Latika Uyainah,Kendari,COD,490098,Delivered,Received,50,2026-06-28
+ORD-51008,Ajimin Permadi,Hj. Calista Hutapea,Bitung,COD,650671,Delivered,Received,50,2026-06-28
+ORD-12130,"Ega Dongoran, M.TI.",Dr. Jumari Nasyiah,Sorong,COD,100487,Delivered,Received,49,2026-07-04
+ORD-79064,Kenari Saefullah,"Raden Hassanah, S.T.",Sukabumi,COD,428677,Delivered,Received,35,2026-07-08
+ORD-90843,"Fathonah Mahendra, S.Ked","dr. Asirwada Lazuardi, M.M.",Cimahi,COD,816987,Delivered,Received,30,2026-07-26
+ORD-85169,"Galur Laksmiwati, S.I.Kom",Rahman Januar,Bandar Lampung,COD,722790,Delivered,Received,7,2026-07-01
+ORD-48497,"Febi Maheswara, S.IP",Vivi Hardiansyah,Gorontalo,COD,1154012,Delivered,Received,37,2026-07-15
+ORD-96781,Umi Firmansyah,"Vivi Hidayat, S.Sos",Kotamobagu,COD,325614,Delivered,Received,43,2026-07-03
+ORD-82175,Cagak Permadi,Capa Rahayu,Magelang,COD,1001340,Delivered,Received,47,2026-07-02
+ORD-96244,R. Galuh Hutagalung,dr. Dalimin Saragih,Pasuruan,COD,744222,Delivered,Received,32,2026-07-19
+ORD-86441,Harjo Usamah,"drg. Zizi Purnawati, S.Sos",Payakumbuh,COD,96863,Delivered,Received,42,2026-07-04
+ORD-23681,Dalimin Ramadan,"Tgk. Garang Kuswandari, M.TI.",Ternate,COD,376166,Delivered,Received,41,2026-07-24
+ORD-26615,"R.A. Belinda Nashiruddin, M.TI.",T. Kacung Mahendra,Banjar,COD,317211,Delivered,Received,39,2026-07-25
+ORD-85269,Putri Utama,KH. Cahyono Farida,Cilegon,COD,301501,Delivered,Received,14,2026-07-17
+ORD-56333,Patricia Megantara,KH. Bagus Natsir,Bengkulu,COD,776788,Delivered,Received,40,2026-06-28
+ORD-20121,T. Kamidin Mansur,Mulyanto Maheswara,Singkawang,COD,886449,Delivered,Received,14,2026-07-01
+ORD-89785,Tami Lailasari,"Drajat Narpati, M.Farm",Cilegon,COD,179826,Failed,Rejected/Unreachable,13,2026-07-20
+ORD-61707,Vivi Sihotang,"Hj. Lala Prasasta, S.Kom",Padangpanjang,COD,1087395,Delivered,Received,8,2026-07-06
+ORD-50647,Rudi Aryani,Samsul Palastri,Bukittinggi,COD,796609,Delivered,Received,36,2026-06-29
+ORD-65616,Dr. Laila Aryani,Tomi Saefullah,Metro,COD,51831,Delivered,Received,35,2026-07-08
+ORD-98626,"Ir. Rachel Ardianto, M.Kom.",R.M. Marwata Yuniar,Tual,COD,120912,Delivered,Received,30,2026-07-22
+ORD-36698,Harimurti Simanjuntak,Zelda Sirait,Gorontalo,COD,267957,Delivered,Received,19,2026-07-19
+ORD-57032,"R. Karman Ramadan, S.Sos",Galur Tamba,Samarinda,COD,987483,Delivered,Received,7,2026-07-06
+ORD-58064,Yani Uyainah,Puti Vanya Jailani,Subulussalam,COD,535922,Delivered,Received,17,2026-06-28
+ORD-72663,Yono Sitompul,"KH. Irsad Mandasari, M.M.",Kotamobagu,COD,489841,Delivered,Not Received,2196,2026-07-20
+ORD-26803,"Drs. Daryani Santoso, S.Gz",Capa Sudiati,Dumai,COD,256150,Delivered,Received,40,2026-07-22
+ORD-87046,"Emil Mayasari, M.Ak",Mala Rahimah,Lubuklinggau,COD,1038326,Delivered,Received,29,2026-07-06
+ORD-24089,Kamila Safitri,Ir. Yulia Kusumo,Pasuruan,COD,689137,Delivered,Received,9,2026-06-29
+ORD-91279,Dian Safitri,"Gandewa Narpati, S.Farm",Prabumulih,COD,336683,Failed,Rejected/Unreachable,33,2026-07-17
+ORD-77460,R. Respati Tarihoran,Lukman Oktaviani,Cimahi,COD,144935,Failed,Rejected/Unreachable,49,2026-07-05
+ORD-26426,Sarah Kusumo,"Faizah Damanik, M.Farm",Tebingtinggi,COD,451784,Delivered,Received,32,2026-07-01
+ORD-73774,Sarah Damanik,Mustofa Sudiati,Purwokerto,COD,1089684,Delivered,Received,9,2026-07-05
+ORD-92626,Putri Permata,Prayogo Prabowo,Banjarbaru,COD,917215,Failed,Rejected/Unreachable,27,2026-06-30
+ORD-39737,"Pia Pratiwi, S.Pt",Cici Lestari,Tidore Kepulauan,COD,646458,Failed,Rejected/Unreachable,63,2026-07-09
+ORD-49491,Keisha Widiastuti,Ir. Dimaz Rajata,Yogyakarta,COD,1234884,Delivered,Received,6,2026-07-03
+ORD-49487,Yusuf Winarno,"Atma Kuswoyo, M.Ak",Langsa,COD,459628,Delivered,Received,30,2026-07-09
+ORD-75312,Ayu Nasyiah,Balamantri Waskita,Malang,COD,762432,Failed,Rejected/Unreachable,96,2026-07-16
+ORD-95919,"Farhunnisa Hidayanto, S.IP",Vera Andriani,Batam,COD,624832,Delivered,Received,40,2026-07-19
+ORD-79779,Chelsea Wacana,Legawa Agustina,Tasikmalaya,COD,891306,Delivered,Received,5,2026-07-26
+ORD-55872,"Omar Iswahyudi, S.Gz",Lidya Marpaung,Balikpapan,COD,906017,Failed,Rejected/Unreachable,74,2026-07-11
+ORD-19589,"Hilda Siregar, M.Pd",R.M. Cecep Natsir,Pariaman,COD,1141869,Delivered,Received,41,2026-07-10
+ORD-15497,"Ifa Wijaya, S.Farm","Puti Vanya Maryadi, S.E.I",Lubuklinggau,COD,710428,Delivered,Received,10,2026-07-14
+ORD-94761,Puji Natsir,Jarwi Saputra,Palembang,COD,1311079,Delivered,Received,7,2026-07-12
+ORD-49200,"Laras Kusmawati, S.Pt","Soleh Fujiati, S.Pd",Langsa,COD,287967,Delivered,Received,36,2026-07-08
+ORD-18772,"Lurhur Mustofa, S.Farm",H. Gandi Damanik,Tanjungbalai,COD,1305258,Delivered,Received,37,2026-07-20
+ORD-56033,Eka Gunawan,dr. Umi Utami,Pematangsiantar,COD,1230291,Delivered,Received,17,2026-07-14
+ORD-92323,Xanana Palastri,Cakrajiya Januar,Tebingtinggi,COD,1323093,Delivered,Received,8,2026-07-09
+ORD-30520,"Dian Firgantoro, S.IP","Hj. Sadina Widodo, M.Farm",Parepare,COD,1406642,Delivered,Received,18,2026-07-01
+ORD-96755,Uli Wibisono,Gilda Megantara,Kediri,COD,227929,Delivered,Not Received,2204,2026-07-26
+ORD-89952,Tiara Suwarno,Bakiman Kusmawati,Tasikmalaya,COD,349119,Delivered,Received,18,2026-07-13
+ORD-92279,Tantri Purwanti,Maya Riyanti,Bau-Bau,COD,935008,Delivered,Received,34,2026-06-30
+ORD-16250,R.A. Malika Thamrin,"drg. Garda Januar, M.TI.",Magelang,COD,510938,Delivered,Received,27,2026-06-28
+ORD-32263,Vanya Jailani,Teguh Mangunsong,Denpasar,COD,324433,Failed,Rejected/Unreachable,63,2026-07-17
+ORD-37511,"Puti Almira Maryadi, M.M.","Galar Permadi, S.E.",Manado,COD,871518,Delivered,Received,6,2026-07-12
+ORD-38857,Zaenab Puspasari,Fitria Melani,Balikpapan,COD,525228,Delivered,Received,15,2026-07-15
+ORD-97978,"R. Iriana Hidayat, S.T.",Tania Wahyuni,Solok,COD,1254874,Delivered,Received,9,2026-07-02
+ORD-95272,Lurhur Wahyuni,"Ellis Dabukke, S.I.Kom",Padangpanjang,COD,1401397,Failed,Rejected/Unreachable,78,2026-07-26
+ORD-37298,Prayitna Situmorang,Ega Ardianto,Tidore Kepulauan,COD,457805,Delivered,Received,36,2026-07-10
+ORD-87446,Puti Karimah Jailani,"Dr. Arsipatra Megantara, S.IP",Tanjungbalai,COD,149495,Delivered,Received,46,2026-07-20
+ORD-70153,Viman Uwais,Tgk. Soleh Prastuti,Cirebon,COD,1016313,Failed,Rejected/Unreachable,64,2026-07-16
+ORD-25924,"Drs. Galih Laksita, S.T.","Ir. Zizi Wibisono, M.M.",Jayapura,COD,856211,Delivered,Received,35,2026-07-09
+ORD-93731,"Dr. Yance Wijaya, S.Ked",Novi Manullang,Yogyakarta,COD,1026761,Delivered,Received,21,2026-07-12
+ORD-59951,Betania Hakim,"Ir. Ade Pudjiastuti, S.Psi",Palangkaraya,COD,1342438,Delivered,Received,5,2026-07-19
+ORD-11307,Jarwa Tampubolon,Najwa Farida,Pangkalpinang,COD,140160,Delivered,Received,32,2026-07-08
+ORD-60288,Yuni Marpaung,Ismail Simanjuntak,Mataram,COD,131851,Delivered,Received,13,2026-07-21
+ORD-36799,"Wage Rajasa, S.Farm",Damar Latupono,Singkawang,COD,731301,Delivered,Received,38,2026-07-09
+ORD-68561,Muhammad Waluyo,"Violet Dabukke, M.Kom.",Tidore Kepulauan,COD,617293,Delivered,Received,12,2026-07-13
+ORD-68869,Putri Zulaika,Sutan Aditya Usamah,Bengkulu,COD,1498006,Delivered,Received,44,2026-07-04
+ORD-22168,Lalita Hassanah,Puti Jessica Damanik,Palu,COD,1447785,Delivered,Received,16,2026-07-01
+ORD-58497,Elvin Gunarto,Warsita Dabukke,Kota Administrasi Jakarta Pusat,COD,1300346,Failed,Rejected/Unreachable,15,2026-07-02
+ORD-95611,Vera Oktaviani,Asmuni Pradipta,Langsa,COD,607935,Delivered,Received,26,2026-07-11
+ORD-12681,"Tgk. Himawan Suryatmi, S.Ked",Luluh Lailasari,Tanjungbalai,COD,586827,Delivered,Received,47,2026-07-10
+ORD-19699,Calista Mayasari,Lintang Usamah,Bima,COD,1066331,Delivered,Received,31,2026-07-27
+ORD-60257,Wirda Sihombing,Nadine Widodo,Kupang,COD,150020,Delivered,Not Received,2367,2026-07-09
+ORD-99638,"drg. Dalima Laksmiwati, S.Ked",R.A. Ulya Pratiwi,Kendari,COD,454539,Delivered,Received,8,2026-07-20
+ORD-36835,Vega Suartini,"R.A. Dewi Laksita, S.Pd",Solok,COD,1020312,Delivered,Received,44,2026-07-11
+ORD-79079,Perkasa Anggriawan,Tirtayasa Mustofa,Magelang,COD,1071247,Delivered,Received,10,2026-07-10
+ORD-29996,"Tgk. Maimunah Fujiati, S.Ked","Ibrahim Rajata, S.Pt",Surabaya,COD,1280173,Delivered,Received,12,2026-07-09
+ORD-28409,Eman Simanjuntak,Ellis Firgantoro,Makassar,COD,1189129,Delivered,Received,8,2026-07-12
+ORD-42717,Lembah Iswahyudi,"Uli Maulana, S.Gz",Salatiga,COD,1410323,Delivered,Received,7,2026-07-24
+ORD-54717,"Amalia Tampubolon, M.Kom.",Pranawa Mangunsong,Medan,COD,139625,Delivered,Received,14,2026-07-19
+ORD-90963,"Hani Prasetya, S.Farm",R.A. Nabila Latupono,Bandar Lampung,COD,1254023,Delivered,Received,42,2026-07-22
+ORD-89544,Balapati Adriansyah,Saiful Hutasoit,Salatiga,COD,1022003,Delivered,Received,34,2026-07-25
+ORD-41552,Harsaya Astuti,Maria Kuswandari,Bengkulu,COD,1068820,Delivered,Received,22,2026-07-04
+ORD-26954,Kemal Padmasari,"Purwanto Simbolon, M.Ak",Payakumbuh,COD,418429,Delivered,Received,13,2026-07-25
+ORD-53722,Aditya Thamrin,Lalita Maryati,Kendari,COD,226238,Delivered,Received,12,2026-07-17
+ORD-49669,Nyoman Wibisono,Prayoga Siregar,Mojokerto,COD,265839,Delivered,Received,37,2026-07-13
+ORD-86768,Cakrawangsa Gunawan,Rahmi Anggriawan,Depok,COD,144578,Delivered,Received,50,2026-06-30
+ORD-27700,"R.A. Hesti Wibisono, S.E.I",Laswi Anggriawan,Pekanbaru,COD,1017956,Delivered,Received,44,2026-07-18
+ORD-98099,Kani Kurniawan,Betania Maulana,Kota Administrasi Jakarta Pusat,COD,549630,Delivered,Received,9,2026-07-11
+ORD-37682,Farah Rajata,Bahuraksa Farida,Sawahlunto,COD,175043,Failed,Rejected/Unreachable,53,2026-07-24
+ORD-44125,"drg. Ilsa Prasetyo, S.IP",Yani Prastuti,Yogyakarta,COD,531741,Failed,Rejected/Unreachable,83,2026-07-04
+ORD-82226,Cici Utama,Dt. Endra Hastuti,Lhokseumawe,COD,685865,Delivered,Received,37,2026-07-16
+ORD-34702,"Lega Rahmawati, S.Sos",Fathonah Gunarto,Meulaboh,COD,1258232,Delivered,Received,30,2026-07-16
+ORD-63330,Wani Farida,Salimah Utama,Malang,COD,1256788,Delivered,Received,42,2026-07-19
+ORD-93833,Hj. Ophelia Utami,Anggabaya Dongoran,Sawahlunto,COD,135426,Delivered,Received,22,2026-07-15
+ORD-42951,Sutan Kusuma Anggraini,"Indra Susanti, S.Kom",Jambi,COD,215795,Delivered,Received,32,2026-07-23
+ORD-52153,Digdaya Haryanti,"Hana Marpaung, S.E.I",Meulaboh,COD,415827,Delivered,Received,18,2026-07-24
+ORD-11967,Uli Andriani,Cut Raina Laksmiwati,Bukittinggi,COD,1423554,Delivered,Received,26,2026-07-26
+ORD-97546,Rahmi Kurniawan,Wakiman Zulaika,Pasuruan,COD,502173,Delivered,Received,29,2026-07-26
+ORD-84060,"Yunita Nasyiah, M.Kom.",Najwa Mangunsong,Padang,COD,1303632,Failed,Rejected/Unreachable,88,2026-07-08
+ORD-95196,"Zulfa Pratama, M.TI.","Drs. Umaya Marbun, S.E.I",Tebingtinggi,COD,680165,Delivered,Received,41,2026-07-05
+ORD-54436,Hesti Astuti,Almira Iswahyudi,Payakumbuh,COD,243738,Delivered,Received,48,2026-07-21
+ORD-85610,Cut Dinda Maryadi,Harjaya Waskita,Bekasi,COD,1277160,Delivered,Received,8,2026-07-24
+ORD-27282,drg. Elvina Mansur,Upik Andriani,Sukabumi,COD,716674,Delivered,Received,48,2026-06-30
+ORD-97542,Dadi Susanti,Zalindra Pranowo,Kota Administrasi Jakarta Utara,COD,1251148,Delivered,Received,14,2026-07-25
+ORD-42665,Salimah Farida,Kiandra Damanik,Palembang,COD,147417,Delivered,Received,5,2026-07-20
+ORD-32528,Dadap Siregar,"dr. Lidya Tampubolon, M.Farm",Pekalongan,COD,1202678,Delivered,Not Received,2929,2026-07-12
+ORD-38466,"Kasiran Melani, S.Farm",Dt. Virman Yolanda,Palangkaraya,COD,1427604,Delivered,Received,17,2026-07-22
+ORD-70562,"Zahra Haryanti, M.M.","Raditya Mardhiyah, S.I.Kom",Kotamobagu,COD,224532,Delivered,Received,43,2026-07-09
+ORD-77931,Dalima Suryatmi,Dr. Hartaka Budiyanto,Serang,COD,1473229,Delivered,Received,36,2026-07-18
+ORD-16619,Ir. Kardi Wibisono,Irwan Wahyudin,Subulussalam,COD,161689,Delivered,Received,25,2026-07-17
+ORD-45082,"Drs. Halima Pratiwi, S.E.I",Darmana Hastuti,Yogyakarta,COD,289734,Delivered,Received,50,2026-07-05
+ORD-73586,Catur Habibi,Elisa Agustina,Manado,COD,314886,Delivered,Received,26,2026-07-11
+ORD-41360,Nadia Farida,Maryadi Hakim,Balikpapan,COD,328741,Delivered,Received,49,2026-07-25
+ORD-77071,Tedi Usada,Wisnu Prasetyo,Parepare,COD,1471942,Delivered,Received,5,2026-07-11
+ORD-34565,Malika Mandasari,Bahuwirya Farida,Langsa,COD,409496,Delivered,Received,48,2026-06-30
+ORD-50707,"Galuh Napitupulu, M.M.",Dr. Dacin Prabowo,Bontang,COD,1048058,Delivered,Received,42,2026-07-03
+ORD-50229,Wakiman Kusumo,Ajimin Hasanah,Medan,COD,1337168,Delivered,Received,13,2026-07-09
+ORD-22659,Narji Dabukke,"Elvin Rajata, S.Psi",Banjarbaru,COD,1482032,Delivered,Received,39,2026-07-21
+ORD-84351,"Bakianto Marpaung, M.Farm","T. Daruna Wulandari, S.Farm",Palembang,COD,123538,Delivered,Received,33,2026-07-23
+ORD-98196,Kunthara Firgantoro,Paiman Habibi,Palembang,COD,712962,Delivered,Received,12,2026-07-25
+ORD-19371,R.A. Kamaria Nainggolan,Vivi Januar,Blitar,COD,1418643,Delivered,Received,12,2026-07-21
+ORD-20474,"R.A. Faizah Yolanda, S.Kom",Karna Prayoga,Padang Sidempuan,COD,999009,Delivered,Received,45,2026-07-15
+ORD-73484,R. Parman Rajata,Ilsa Halim,Kota Administrasi Jakarta Timur,COD,637547,Delivered,Received,9,2026-07-23
+ORD-78662,Chelsea Susanti,Ir. Kayun Melani,Tebingtinggi,COD,490530,Failed,Rejected/Unreachable,23,2026-07-25
+ORD-62319,Dt. Cahyo Simbolon,Kardi Wacana,Pagaralam,COD,356133,Delivered,Received,22,2026-07-18
+ORD-69746,"Bajragin Lailasari, M.Kom.","Sutan Martani Mulyani, S.Sos",Tual,COD,1016010,Delivered,Received,7,2026-07-12
+ORD-72680,"Oni Pranowo, S.E.",Puti Ida Palastri,Padang Sidempuan,COD,1227130,Delivered,Received,48,2026-07-10
+ORD-80634,Radika Thamrin,dr. Winda Pranowo,Banjar,COD,746066,Delivered,Received,47,2026-07-17
+ORD-65385,"KH. Wira Prayoga, M.Farm",Irnanto Hutasoit,Ambon,COD,404962,Delivered,Received,44,2026-07-05
+ORD-45499,"Emin Nasyiah, S.IP","Galih Nurdiyanti, S.Sos",Palangkaraya,COD,1400139,Delivered,Received,29,2026-06-28
+ORD-66617,Zahra Mandala,Puti Yulia Ardianto,Ternate,COD,422293,Delivered,Received,31,2026-07-09
+ORD-67348,Zahra Yuniar,"Zamira Nugroho, S.Kom",Cimahi,COD,1008852,Delivered,Received,35,2026-07-22
+ORD-21265,"Tina Mulyani, S.Sos","dr. Kurnia Jailani, S.Gz",Banjar,COD,1113940,Delivered,Received,25,2026-07-13
+ORD-40423,Violet Tampubolon,Yusuf Hartati,Jayapura,COD,428848,Delivered,Received,26,2026-06-29
+ORD-85982,Eko Iswahyudi,Jarwi Maryati,Madiun,COD,783572,Failed,Rejected/Unreachable,30,2026-07-23
+ORD-53070,Samiah Pradipta,"Ibun Adriansyah, S.Gz",Bengkulu,COD,1419828,Delivered,Received,16,2026-07-19
+ORD-70063,Karimah Marpaung,"H. Kunthara Farida, S.H.",Cimahi,COD,404532,Delivered,Not Received,3180,2026-07-05
+ORD-60776,Mahesa Halimah,Nadia Usamah,Samarinda,COD,1005498,Delivered,Received,23,2026-07-20
+ORD-44030,Ir. Kani Hardiansyah,Ganep Fujiati,Balikpapan,COD,765999,Delivered,Received,50,2026-07-01
+ORD-64102,"Emas Widodo, M.Kom.",Parman Riyanti,Depok,COD,308728,Delivered,Not Received,3889,2026-07-21
+ORD-56875,Rina Novitasari,Prasetyo Widodo,Purwokerto,COD,499310,Delivered,Received,38,2026-07-09
+ORD-86990,Jasmin Nasyidah,"Pia Putra, S.Psi",Binjai,COD,512397,Delivered,Received,26,2026-07-27
+ORD-47308,Elon Yuliarti,"Nalar Astuti, S.Gz",Cilegon,COD,817130,Delivered,Received,28,2026-07-03
+ORD-40490,"drg. Vivi Wacana, M.TI.",Dt. Jamal Usada,Dumai,COD,704848,Failed,Rejected/Unreachable,37,2026-07-18
+ORD-25505,Dian Thamrin,Lasmanto Prabowo,Tanjungbalai,COD,452700,Failed,Rejected/Unreachable,68,2026-07-26
+ORD-44954,"Cut Paris Nababan, M.TI.",R. Bahuwirya Halim,Bontang,COD,276552,Delivered,Received,33,2026-07-18
+ORD-57553,Kamidin Prastuti,Sutan Perkasa Pradana,Balikpapan,COD,1004718,Delivered,Received,17,2026-06-28
+ORD-36076,"Pangeran Mulyani, S.H.",Elisa Hidayanto,Palu,COD,326785,Delivered,Received,27,2026-07-07
+ORD-19085,"Drs. Safina Utami, S.T.",KH. Erik Mahendra,Singkawang,COD,469092,Delivered,Received,24,2026-07-15
+ORD-98256,Zulaikha Saragih,Bagiya Agustina,Kota Administrasi Jakarta Timur,COD,495414,Delivered,Received,21,2026-07-17
+ORD-74146,"R.A. Devi Ardianto, S.H.",Harjasa Uyainah,Metro,COD,1260866,Delivered,Received,26,2026-07-17
+ORD-43947,Tina Mangunsong,Kartika Hutagalung,Sorong,COD,1012943,Delivered,Received,50,2026-07-24
+ORD-93867,Jaka Narpati,"Wasis Riyanti, M.Farm",Padang,COD,995373,Delivered,Received,22,2026-07-21
+ORD-43670,Puti Zelda Napitupulu,Taufan Melani,Metro,COD,1035627,Delivered,Received,18,2026-07-04
+ORD-63907,"Tantri Anggriawan, S.H.",Salwa Damanik,Cimahi,COD,1364138,Delivered,Received,41,2026-07-27
+ORD-10740,Wakiman Puspita,R. Praba Narpati,Bandung,COD,1488647,Failed,Rejected/Unreachable,48,2026-07-18
+ORD-91407,Prayogo Utama,"Tgk. Rachel Saragih, M.Kom.",Singkawang,COD,785160,Failed,Rejected/Unreachable,30,2026-07-22
+ORD-41724,Ilsa Pradana,Drs. Cengkal Pangestu,Pasuruan,COD,1391151,Delivered,Received,26,2026-07-19
+ORD-39401,Rahmi Wastuti,Among Purwanti,Semarang,COD,862152,Delivered,Received,11,2026-07-20
+ORD-32915,Balapati Nashiruddin,Cici Tamba,Binjai,COD,1131773,Delivered,Received,23,2026-07-15
+ORD-99655,"Tgk. Winda Tamba, M.TI.","Tugiman Laksita, S.Psi",Yogyakarta,COD,263582,Delivered,Received,44,2026-07-07
+ORD-80975,Farhunnisa Irawan,"Dr. Oskar Hidayanto, S.H.",Salatiga,COD,740479,Delivered,Received,16,2026-07-26
+ORD-15755,"dr. Umar Farida, M.Kom.","Amalia Mandala, S.E.I",Makassar,COD,1040532,Delivered,Received,16,2026-07-26
+ORD-96894,Iriana Hidayat,"Lidya Kusmawati, S.Pd",Lhokseumawe,COD,993639,Delivered,Received,25,2026-07-14
+ORD-15280,Jamalia Ramadan,Widya Haryanti,Gorontalo,COD,1093517,Delivered,Received,39,2026-06-30
+ORD-83046,R.M. Kairav Suartini,Among Simbolon,Cimahi,COD,324088,Delivered,Received,7,2026-07-15
+ORD-86001,Panca Rajata,Najwa Laksita,Pekanbaru,COD,927800,Delivered,Received,38,2026-07-26
+ORD-86236,Tasnim Sinaga,Cinthia Sudiati,Sukabumi,COD,594729,Failed,Rejected/Unreachable,16,2026-07-02
+ORD-44650,"Karimah Mansur, S.Pt",Drs. Jamal Purnawati,Bandar Lampung,COD,548950,Delivered,Received,28,2026-07-22
+ORD-42347,Cahya Permadi,dr. Ratna Halimah,Lubuklinggau,COD,1244172,Delivered,Received,14,2026-06-30
+ORD-26965,Tgk. Karta Mansur,Salimah Puspasari,Tanjungpinang,COD,83757,Delivered,Received,16,2026-07-17
+ORD-75058,Ida Salahudin,Jelita Lazuardi,Cimahi,COD,242310,Delivered,Received,33,2026-07-27
+ORD-40502,Bakiadi Anggriawan,"Tgk. Gantar Latupono, M.Pd",Cimahi,COD,587468,Delivered,Received,8,2026-07-05
+ORD-71132,"Oliva Anggraini, M.Kom.",Hj. Agnes Laksita,Balikpapan,COD,1050215,Delivered,Received,30,2026-07-01
+ORD-54060,Zelda Pangestu,"Drs. Gaduh Lazuardi, S.Ked",Padang Sidempuan,COD,725937,Delivered,Received,21,2026-07-13
+ORD-56596,Lintang Habibi,Atmaja Rahmawati,Pontianak,COD,505697,Delivered,Received,45,2026-07-23
+ORD-62655,Farhunnisa Sihombing,Lidya Prabowo,Sorong,COD,1483279,Delivered,Received,9,2026-07-12
+ORD-97154,"Endah Uwais, M.Pd","drg. Kani Pangestu, S.Psi",Salatiga,COD,1451123,Delivered,Received,15,2026-07-17
+ORD-50522,Karsa Firgantoro,Candrakanta Tarihoran,Batam,COD,944835,Delivered,Received,48,2026-07-05
+ORD-10868,Rahmi Lazuardi,"Asirwanda Kusumo, S.H.",Probolinggo,COD,1284990,Delivered,Received,19,2026-07-19
+ORD-70534,"Prayoga Astuti, S.Ked",Dipa Suartini,Palangkaraya,COD,1028266,Delivered,Received,11,2026-07-27
+ORD-89303,Galih Ramadan,Natalia Pradipta,Kotamobagu,COD,1156634,Failed,Rejected/Unreachable,5,2026-07-07
+ORD-60464,Taufik Mandasari,R.M. Nalar Natsir,Sawahlunto,COD,772577,Delivered,Received,15,2026-07-15
+ORD-48428,Hasta Yuliarti,Sarah Maryati,Ternate,COD,880959,Failed,Rejected/Unreachable,58,2026-07-05
+ORD-91083,"Umi Marbun, S.Farm",Maimunah Andriani,Purwokerto,COD,254568,Delivered,Received,46,2026-06-28
+ORD-13949,Gina Zulkarnain,Suci Prasetya,Kota Administrasi Jakarta Barat,COD,241907,Failed,Rejected/Unreachable,63,2026-07-23
+ORD-40626,Carla Prabowo,Kasiyah Nababan,Kupang,COD,206314,Failed,Rejected/Unreachable,24,2026-07-08
+ORD-21770,Maida Suryono,Gadang Lailasari,Pariaman,COD,471011,Delivered,Received,15,2026-07-18
+ORD-16238,KH. Eluh Hidayanto,Bahuraksa Santoso,Payakumbuh,COD,838881,Failed,Rejected/Unreachable,55,2026-07-18
+ORD-62540,Kayun Tarihoran,Tami Utami,Jambi,COD,78585,Delivered,Received,19,2026-07-12
+ORD-82932,Nugraha Wahyudin,Bagas Adriansyah,Cimahi,COD,831328,Delivered,Received,34,2026-07-06
+ORD-18334,Novi Pangestu,"Prabu Hartati, M.Pd",Surabaya,COD,902237,Delivered,Received,20,2026-06-28
+ORD-47501,"Yuliana Lailasari, S.Kom","T. Pandu Wahyudin, M.TI.",Ambon,COD,391401,Delivered,Received,10,2026-07-17
+ORD-41030,Uchita Prasasta,"R. Nalar Suartini, M.M.",Balikpapan,COD,962838,Delivered,Received,47,2026-07-05
+ORD-21028,Jaswadi Mulyani,"Kenari Mansur, S.Pd",Kota Administrasi Jakarta Utara,COD,1451410,Delivered,Received,20,2026-07-03
+ORD-88451,Drs. Ika Kusumo,Niyaga Damanik,Tanjungpinang,COD,1157492,Delivered,Received,23,2026-07-12
+ORD-51634,Artawan Waskita,Farhunnisa Sinaga,Bogor,COD,241823,Delivered,Received,37,2026-07-19
+ORD-55970,Kamidin Pratama,Ilsa Santoso,Jayapura,COD,1222176,Delivered,Received,50,2026-07-01
+ORD-70466,Wahyu Tampubolon,"dr. Nyana Tampubolon, S.Farm",Padangpanjang,COD,1219426,Delivered,Received,41,2026-07-21
+ORD-96593,"Ega Prasetyo, S.Farm",Aslijan Haryanti,Solok,COD,443188,Delivered,Received,40,2026-07-01
+ORD-66817,Puti Rika Dongoran,drg. Cahyanto Laksita,Surakarta,COD,318230,Delivered,Received,23,2026-07-12
+ORD-56019,"R.A. Belinda Wijaya, S.Kom","drg. Galar Habibi, M.Pd",Malang,COD,794999,Delivered,Received,28,2026-07-17
+ORD-53229,Kawaca Handayani,R.A. Sabrina Mangunsong,Solok,COD,1293986,Delivered,Received,31,2026-07-01
+ORD-49917,Tgk. Najwa Kusmawati,Hamima Puspasari,Sungai Penuh,COD,856654,Delivered,Received,7,2026-07-10
+ORD-62150,Faizah Prasetya,Raden Prasasta,Probolinggo,COD,1373589,Delivered,Received,40,2026-07-26
+ORD-31147,"KH. Carub Budiyanto, M.Ak",Paris Thamrin,Kotamobagu,COD,1335742,Delivered,Received,31,2026-06-29
+ORD-23755,"Jessica Prabowo, M.Farm",Puti Yani Iswahyudi,Sorong,COD,646328,Delivered,Received,20,2026-07-04
+ORD-96073,"Hj. Gawati Latupono, S.Psi",Hilda Suryono,Sorong,COD,306648,Delivered,Not Received,4175,2026-07-02
+ORD-22930,R. Mala Aryani,"Karsana Hasanah, S.E.",Sukabumi,COD,326941,Delivered,Received,28,2026-07-08
+ORD-23222,Harjasa Kusmawati,Ellis Ramadan,Cimahi,COD,468388,Delivered,Received,29,2026-07-08
+ORD-26174,Garan Saefullah,Kariman Maryati,Makassar,COD,797844,Failed,Rejected/Unreachable,95,2026-07-04
+ORD-84208,"Wadi Wahyudin, S.H.","Kania Uyainah, M.M.",Sawahlunto,COD,107720,Delivered,Received,15,2026-07-25
+ORD-92296,"Laila Hutasoit, M.M.",Hj. Siska Kuswandari,Kotamobagu,COD,505671,Delivered,Received,9,2026-07-25
+ORD-78013,Ibun Siregar,Asirwada Purwanti,Tidore Kepulauan,COD,394065,Delivered,Received,9,2026-07-22
+ORD-65107,Elma Nuraini,"Karen Astuti, S.Farm",Bitung,COD,1241046,Delivered,Received,32,2026-07-05
+ORD-16041,"Winda Habibi, M.Kom.","Paulin Wibowo, S.E.I",Ambon,COD,1236181,Delivered,Received,47,2026-07-10
+ORD-34717,"Leo Mulyani, M.Kom.",Rina Adriansyah,Madiun,COD,1002370,Delivered,Received,43,2026-07-12
+ORD-90211,Daliono Usada,"Koko Maheswara, S.E.I",Pariaman,COD,678977,Delivered,Received,37,2026-07-14
+ORD-56263,"Nova Hartati, S.Gz","Raina Mahendra, S.Kom",Tangerang Selatan,COD,1387847,Delivered,Received,14,2026-07-03
+ORD-61372,Vanya Hartati,Kartika Sitompul,Pagaralam,COD,1032577,Failed,Rejected/Unreachable,30,2026-07-10
+ORD-30571,Silvia Tarihoran,Artawan Susanti,Sorong,COD,149338,Delivered,Received,44,2026-07-06
+ORD-93145,"Drs. Asmadi Kusmawati, S.Kom",Rafi Hartati,Banjar,COD,1039062,Delivered,Received,18,2026-07-23
+ORD-38745,Rahman Megantara,Cahya Waskita,Banjar,COD,497901,Delivered,Received,25,2026-07-14
+ORD-54535,R. Ratna Prasetya,Tri Ramadan,Payakumbuh,COD,815237,Delivered,Received,17,2026-07-17
+ORD-12350,Eluh Uyainah,Amalia Mansur,Tual,COD,1470034,Failed,Rejected/Unreachable,71,2026-07-01
+ORD-96066,Ajeng Pradipta,Puput Situmorang,Palu,COD,351410,Failed,Rejected/Unreachable,98,2026-07-13
+ORD-33225,Jaga Aryani,Nrima Rahimah,Mojokerto,COD,1030553,Delivered,Received,12,2026-07-14
+ORD-75726,"Radit Sihombing, S.I.Kom","dr. Soleh Uwais, S.E.",Surabaya,COD,135473,Delivered,Received,36,2026-07-19
+ORD-50945,"Tgk. Anita Simanjuntak, S.IP",Qori Farida,Banda Aceh,COD,1396770,Delivered,Received,24,2026-07-09
+ORD-72827,"R. Janet Winarno, M.TI.",Ajiman Kuswoyo,Bandar Lampung,COD,1272236,Delivered,Received,45,2026-06-28
+ORD-81482,Ilsa Hidayanto,Kala Sihotang,Probolinggo,COD,1171160,Failed,Rejected/Unreachable,56,2026-07-18
+ORD-69816,Tgk. Maida Prakasa,Zulfa Wijayanti,Padang,COD,474659,Delivered,Received,34,2026-07-05
+ORD-14661,"Radika Januar, S.Ked",Paramita Wijayanti,Makassar,COD,1265824,Failed,Rejected/Unreachable,34,2026-07-21
+ORD-37185,R.M. Omar Fujiati,R.A. Tania Ramadan,Tangerang,COD,1130345,Delivered,Received,20,2026-07-11
+ORD-55925,Julia Hutagalung,Mahdi Sirait,Lhokseumawe,COD,872248,Failed,Rejected/Unreachable,9,2026-07-07
+ORD-20986,Cakrawala Mustofa,Rika Rahayu,Medan,COD,796076,Delivered,Received,31,2026-07-24
+ORD-55008,Bakijan Hakim,Dt. Rama Haryanto,Denpasar,COD,364741,Delivered,Received,24,2026-07-07
+ORD-72212,Paris Maheswara,"Cut Gina Nashiruddin, M.Kom.",Payakumbuh,COD,1456575,Delivered,Received,19,2026-07-11
+ORD-53305,Dr. Laila Samosir,"Hj. Rahmi Irawan, S.Pd",Lubuklinggau,COD,1260479,Delivered,Received,20,2026-06-28
+ORD-91475,"Dr. Ganjaran Rahmawati, S.T.",Zulfa Widiastuti,Sungai Penuh,COD,1466358,Failed,Rejected/Unreachable,83,2026-07-02
+ORD-18106,Ajimat Wijaya,Hj. Novi Saptono,Mataram,COD,1098724,Delivered,Received,19,2026-07-10
+ORD-39077,R.M. Lurhur Yuniar,drg. Gangsar Utama,Langsa,COD,64242,Delivered,Received,25,2026-07-05
+ORD-86740,"drg. Latika Suryono, S.Farm",Putri Wijaya,Tarakan,COD,1355605,Delivered,Received,41,2026-06-29
+ORD-52882,"Alika Yolanda, M.Pd","Puti Gilda Prabowo, S.Gz",Mojokerto,COD,1054835,Delivered,Not Received,4801,2026-07-26
+ORD-64560,Ayu Narpati,"Puti Maimunah Nasyiah, S.Sos",Kota Administrasi Jakarta Barat,COD,140258,Delivered,Received,36,2026-06-29
+ORD-86760,Hari Wijaya,"Darman Hidayat, M.Farm",Pangkalpinang,COD,355705,Delivered,Received,35,2026-07-24
+ORD-82806,drg. Panji Mustofa,Nilam Halimah,Tegal,COD,633107,Delivered,Received,11,2026-07-21
+ORD-39998,Asmadi Astuti,Puji Siregar,Bogor,COD,1445760,Delivered,Received,7,2026-07-12
+ORD-80002,Hilda Maryadi,Drs. Gawati Marpaung,Depok,COD,418288,Delivered,Received,26,2026-07-09
+ORD-36136,"Febi Saragih, M.Farm","drg. Embuh Yuniar, S.Pt",Cirebon,COD,560442,Delivered,Received,34,2026-06-28
+ORD-34799,"H. Rangga Salahudin, S.Sos",Adiarja Saputra,Bogor,COD,1419970,Delivered,Received,23,2026-06-29
+ORD-61101,Edi Winarno,Unjani Jailani,Batu,COD,474530,Delivered,Received,50,2026-07-10
+ORD-67021,Dt. Nalar Laksita,"R. Hasim Hastuti, S.Ked",Palopo,COD,1201887,Delivered,Received,29,2026-07-11
+ORD-80965,Dt. Olga Siregar,"Asmianto Marpaung, S.Ked",Singkawang,COD,1023045,Failed,Rejected/Unreachable,28,2026-07-12
+ORD-30990,"Empluk Kuswandari, S.E.",Hairyanto Adriansyah,Sabang,COD,94234,Delivered,Received,37,2026-07-18
+ORD-96499,Elma Halimah,Cager Sirait,Surakarta,COD,844221,Delivered,Received,22,2026-07-24
+ORD-19002,"Chelsea Hariyah, S.Farm",Ami Palastri,Serang,COD,1441822,Delivered,Received,43,2026-07-09
+ORD-97354,Hj. Yunita Maryadi,Rahmi Hastuti,Purwokerto,COD,380262,Delivered,Received,7,2026-07-24
+ORD-73377,"dr. Cengkal Narpati, S.Psi",Zizi Wibowo,Bitung,COD,618458,Failed,Rejected/Unreachable,64,2026-07-08
+ORD-96792,"Puti Rahmi Fujiati, S.T.","Tgk. Yulia Anggraini, S.Farm",Pekalongan,COD,965724,Delivered,Received,50,2026-07-17
+ORD-48947,Violet Sihombing,Restu Sihombing,Bukittinggi,COD,1364602,Delivered,Received,18,2026-07-18
+ORD-53684,"Dt. Indra Simanjuntak, S.Kom",R.M. Wawan Uyainah,Palopo,COD,307470,Failed,Rejected/Unreachable,97,2026-07-26
+ORD-95662,Paris Kuswandari,Silvia Suryono,Meulaboh,COD,1499897,Failed,Rejected/Unreachable,72,2026-07-01
+ORD-60456,"Karimah Simanjuntak, S.E.",Ade Prasetyo,Bitung,COD,1333470,Delivered,Received,46,2026-07-10
+ORD-31450,Drs. Bella Samosir,Maida Thamrin,Payakumbuh,COD,727960,Delivered,Received,35,2026-07-21
+ORD-94285,Jono Mangunsong,"Vanya Melani, S.E.I",Malang,COD,734964,Delivered,Received,23,2026-07-04
+ORD-59392,Uchita Mangunsong,"Qori Kusmawati, S.Ked",Pekanbaru,COD,1064280,Delivered,Received,24,2026-07-21
+ORD-23036,drg. Rahmat Hariyah,Latika Siregar,Tomohon,COD,61853,Failed,Rejected/Unreachable,97,2026-07-07
+ORD-56230,Kunthara Mangunsong,Chandra Halimah,Lubuklinggau,COD,880404,Delivered,Received,13,2026-07-26
+ORD-22068,Jane Nurdiyanti,Siska Pradipta,Tarakan,COD,1036066,Delivered,Not Received,2668,2026-07-21
+ORD-70268,"Mutia Prastuti, S.E.I",Atmaja Purwanti,Makassar,COD,97829,Failed,Rejected/Unreachable,15,2026-07-23
+ORD-59710,Gasti Nashiruddin,"Hj. Laras Rahmawati, S.I.Kom",Bandar Lampung,COD,1188205,Delivered,Received,11,2026-07-22
+ORD-99070,R. Adinata Gunarto,"R. Cornelia Agustina, M.M.",Tanjungbalai,COD,1347852,Delivered,Received,13,2026-07-22
+ORD-35179,Kani Mayasari,"Cut Syahrini Wahyuni, S.Sos",Serang,COD,1310392,Delivered,Received,33,2026-07-10
+ORD-97248,"Cut Zulfa Saefullah, M.Pd","drg. Almira Megantara, M.M.",Kota Administrasi Jakarta Pusat,COD,1000220,Delivered,Received,18,2026-07-19
+ORD-81163,R. Darijan Halimah,"Tgk. Adhiarja Damanik, S.T.",Denpasar,COD,911702,Delivered,Received,19,2026-07-11
+ORD-22252,H. Jais Uyainah,Kasusra Prasasta,Kotamobagu,COD,710125,Failed,Rejected/Unreachable,86,2026-07-23
+ORD-52420,Carla Saputra,Luwar Yolanda,Balikpapan,COD,1244215,Delivered,Received,7,2026-07-21
+ORD-51416,Gasti Mardhiyah,Ella Nugroho,Tangerang Selatan,COD,1133413,Delivered,Not Received,1588,2026-07-25
+ORD-86189,Prabawa Handayani,Maya Prastuti,Probolinggo,COD,665581,Delivered,Received,37,2026-07-10
+ORD-87487,Vicky Irawan,Zelaya Hasanah,Sorong,COD,1141356,Delivered,Received,39,2026-07-26
+ORD-96192,Elvina Habibi,"Drs. Estiawan Astuti, S.Sos",Madiun,COD,817724,Failed,Rejected/Unreachable,62,2026-07-22
+ORD-22069,"Puji Iswahyudi, M.Kom.",Irsad Prakasa,Tebingtinggi,COD,313355,Failed,Rejected/Unreachable,7,2026-07-18
+ORD-51685,"Dr. Ade Firmansyah, S.Pd",Kayla Nuraini,Kota Administrasi Jakarta Selatan,COD,651892,Delivered,Received,18,2026-07-12
+ORD-60285,"R. Yulia Mayasari, M.TI.",Maya Sitompul,Madiun,COD,1268317,Failed,Rejected/Unreachable,66,2026-07-25
+ORD-96075,Tiara Anggriawan,"Tgk. Lidya Siregar, S.Pd",Meulaboh,COD,991198,Failed,Rejected/Unreachable,73,2026-07-15
+ORD-93112,"Sutan Bajragin Puspita, S.Gz",Paramita Salahudin,Payakumbuh,COD,1103698,Delivered,Received,17,2026-07-01
+ORD-97309,R. Liman Firgantoro,Paiman Riyanti,Banjarmasin,COD,533845,Delivered,Not Received,1766,2026-07-11
+ORD-99656,Devi Aryani,Jatmiko Firgantoro,Sabang,COD,710231,Delivered,Received,23,2026-07-16
+ORD-36842,Argono Hidayat,Bakijan Utama,Ternate,COD,1271527,Delivered,Received,45,2026-07-12
+ORD-95379,Mumpuni Handayani,"Dt. Bakti Safitri, S.Pt",Pekalongan,COD,507285,Delivered,Received,49,2026-07-24
+ORD-11812,"Dr. Pandu Uwais, S.Pt",Drs. Abyasa Susanti,Malang,COD,482918,Failed,Rejected/Unreachable,54,2026-07-10
+ORD-55041,"R.M. Luwar Saefullah, S.Kom",Yosef Irawan,Payakumbuh,COD,485936,Delivered,Received,6,2026-07-15
+ORD-41497,"Artanto Palastri, M.Ak",Wirda Padmasari,Surabaya,COD,1335172,Delivered,Received,42,2026-07-27
+ORD-26012,"Puti Gabriella Damanik, S.Farm",Usman Santoso,Pematangsiantar,COD,1171798,Failed,Rejected/Unreachable,74,2026-07-05
+ORD-53024,Gambira Yuliarti,"Dr. Ratih Rahmawati, M.Kom.",Bau-Bau,COD,1382907,Delivered,Received,29,2026-07-04
+ORD-43156,Aswani Nuraini,Syahrini Puspasari,Kota Administrasi Jakarta Barat,COD,1166669,Failed,Rejected/Unreachable,36,2026-07-13
+ORD-66043,Calista Gunarto,"Kunthara Handayani, S.E.",Tomohon,COD,403070,Delivered,Received,42,2026-07-10
+ORD-30615,Prakosa Budiman,KH. Harja Halim,Bontang,COD,1041768,Delivered,Received,44,2026-07-03
+ORD-89554,Devi Tarihoran,"Gading Tampubolon, S.H.",Tangerang Selatan,COD,114118,Failed,Rejected/Unreachable,86,2026-07-24
+ORD-75901,"Oliva Kuswandari, S.Gz",Galih Agustina,Palopo,COD,960459,Delivered,Received,50,2026-07-02
+ORD-74900,Luluh Nababan,"Cut Faizah Irawan, M.Farm",Bekasi,COD,801194,Failed,Rejected/Unreachable,85,2026-07-11
+ORD-21838,Novi Waluyo,Margana Salahudin,Kota Administrasi Jakarta Selatan,COD,1427098,Failed,Rejected/Unreachable,97,2026-07-20
+ORD-73890,"Nardi Oktaviani, S.IP","Puti Gabriella Setiawan, M.Ak",Palu,COD,177817,Failed,Rejected/Unreachable,19,2026-07-25
+ORD-72497,Utama Hidayanto,Abyasa Prasetya,Bandung,COD,403248,Delivered,Received,42,2026-06-29
+ORD-74730,"Indra Siregar, M.Pd",Dt. Umar Pertiwi,Tegal,COD,1485854,Delivered,Received,49,2026-07-05
+ORD-30788,Endra Wacana,Laras Anggraini,Semarang,COD,1152339,Delivered,Received,9,2026-06-30
+ORD-22263,"Asmianto Hastuti, S.Pt",Cinthia Samosir,Salatiga,COD,241520,Delivered,Received,5,2026-07-12
+ORD-24418,Queen Sirait,Dipa Nuraini,Tegal,COD,322475,Delivered,Received,11,2026-07-12
+ORD-42913,Embuh Siregar,"Kawaya Saputra, M.M.",Pagaralam,COD,234111,Delivered,Received,6,2026-07-18
+ORD-22221,Nasrullah Usada,Daryani Lestari,Tanjungbalai,COD,1062649,Delivered,Received,44,2026-07-02
+ORD-48277,Marsudi Novitasari,H. Kasim Rahimah,Banjarmasin,COD,85729,Delivered,Received,17,2026-07-21
+ORD-99576,Ir. Humaira Nasyidah,Ganda Suryono,Tanjungbalai,COD,646092,Delivered,Received,47,2026-07-24
+ORD-42612,"Puti Anastasia Usamah, M.Pd",dr. Karen Susanti,Manado,COD,1392544,Failed,Rejected/Unreachable,35,2026-07-22
+ORD-42196,Yance Marbun,Azalea Budiyanto,Bandung,COD,1456559,Delivered,Received,44,2026-06-30
+ORD-29033,"Tami Kusmawati, S.Sos",dr. Zelaya Suwarno,Tanjungpinang,COD,866742,Delivered,Received,41,2026-07-20
+ORD-21337,Yunita Gunarto,"Ulva Kurniawan, S.Gz",Bandar Lampung,COD,105845,Delivered,Not Received,3441,2026-07-09
+ORD-40598,"Tgk. Pangeran Astuti, S.E.I",drg. Wage Hardiansyah,Tangerang,COD,442937,Delivered,Not Received,2692,2026-06-28
+ORD-57788,Kanda Sitompul,drg. Laras Laksita,Lubuklinggau,COD,1427851,Delivered,Received,43,2026-07-26
+ORD-83194,Diana Lestari,Dr. Uchita Winarno,Banda Aceh,COD,178656,Delivered,Received,39,2026-07-05
+ORD-31968,Legawa Uwais,"Devi Kuswoyo, S.Psi",Balikpapan,COD,700690,Delivered,Received,14,2026-07-08
+ORD-37083,"Jasmin Hasanah, S.Psi",Eko Maheswara,Banjarbaru,COD,1375066,Delivered,Received,37,2026-07-10
+ORD-75325,Kezia Nainggolan,Pia Nainggolan,Padang,COD,353536,Delivered,Received,5,2026-07-03
+ORD-19722,"Saiful Lestari, S.Kom","Yulia Palastri, M.Ak",Bandar Lampung,COD,1289908,Failed,Rejected/Unreachable,61,2026-07-22
+ORD-60618,Dr. Gamblang Pratiwi,Indah Hidayat,Bau-Bau,COD,309249,Delivered,Received,33,2026-07-21
+ORD-45308,Bahuwirya Wasita,"H. Lanjar Wibowo, S.E.I",Pangkalpinang,COD,618631,Delivered,Received,31,2026-07-27
+ORD-99970,"Tgk. Ghaliyati Utami, S.Gz",Ismail Pratiwi,Palopo,COD,802963,Delivered,Received,16,2026-07-26
+ORD-30602,Gambira Hakim,"R. Kamaria Halimah, S.Gz",Mojokerto,COD,202812,Failed,Rejected/Unreachable,72,2026-07-12
+ORD-81467,"Salman Maryati, S.Ked",Vivi Sihotang,Batu,COD,109561,Delivered,Received,27,2026-07-06
+ORD-32824,"Paiman Pranowo, S.E.",Kayla Ardianto,Binjai,COD,321851,Delivered,Received,30,2026-07-10
+ORD-58989,"Viman Purnawati, M.Kom.",Hj. Nadine Saptono,Meulaboh,COD,748127,Delivered,Received,23,2026-07-15
+ORD-16085,Ir. Ina Siregar,Yulia Thamrin,Pasuruan,COD,374047,Delivered,Received,29,2026-07-15
+ORD-12525,Mustika Mahendra,Vera Hakim,Subulussalam,COD,203286,Delivered,Received,42,2026-07-24
+ORD-19175,"Gilang Sudiati, S.E.",R. Michelle Maryadi,Banda Aceh,COD,983500,Delivered,Received,12,2026-07-22
+ORD-62270,Hj. Laras Mardhiyah,Dt. Edi Pratiwi,Bandung,COD,1104302,Delivered,Not Received,3187,2026-07-02
+ORD-46196,Julia Astuti,Najam Santoso,Pangkalpinang,COD,1203082,Failed,Rejected/Unreachable,48,2026-06-28
+ORD-30801,"Samiah Usada, S.E.",Raden Pertiwi,Mojokerto,COD,379754,Delivered,Received,38,2026-07-08
+ORD-51276,"Kuncara Tampubolon, S.H.","Lega Hardiansyah, M.TI.",Cirebon,COD,1231954,Failed,Rejected/Unreachable,88,2026-07-20
+ORD-99753,Calista Astuti,Irsad Sitompul,Mataram,COD,771132,Delivered,Received,24,2026-07-26
+ORD-20547,Bahuraksa Manullang,Shania Damanik,Malang,COD,1326627,Delivered,Received,45,2026-07-08
+ORD-43088,Sakti Astuti,"R. Rina Marpaung, S.Farm",Magelang,COD,1406486,Delivered,Received,45,2026-07-02
+ORD-69996,Puti Umi Dongoran,Lantar Hasanah,Bontang,COD,968029,Delivered,Received,38,2026-07-13
+ORD-31358,"drg. Kezia Utama, S.Sos","Ratna Thamrin, S.I.Kom",Meulaboh,COD,580737,Delivered,Received,27,2026-07-08
+ORD-92228,dr. Saiful Pangestu,Vanya Prastuti,Manado,COD,1124738,Delivered,Received,21,2026-07-11
+ORD-42461,Raina Sihombing,Ian Pangestu,Tebingtinggi,COD,867669,Delivered,Received,43,2026-07-02
+ORD-11320,"Hartaka Nashiruddin, S.T.",Gandewa Lailasari,Kupang,COD,250175,Delivered,Received,39,2026-07-19
+ORD-71694,Diana Wastuti,"drg. Siti Wacana, S.IP",Bau-Bau,COD,970851,Delivered,Received,44,2026-07-03
+ORD-71096,"Ika Napitupulu, S.Kom","R. Oni Pradana, M.Farm",Magelang,COD,1186009,Delivered,Received,18,2026-07-06
+ORD-38345,Raina Pertiwi,"Rizki Prasasta, S.E.",Pangkalpinang,COD,174395,Failed,Rejected/Unreachable,92,2026-07-01
+ORD-66769,Ratna Tarihoran,"R.M. Cawisono Rahimah, S.Sos",Salatiga,COD,1432150,Delivered,Received,50,2026-07-16
+ORD-19768,Cahyo Saragih,Karta Fujiati,Kediri,COD,1496474,Delivered,Received,26,2026-07-05
+ORD-51234,Winda Permata,Kani Natsir,Kota Administrasi Jakarta Timur,COD,1473754,Delivered,Received,12,2026-07-12
+ORD-28029,KH. Elon Sitorus,Putri Maheswara,Pasuruan,COD,816046,Delivered,Received,11,2026-07-22
+ORD-45654,Tgk. Betania Sirait,Timbul Agustina,Kota Administrasi Jakarta Barat,COD,307934,Delivered,Not Received,2964,2026-07-11
+ORD-18131,Gada Hartati,Harsaya Zulaika,Padangpanjang,COD,1105774,Failed,Rejected/Unreachable,71,2026-07-27
+ORD-95989,Sutan Lamar Prastuti,Gatra Puspita,Bima,COD,325250,Delivered,Received,18,2026-07-20
+ORD-74239,Janet Prakasa,Martaka Nashiruddin,Sabang,COD,668385,Delivered,Received,36,2026-07-16
+ORD-96799,Ifa Tamba,Tugiman Hassanah,Manado,COD,1456952,Delivered,Received,39,2026-07-12
+ORD-78356,"Harsanto Permata, S.T.","Drs. Ami Januar, S.Psi",Medan,COD,104892,Delivered,Received,10,2026-07-17
+ORD-89044,Reksa Mandala,Mariadi Sihombing,Kupang,COD,1104649,Delivered,Received,44,2026-07-13
+ORD-67723,Puti Laras Purwanti,Harto Wasita,Tangerang,COD,1084159,Delivered,Received,15,2026-07-14
+ORD-85682,Bagus Prasasta,Eka Waluyo,Bandar Lampung,COD,775412,Delivered,Received,18,2026-07-19
+ORD-32659,Gaman Pangestu,Violet Simanjuntak,Bandar Lampung,COD,1104098,Failed,Rejected/Unreachable,20,2026-07-24
+ORD-35046,Raihan Hutapea,"Wira Pratiwi, M.M.",Bandung,COD,1322936,Failed,Rejected/Unreachable,95,2026-07-11
+ORD-73219,"T. Makara Santoso, M.Farm",H. Hari Rajata,Cilegon,COD,59649,Delivered,Received,20,2026-06-30
+ORD-99921,drg. Artanto Siregar,Kayla Wibisono,Kota Administrasi Jakarta Timur,COD,866722,Delivered,Received,11,2026-07-22
+ORD-14726,Luwar Wacana,Lili Kurniawan,Prabumulih,COD,892494,Delivered,Received,8,2026-07-18
+ORD-74690,Maida Mandala,"Dr. Nyana Wahyudin, S.Sos",Tasikmalaya,COD,457736,Failed,Rejected/Unreachable,54,2026-07-12
+ORD-90121,Usyi Susanti,"Ir. Shakila Mangunsong, S.Farm",Lubuklinggau,COD,413503,Failed,Rejected/Unreachable,72,2026-07-11
+ORD-94397,Ulya Situmorang,"H. Daryani Nashiruddin, M.Farm",Tual,COD,1495770,Failed,Rejected/Unreachable,97,2026-07-01
+ORD-75276,Kamaria Januar,Hendri Prakasa,Kota Administrasi Jakarta Utara,COD,668535,Delivered,Received,6,2026-07-08
+ORD-41512,Atma Usamah,Baktiono Nasyiah,Jambi,COD,1295687,Failed,Rejected/Unreachable,78,2026-07-21
+ORD-65389,"Zelaya Mulyani, S.Ked","Bakijan Prasetya, S.Pt",Bau-Bau,COD,1333838,Delivered,Received,9,2026-07-07
+ORD-13914,T. Kalim Samosir,Almira Handayani,Prabumulih,COD,96566,Delivered,Received,17,2026-06-28
+ORD-13348,Ihsan Susanti,Nadine Astuti,Blitar,COD,1403334,Delivered,Received,36,2026-07-02
+ORD-63577,"Liman Wijayanti, M.Pd",Rangga Nurdiyanti,Metro,COD,1204780,Delivered,Received,26,2026-07-23
+ORD-53565,Cahyo Farida,Ami Haryanti,Surakarta,COD,1095039,Delivered,Received,22,2026-07-14
+ORD-14138,Darsirah Wahyuni,Hilda Prasetya,Padangpanjang,COD,727570,Delivered,Received,42,2026-07-08
+ORD-99676,Gambira Ramadan,R. Zulaikha Sinaga,Banjarmasin,COD,1414981,Delivered,Received,21,2026-07-14
+ORD-76173,"drg. Martaka Wulandari, S.T.",Gawati Lazuardi,Cilegon,COD,549766,Delivered,Received,21,2026-07-17
+ORD-41287,Estiono Riyanti,Galih Waskita,Semarang,COD,907783,Delivered,Received,37,2026-07-07
+ORD-75796,T. Hartana Rajasa,"Cemeti Sihombing, S.Ked",Lubuklinggau,COD,67821,Delivered,Received,36,2026-07-24
+ORD-89320,Gawati Kusumo,Bella Mardhiyah,Probolinggo,COD,1191780,Delivered,Received,29,2026-07-03
+ORD-40733,Hasta Melani,Raharja Agustina,Palopo,COD,710316,Delivered,Received,34,2026-06-30
+ORD-37126,Elisa Nasyiah,Bahuraksa Winarsih,Blitar,COD,901852,Delivered,Received,46,2026-06-30
+ORD-23811,Danuja Purnawati,Natalia Najmudin,Tarakan,COD,1402095,Delivered,Received,35,2026-07-20
+ORD-18053,drg. Clara Marbun,"Balamantri Marpaung, S.Ked",Pekalongan,COD,457431,Delivered,Received,24,2026-07-14
+ORD-67984,"Pandu Suryatmi, S.E.","Lanang Wastuti, M.Kom.",Samarinda,COD,288478,Failed,Rejected/Unreachable,25,2026-07-16
+ORD-43070,R.M. Arsipatra Nugroho,Victoria Rajasa,Batam,COD,691068,Delivered,Received,7,2026-07-19
+ORD-85087,Parman Wijayanti,Kairav Widodo,Pangkalpinang,COD,1396465,Delivered,Received,20,2026-07-14
+ORD-13569,Reza Haryanto,"dr. Ratna Wacana, S.Pd",Metro,COD,1174259,Delivered,Not Received,2671,2026-07-13
+ORD-39328,Mustika Nugroho,Murti Hutagalung,Prabumulih,COD,886860,Delivered,Received,18,2026-07-08
+ORD-67798,Hesti Puspasari,"Bakiadi Nasyidah, S.Farm",Serang,COD,661948,Delivered,Received,42,2026-07-24
+ORD-49432,"Tgk. Gamanto Mansur, S.H.","Irma Adriansyah, S.Sos",Sukabumi,COD,971956,Delivered,Received,12,2026-07-20
+ORD-70647,dr. Ella Prabowo,"Hj. Eli Jailani, S.IP",Kota Administrasi Jakarta Selatan,COD,1406609,Delivered,Received,11,2026-07-15
+ORD-51218,"Warta Najmudin, S.Gz","Danuja Utama, S.Pt",Kota Administrasi Jakarta Utara,COD,1328936,Delivered,Received,23,2026-07-08
+ORD-84279,"T. Nasab Hasanah, S.E.I",Calista Tampubolon,Tomohon,COD,608638,Delivered,Received,36,2026-07-19
+ORD-43553,drg. Gada Tamba,Nasrullah Rajata,Dumai,COD,930807,Delivered,Received,43,2026-07-17
+ORD-62674,Dr. Unjani Hutagalung,"drg. Luluh Hidayanto, S.E.",Bitung,COD,1022725,Delivered,Received,39,2026-07-07
+ORD-54359,"Cut Kayla Budiman, S.T.",Intan Sihombing,Singkawang,COD,838731,Delivered,Received,49,2026-07-15
+ORD-55926,Paulin Wastuti,Olivia Pangestu,Sukabumi,COD,510652,Delivered,Received,32,2026-07-13
+ORD-18226,Tina Pertiwi,Irwan Zulaika,Magelang,COD,513947,Failed,Rejected/Unreachable,95,2026-07-02
+ORD-10441,Zelaya Tamba,Cindy Mulyani,Medan,COD,1149146,Delivered,Received,23,2026-07-01
+ORD-42423,"Ajeng Pertiwi, S.IP",Tgk. Siti Habibi,Cilegon,COD,1352994,Delivered,Received,38,2026-07-05
+ORD-37354,"Wani Simbolon, M.Pd","Ir. Cici Siregar, M.Pd",Metro,COD,1168571,Delivered,Received,35,2026-07-25
+ORD-16195,Zulfa Sudiati,Nilam Sihombing,Denpasar,COD,610936,Delivered,Received,41,2026-07-13
+ORD-30794,Latif Saragih,Dr. Gilang Astuti,Palembang,COD,329133,Delivered,Received,45,2026-06-30
+ORD-74669,Slamet Hassanah,Sarah Nainggolan,Medan,COD,652152,Delivered,Received,41,2026-07-15
+ORD-11624,Yono Wijaya,"drg. Dewi Zulkarnain, S.Pd",Dumai,COD,1345111,Delivered,Received,32,2026-07-18
+ORD-41097,dr. Teddy Maryati,"Ivan Wahyuni, M.Farm",Pontianak,COD,1442351,Delivered,Received,43,2026-07-01
+ORD-23655,"KH. Gandewa Pangestu, M.Kom.",Gamanto Wastuti,Gorontalo,COD,796309,Delivered,Received,33,2026-07-17
+ORD-19104,Kalim Aryani,Daliman Andriani,Tarakan,COD,1407042,Delivered,Received,10,2026-07-03
+ORD-96011,Mahmud Situmorang,"Titin Hasanah, M.M.",Tual,COD,1172860,Failed,Rejected/Unreachable,14,2026-07-03
+ORD-58246,Umaya Zulkarnain,"Farah Salahudin, S.IP",Tangerang Selatan,COD,1381037,Delivered,Received,16,2026-07-17
+ORD-32871,"Unggul Tampubolon, M.Farm",Vinsen Prakasa,Lubuklinggau,COD,185228,Delivered,Received,34,2026-07-23
+ORD-74110,"Juli Thamrin, M.TI.",Martana Salahudin,Probolinggo,COD,691889,Delivered,Received,18,2026-07-23
+ORD-74223,Latika Samosir,Zelda Suryono,Probolinggo,COD,797858,Delivered,Received,40,2026-07-16
+ORD-65930,Lantar Damanik,Zulfa Saefullah,Mataram,COD,1186936,Delivered,Received,5,2026-06-28
+ORD-66940,Vanya Situmorang,Dadap Kusumo,Palu,COD,1170490,Delivered,Received,15,2026-07-15
+ORD-39061,Irwan Budiman,R. Estiono Najmudin,Pagaralam,COD,525797,Delivered,Received,35,2026-07-08
+ORD-70642,Dr. Ozy Yuliarti,Wahyu Damanik,Sukabumi,COD,1411115,Failed,Rejected/Unreachable,97,2026-07-04
+ORD-45151,Nyana Najmudin,"H. Cakrabirawa Widodo, S.Pd",Purwokerto,COD,1210070,Delivered,Received,43,2026-07-09
+ORD-73015,"Cut Queen Fujiati, S.Sos",Nugraha Haryanti,Sorong,COD,249085,Delivered,Received,6,2026-06-28
+ORD-74928,Ciaobella Tamba,Karsa Januar,Pasuruan,COD,441405,Delivered,Received,35,2026-07-05
+ORD-50421,R.A. Dinda Rahimah,R.A. Laras Siregar,Pangkalpinang,COD,1269054,Failed,Rejected/Unreachable,78,2026-07-13
+ORD-52950,Genta Susanti,"Tgk. Prabu Hakim, S.Sos",Medan,COD,96405,Delivered,Received,35,2026-07-01
+ORD-98692,Mustika Tamba,"Erik Lestari, S.E.I",Batam,COD,605195,Failed,Rejected/Unreachable,56,2026-07-16
+ORD-28608,Tgk. Maria Maryati,Iriana Sitorus,Pangkalpinang,COD,896827,Delivered,Received,36,2026-07-14
+ORD-18249,Pranata Pradana,Jaga Hardiansyah,Bandung,COD,598187,Failed,Rejected/Unreachable,80,2026-07-21
+ORD-50928,Ir. Paramita Permadi,"R.A. Zamira Damanik, S.Gz",Mojokerto,COD,288673,Delivered,Received,26,2026-07-08
+ORD-98847,R.A. Kayla Kuswandari,Umaya Pudjiastuti,Bitung,COD,553970,Delivered,Received,21,2026-07-09
+ORD-84792,Kamila Handayani,H. Dimas Pradipta,Kota Administrasi Jakarta Barat,COD,1308153,Failed,Rejected/Unreachable,100,2026-07-18
+ORD-24165,Nasim Fujiati,Lasmono Andriani,Ambon,COD,114833,Failed,Rejected/Unreachable,48,2026-06-29
+ORD-12644,Elon Haryanto,Qori Firmansyah,Ambon,COD,640193,Delivered,Received,23,2026-06-30
+ORD-28175,Zamira Budiyanto,Bakiono Prabowo,Meulaboh,COD,704550,Failed,Rejected/Unreachable,72,2026-07-23
+ORD-33670,Dr. Kusuma Gunawan,Radit Kuswoyo,Kota Administrasi Jakarta Pusat,COD,1032896,Delivered,Received,15,2026-06-29
+ORD-35629,"Hardana Tamba, S.Sos",Nabila Hardiansyah,Mataram,COD,851926,Delivered,Received,23,2026-06-28
+ORD-39830,"R. Parman Lazuardi, M.Ak","Daryani Widodo, S.Kom",Bau-Bau,COD,1256643,Delivered,Received,43,2026-07-14
+ORD-20715,"Putri Zulkarnain, S.Psi",Prasetya Wahyudin,Bekasi,COD,1347604,Delivered,Received,43,2026-06-30
+ORD-33807,Ulva Putra,"Dr. Olivia Adriansyah, S.T.",Kota Administrasi Jakarta Selatan,COD,144547,Delivered,Received,43,2026-06-30
+ORD-76329,"Dt. Balidin Siregar, S.I.Kom",Marsito Prakasa,Depok,COD,204420,Delivered,Received,40,2026-07-03
+ORD-58019,Victoria Mardhiyah,R.M. Soleh Hassanah,Tidore Kepulauan,COD,1289043,Failed,Rejected/Unreachable,69,2026-07-12
+ORD-14052,"Najib Susanti, M.M.",Puji Rahimah,Pasuruan,COD,637451,Delivered,Received,27,2026-07-27
+ORD-51353,Kadir Halimah,"Dr. Sadina Suryatmi, M.TI.",Kota Administrasi Jakarta Timur,COD,656767,Delivered,Received,13,2026-07-22
+ORD-77822,"dr. Ifa Uwais, S.Gz",Ayu Lailasari,Salatiga,COD,868773,Delivered,Received,7,2026-06-30
+ORD-20856,Sakura Yuniar,"Hartana Hardiansyah, S.Sos",Magelang,COD,574444,Delivered,Received,8,2026-07-17
+ORD-53396,Fitriani Habibi,Ajeng Uwais,Sungai Penuh,COD,1377530,Delivered,Received,12,2026-07-27
+ORD-39667,dr. Vinsen Prastuti,"Puti Alika Firgantoro, S.E.I",Bandar Lampung,COD,1348202,Delivered,Received,46,2026-07-07
+ORD-94864,Ella Hastuti,Nilam Firmansyah,Banda Aceh,COD,787340,Failed,Rejected/Unreachable,21,2026-07-02
+ORD-50597,Yuliana Zulkarnain,Cornelia Hutasoit,Kediri,COD,382379,Failed,Rejected/Unreachable,74,2026-07-26
+ORD-81523,Novi Andriani,Zizi Anggriawan,Tangerang Selatan,COD,987782,Failed,Rejected/Unreachable,90,2026-06-30
+ORD-91267,Mila Thamrin,Edison Sitompul,Cimahi,COD,1465890,Delivered,Received,19,2026-07-01
+ORD-34973,Emong Nasyidah,Azalea Hariyah,Magelang,COD,460297,Failed,Rejected/Unreachable,84,2026-07-10
+ORD-37593,Maman Permata,Putu Maryadi,Banjar,COD,1190215,Delivered,Received,47,2026-07-17
+ORD-23981,Jumari Usada,Cut Ami Wacana,Ternate,COD,1368155,Delivered,Received,8,2026-07-15
+ORD-84965,Vanya Mustofa,"Balijan Waluyo, S.Farm",Pasuruan,COD,602898,Delivered,Received,43,2026-07-03
+ORD-31880,Najwa Wasita,Harjo Puspita,Mataram,COD,787282,Delivered,Not Received,3665,2026-06-29
+ORD-32667,"Kawaya Budiyanto, S.E.I",R. Septi Iswahyudi,Pematangsiantar,COD,559587,Delivered,Received,40,2026-07-19
+ORD-35608,"Ajimin Utama, S.H.",Sidiq Nasyiah,Surabaya,COD,324105,Delivered,Received,24,2026-06-29
+ORD-11036,Cawuk Puspasari,Asman Wijayanti,Surakarta,COD,83123,Delivered,Received,48,2026-07-02
+ORD-63098,Tgk. Silvia Habibi,"Putu Permata, S.E.",Tomohon,COD,440187,Delivered,Received,50,2026-06-29
+ORD-83013,"Jindra Pratiwi, S.I.Kom",Ajeng Wibowo,Pasuruan,COD,591724,Delivered,Received,20,2026-07-06
+ORD-43483,Latif Nainggolan,Yusuf Lestari,Ambon,COD,1369667,Delivered,Received,5,2026-07-11
+ORD-31757,Kamaria Waskita,Dr. Waluyo Tamba,Jambi,COD,1017071,Delivered,Received,33,2026-07-25
+ORD-30928,Ikin Hutasoit,Cengkal Wibisono,Lubuklinggau,COD,175452,Delivered,Received,27,2026-07-27
+ORD-49808,"Ir. Rahmi Firgantoro, S.H.",R.M. Opung Wijaya,Bandung,COD,626513,Delivered,Received,20,2026-07-21
+ORD-39354,Zulfa Kusumo,Dr. Mulya Purwanti,Bandar Lampung,COD,998185,Delivered,Received,28,2026-07-15
+ORD-19878,"Asirwanda Narpati, S.Ked",Diah Rahmawati,Makassar,COD,486396,Delivered,Received,33,2026-07-20
+ORD-13682,Nrima Firgantoro,Bakiman Rahayu,Prabumulih,COD,999856,Delivered,Received,8,2026-07-27
+ORD-83942,Ophelia Maulana,Bahuwirya Lailasari,Yogyakarta,COD,1264176,Failed,Rejected/Unreachable,31,2026-07-06
+ORD-79925,"Mitra Yulianti, S.Sos",Azalea Salahudin,Bekasi,COD,593461,Delivered,Received,13,2026-07-17
+ORD-98968,"drg. Michelle Fujiati, S.I.Kom",Kania Iswahyudi,Tomohon,COD,1182829,Failed,Rejected/Unreachable,86,2026-07-19
+ORD-96381,"Asirwanda Situmorang, S.Sos",Perkasa Nababan,Tebingtinggi,COD,1184347,Delivered,Received,5,2026-07-16
+ORD-42214,"Dt. Sidiq Pudjiastuti, M.Ak",Sutan Virman Halim,Surabaya,COD,529867,Delivered,Received,38,2026-07-03
+ORD-51464,Utama Rajata,"R. Dina Melani, M.Pd",Magelang,COD,336086,Delivered,Received,9,2026-07-17
+ORD-22583,Ami Pradana,Ellis Widodo,Ambon,COD,670181,Delivered,Received,37,2026-07-05
+ORD-19212,Gawati Mangunsong,Luwes Mandasari,Sabang,COD,1052848,Failed,Rejected/Unreachable,99,2026-07-04
+ORD-53724,Ophelia Thamrin,dr. Agnes Simanjuntak,Pariaman,COD,1382029,Delivered,Received,32,2026-06-28
+ORD-35308,"dr. Uchita Wijaya, S.E.","Ir. Kawaca Habibi, M.Farm",Pangkalpinang,COD,953308,Delivered,Received,40,2026-07-27
+ORD-97280,R. Teguh Nurdiyanti,"R. Suci Wasita, M.Ak",Bekasi,COD,484395,Delivered,Received,10,2026-07-08
+ORD-67253,Ajeng Putra,Aisyah Purnawati,Kota Administrasi Jakarta Selatan,COD,348043,Delivered,Received,48,2026-07-11
+ORD-21936,Septi Hasanah,"Tgk. Farhunnisa Halimah, S.Pt",Cirebon,COD,1059550,Delivered,Received,24,2026-07-04
+ORD-25751,Eja Lailasari,Mustika Usamah,Binjai,COD,909508,Failed,Rejected/Unreachable,24,2026-07-02
+ORD-29818,"drg. Wage Agustina, S.E.I",Sakura Latupono,Cirebon,COD,481423,Delivered,Received,37,2026-07-16
+ORD-40675,Drs. Eluh Habibi,Raihan Sihombing,Denpasar,COD,1060709,Delivered,Received,31,2026-07-24
+ORD-23413,Rendy Haryanti,"Puti Dian Marbun, S.I.Kom",Gorontalo,COD,85153,Delivered,Received,6,2026-06-28
+ORD-23700,Yessi Ardianto,Tgk. Calista Nainggolan,Kota Administrasi Jakarta Selatan,COD,956681,Failed,Rejected/Unreachable,42,2026-07-05
+ORD-15052,Cut Betania Gunawan,Gasti Wastuti,Magelang,COD,1211237,Delivered,Received,49,2026-07-15
+ORD-59841,"Cut Sari Januar, M.Pd",Laksana Damanik,Tual,COD,586019,Failed,Rejected/Unreachable,64,2026-07-06
+ORD-23687,Luhung Salahudin,"Cahyadi Anggriawan, S.Pd",Pariaman,COD,637260,Failed,Rejected/Unreachable,88,2026-07-13
+ORD-70610,Harsaya Utama,"Nabila Waskita, S.Farm",Payakumbuh,COD,694694,Delivered,Received,21,2026-06-29
+ORD-16213,Drs. Opung Wahyuni,Nabila Iswahyudi,Blitar,COD,1011119,Delivered,Received,33,2026-07-12
+ORD-65250,Ghani Suryatmi,Hafshah Napitupulu,Padangpanjang,COD,380746,Delivered,Not Received,4807,2026-07-24
+ORD-64904,Bagiya Wijayanti,dr. Ani Oktaviani,Purwokerto,COD,685811,Delivered,Received,37,2026-07-25
+ORD-60275,Danang Lazuardi,Zelaya Napitupulu,Palangkaraya,COD,999202,Delivered,Received,47,2026-07-17
+ORD-36932,Dt. Jagapati Permadi,Restu Kuswoyo,Binjai,COD,225058,Delivered,Received,11,2026-06-29
+ORD-52353,Drs. Paramita Maulana,Natalia Mardhiyah,Bima,COD,784719,Failed,Rejected/Unreachable,10,2026-07-25
+ORD-73937,Zelaya Nuraini,Vega Saefullah,Metro,COD,1196685,Delivered,Received,44,2026-07-02
+ORD-37605,Silvia Uyainah,Cut Cici Manullang,Tangerang Selatan,COD,369039,Delivered,Received,46,2026-07-22
+ORD-41335,Praba Prasetya,Sadina Laksita,Manado,COD,469197,Delivered,Received,35,2026-06-28
+ORD-53143,Dr. Julia Pratiwi,Putri Usada,Tarakan,COD,903765,Delivered,Not Received,2263,2026-07-16
+ORD-61920,"Rahmi Budiman, S.Psi",R. Atma Putra,Padangpanjang,COD,68619,Delivered,Received,34,2026-07-17
+ORD-38572,Julia Saputra,R. Cawisono Mandasari,Madiun,COD,192918,Failed,Rejected/Unreachable,8,2026-07-10
+ORD-19616,Drs. Unjani Sitompul,Vera Astuti,Padang Sidempuan,COD,486670,Delivered,Received,32,2026-07-15
+ORD-12650,Ana Andriani,Ella Narpati,Semarang,COD,929443,Delivered,Not Received,1803,2026-07-08
+ORD-68827,R. Jaya Palastri,"Kusuma Santoso, M.Farm",Pangkalpinang,COD,1387400,Delivered,Received,37,2026-07-20
+ORD-26185,"T. Rusman Purwanti, M.TI.",Daruna Yolanda,Bukittinggi,COD,297075,Failed,Rejected/Unreachable,29,2026-07-21
+ORD-76836,Tedi Nurdiyanti,Aisyah Purwanti,Kota Administrasi Jakarta Timur,COD,374954,Delivered,Received,39,2026-07-05
+ORD-25404,Hasna Namaga,"Azalea Andriani, M.Pd",Serang,COD,423509,Delivered,Received,13,2026-06-29
+ORD-64096,Gilang Usamah,"Drs. Kurnia Ardianto, M.TI.",Purwokerto,COD,1036620,Delivered,Received,39,2026-07-05
+ORD-16640,Pangestu Hutapea,"Rachel Yuniar, S.I.Kom",Cimahi,COD,1483419,Delivered,Received,5,2026-07-16
+ORD-42611,Cawisadi Suryatmi,Harjaya Wastuti,Banjarmasin,COD,699575,Delivered,Received,6,2026-07-12
+ORD-73583,Azalea Ardianto,"Raden Susanti, S.Pt",Magelang,COD,491274,Failed,Rejected/Unreachable,91,2026-07-23
+ORD-11096,Paramita Manullang,"H. Bagus Yuniar, S.Pt",Jayapura,COD,123333,Delivered,Received,42,2026-07-17
+ORD-62536,Citra Iswahyudi,"KH. Martani Farida, S.Pt",Pekanbaru,COD,107518,Failed,Rejected/Unreachable,88,2026-07-10
+ORD-95068,Nova Tarihoran,Titi Adriansyah,Pematangsiantar,COD,899396,Delivered,Received,36,2026-07-18
+ORD-57073,Pardi Padmasari,"drg. Gabriella Pangestu, M.TI.",Pekalongan,COD,642333,Delivered,Received,23,2026-07-13
+ORD-56071,"Melinda Pertiwi, M.Farm",Cinthia Hidayanto,Medan,COD,262781,Delivered,Received,46,2026-07-04
+ORD-27079,Anita Pratama,Sutan Kajen Haryanti,Sungai Penuh,COD,705580,Delivered,Received,25,2026-07-26
+ORD-84722,R. Ibrani Mandala,Oskar Budiyanto,Kendari,COD,878127,Delivered,Received,21,2026-07-06
+ORD-21222,Zalindra Winarsih,Kezia Situmorang,Sabang,COD,157181,Delivered,Received,21,2026-07-04
+ORD-82809,Agnes Rahimah,"drg. Rina Wahyuni, S.Farm",Ambon,COD,864367,Failed,Rejected/Unreachable,7,2026-07-17
+ORD-74395,Maya Yuniar,Natalia Narpati,Pagaralam,COD,345993,Delivered,Received,35,2026-07-14
+ORD-67510,Ophelia Sudiati,Cindy Hutasoit,Jambi,COD,868941,Delivered,Received,50,2026-07-03
+ORD-11385,Gina Yuliarti,Paiman Jailani,Kota Administrasi Jakarta Pusat,COD,1360014,Failed,Rejected/Unreachable,61,2026-07-27
+ORD-56411,"KH. Gaman Santoso, S.Kom",Ulva Kusumo,Palopo,COD,1045554,Delivered,Received,15,2026-07-22
+ORD-15501,Opan Januar,"Dr. Lulut Laksmiwati, M.Pd",Medan,COD,924337,Delivered,Received,36,2026-06-30
+ORD-44530,Ganep Winarsih,Vino Anggraini,Cimahi,COD,860754,Delivered,Received,44,2026-07-12
+ORD-60838,"Talia Rahayu, S.IP","Ir. Sabrina Natsir, S.Pt",Binjai,COD,1411421,Delivered,Received,13,2026-06-30
+ORD-80039,"Dt. Mursita Usada, S.I.Kom",Jamalia Sihombing,Cirebon,COD,1087254,Delivered,Received,23,2026-07-12
+ORD-77176,"Drs. Raisa Mansur, S.Kom",Adiarja Pangestu,Bontang,COD,1388638,Delivered,Received,36,2026-07-23
+ORD-64033,"Jatmiko Pradipta, S.T.",Purwanto Handayani,Semarang,COD,637092,Delivered,Received,21,2026-07-02
+ORD-30969,Rama Uwais,Adika Rahmawati,Padangpanjang,COD,504279,Delivered,Received,48,2026-06-30
+ORD-82215,Shakila Hidayat,Harjaya Agustina,Kota Administrasi Jakarta Pusat,COD,175735,Failed,Rejected/Unreachable,82,2026-07-13
+ORD-75425,Daruna Setiawan,"Dr. Darmaji Lestari, S.Psi",Salatiga,COD,700076,Failed,Rejected/Unreachable,93,2026-06-28
+ORD-72724,H. Rudi Simbolon,Okto Puspita,Tangerang,COD,833362,Delivered,Received,7,2026-07-27
+ORD-79438,Kamila Mayasari,"Ir. Irma Prasasta, M.Ak",Batam,COD,856971,Delivered,Received,32,2026-07-22
+ORD-41542,Ilsa Nasyidah,"T. Hasta Halimah, S.E.I",Batam,COD,901407,Delivered,Received,48,2026-07-04
+ORD-16079,Raden Halim,"Capa Utami, S.I.Kom",Pariaman,COD,245009,Delivered,Received,26,2026-07-06
+ORD-91800,"Tgk. Mutia Prabowo, S.Pt",Artanto Zulaika,Cimahi,COD,682661,Delivered,Received,19,2026-07-26
+ORD-90328,Dr. Zaenab Mustofa,Lidya Kuswoyo,Pekalongan,COD,869445,Delivered,Received,42,2026-07-19
+ORD-13199,Maryanto Zulaika,Hilda Fujiati,Sabang,COD,279642,Failed,Rejected/Unreachable,56,2026-07-08
+ORD-63806,"Ella Novitasari, S.Psi",Nasim Rahmawati,Payakumbuh,COD,1009714,Delivered,Received,20,2026-07-19
+ORD-11547,"Dt. Dacin Mardhiyah, S.E.I",Melinda Hutapea,Sibolga,COD,872665,Failed,Rejected/Unreachable,79,2026-07-02
+ORD-74218,Ella Palastri,"H. Gamblang Utama, S.E.I",Pontianak,COD,1309471,Delivered,Received,29,2026-07-15
+ORD-27231,Intan Januar,Elisa Zulaika,Banjarbaru,COD,827975,Delivered,Received,24,2026-07-16
+ORD-65185,Jane Nababan,Setya Zulkarnain,Salatiga,COD,964137,Delivered,Received,43,2026-07-10
+ORD-19562,Tedi Rajasa,Cindy Sitompul,Jayapura,COD,208209,Failed,Rejected/Unreachable,70,2026-07-17
+ORD-31915,dr. Gangsar Latupono,"Sutan Cakrabirawa Saptono, S.E.",Blitar,COD,742884,Delivered,Received,28,2026-07-21
+ORD-69145,Cagak Laksita,"dr. Nasim Yuliarti, S.Gz",Tidore Kepulauan,COD,1143364,Delivered,Received,15,2026-07-20
+ORD-59077,"Danuja Setiawan, S.Ked",Uda Kusumo,Padangpanjang,COD,540188,Delivered,Received,43,2026-07-22
+ORD-99849,"Cahyadi Firgantoro, S.Pt",Calista Hastuti,Palopo,COD,328060,Delivered,Received,37,2026-07-25
+ORD-31140,"Dt. Mulyanto Napitupulu, S.E.",Virman Natsir,Langsa,COD,1423587,Delivered,Received,22,2026-07-15
+ORD-20421,Vanya Wibisono,Nadia Nababan,Bogor,COD,694216,Delivered,Received,8,2026-07-07
+ORD-47567,Digdaya Maryadi,"Chelsea Mangunsong, S.Gz",Langsa,COD,1339527,Delivered,Received,7,2026-07-17
+ORD-16736,"Ani Pradipta, S.T.",Ir. Talia Yuniar,Payakumbuh,COD,675412,Delivered,Received,50,2026-07-26
+ORD-13055,"Jono Pradana, S.T.",Sakti Prasetyo,Sorong,COD,1248932,Delivered,Received,23,2026-07-11
+ORD-92853,"dr. Maria Maulana, S.Pt",Tantri Winarno,Tegal,COD,618178,Failed,Rejected/Unreachable,87,2026-07-27
+ORD-57220,Eka Sinaga,Prakosa Sihombing,Surakarta,COD,58095,Delivered,Received,33,2026-07-06
+ORD-69220,Asirwanda Megantara,Balijan Gunawan,Pekanbaru,COD,293066,Delivered,Received,49,2026-07-02
+ORD-21473,R.M. Mahdi Rahimah,Olivia Mandala,Sabang,COD,1361091,Delivered,Received,21,2026-07-06
+ORD-94921,Jayadi Zulaika,"Prayoga Widiastuti, M.Farm",Batu,COD,1412614,Delivered,Received,17,2026-07-07
+ORD-56226,Maida Situmorang,"dr. Caraka Hasanah, S.Farm",Payakumbuh,COD,965031,Delivered,Received,8,2026-07-15
+ORD-77956,Lalita Anggriawan,"Tgk. Uli Rahmawati, M.Farm",Banda Aceh,COD,267581,Delivered,Received,10,2026-07-22
+ORD-82212,Jessica Natsir,Umi Damanik,Pematangsiantar,COD,1313121,Delivered,Received,12,2026-07-08
+ORD-54879,Opung Winarno,"Ir. Pangestu Oktaviani, S.Pd",Sibolga,COD,64765,Delivered,Received,9,2026-07-03
+ORD-18213,Hasna Riyanti,"Iriana Sirait, S.Pt",Surabaya,COD,251471,Delivered,Received,8,2026-07-10
+ORD-38176,Kasiyah Purwanti,Asirwada Siregar,Tangerang,COD,1450715,Delivered,Received,37,2026-07-12
+ORD-85334,Victoria Haryanti,Kezia Yuliarti,Batam,COD,383346,Delivered,Received,6,2026-06-29
+ORD-17534,Agnes Oktaviani,Karja Saputra,Bitung,COD,516839,Delivered,Received,9,2026-07-02
+ORD-24918,Belinda Siregar,Sutan Panca Widodo,Kendari,COD,308621,Delivered,Received,18,2026-07-27
+ORD-97061,Amelia Kuswandari,Wadi Salahudin,Jambi,COD,239764,Delivered,Received,43,2026-07-09
+ORD-42146,Ulya Farida,Wani Agustina,Tidore Kepulauan,COD,871670,Delivered,Received,27,2026-07-03
+ORD-96694,Hj. Elvina Rahmawati,Mutia Gunawan,Kota Administrasi Jakarta Pusat,COD,325577,Delivered,Received,43,2026-06-28
+ORD-71001,R.A. Nilam Zulkarnain,"KH. Jinawi Kuswoyo, S.E.",Batam,COD,597978,Delivered,Received,16,2026-07-06
+ORD-28940,Jayeng Mardhiyah,Anggabaya Utami,Batam,COD,602457,Delivered,Received,6,2026-07-11
+ORD-23046,"Uli Nashiruddin, S.T.",Umar Wibowo,Payakumbuh,COD,617839,Delivered,Received,14,2026-07-03
+ORD-68345,R.M. Rudi Ardianto,Candrakanta Wastuti,Padang,COD,1152863,Delivered,Received,35,2026-06-28
+ORD-86533,Ir. Waluyo Kuswoyo,"Drs. Irfan Latupono, M.Pd",Semarang,COD,197775,Delivered,Received,12,2026-07-17
+ORD-11066,dr. Dadi Halim,Jelita Pradana,Payakumbuh,COD,1281026,Delivered,Received,28,2026-06-28
+ORD-10049,R. Gaduh Wahyudin,Ayu Ardianto,Kupang,COD,408352,Delivered,Received,44,2026-07-03
+ORD-79298,Drs. Hari Megantara,Ifa Kuswoyo,Pasuruan,COD,469717,Delivered,Received,37,2026-07-08
+ORD-32637,Puti Nadine Anggraini,Kamaria Maheswara,Manado,COD,119810,Delivered,Received,11,2026-07-02
+ORD-24565,Ir. Cawuk Puspasari,Jamal Damanik,Dumai,COD,1140449,Failed,Rejected/Unreachable,89,2026-07-12
+ORD-25870,KH. Rendy Pradipta,"Sarah Budiyanto, S.I.Kom",Blitar,COD,775124,Delivered,Received,23,2026-07-06
+ORD-67143,"Yuni Laksmiwati, M.M.",Waluyo Sitorus,Tebingtinggi,COD,140724,Delivered,Received,33,2026-07-04
+ORD-83178,"Indah Laksmiwati, S.Ked",Gawati Hutasoit,Tanjungpinang,COD,114849,Delivered,Received,12,2026-07-27
+ORD-68209,"dr. Harsaya Wijayanti, S.E.I",Paiman Uyainah,Depok,COD,740886,Delivered,Received,32,2026-07-23
+ORD-41359,Nasrullah Widodo,Ami Saptono,Balikpapan,COD,1285584,Delivered,Received,25,2026-07-03
+ORD-47742,Zulaikha Budiyanto,"Hj. Anita Uwais, M.Farm",Metro,COD,780933,Delivered,Not Received,3679,2026-07-25
+ORD-78637,R. Perkasa Prasasta,Marwata Prayoga,Sabang,COD,1262166,Delivered,Received,6,2026-07-07
+ORD-43520,Zulfa Nugroho,drg. Jelita Maryadi,Semarang,COD,1091340,Delivered,Received,40,2026-07-16
+ORD-61898,Farhunnisa Mayasari,"Danu Winarno, M.M.",Semarang,COD,465380,Delivered,Received,5,2026-07-14
+ORD-46629,Hadi Wahyuni,Pandu Mangunsong,Batu,COD,811353,Delivered,Received,43,2026-07-24
+ORD-82311,Ajeng Hardiansyah,"Elvina Prastuti, S.IP",Tangerang,COD,746978,Failed,Rejected/Unreachable,86,2026-06-28
+ORD-25974,Putu Wibisono,Samsul Nashiruddin,Tanjungbalai,COD,407513,Delivered,Received,40,2026-07-03
+ORD-67039,Queen Manullang,drg. Cemani Latupono,Sukabumi,COD,1190117,Delivered,Received,12,2026-06-30
+ORD-15196,Febi Hassanah,"Cut Queen Suryono, S.E.",Metro,COD,365650,Delivered,Received,43,2026-07-11
+ORD-65176,Aurora Hidayanto,Mala Prayoga,Bogor,COD,1407270,Delivered,Received,31,2026-07-07
+ORD-88648,Genta Hakim,Hadi Laksmiwati,Bau-Bau,COD,487614,Delivered,Received,28,2026-07-10
+ORD-49423,Yance Wijayanti,"Kartika Riyanti, S.Ked",Parepare,COD,130950,Delivered,Received,13,2026-07-27
+ORD-98320,"Jelita Oktaviani, M.M.","Kiandra Simbolon, S.Farm",Sungai Penuh,COD,1198624,Delivered,Received,36,2026-07-08
+ORD-33492,Sakura Kusmawati,drg. Vinsen Gunarto,Padangpanjang,COD,762049,Delivered,Received,20,2026-07-11
+ORD-32834,Violet Tampubolon,Banara Safitri,Sibolga,COD,867139,Delivered,Received,10,2026-07-18
+ORD-81229,Devi Safitri,"Puti Maimunah Oktaviani, S.Psi",Pangkalpinang,COD,1493722,Delivered,Received,49,2026-06-28
+ORD-99244,"Wani Hutagalung, M.Pd",Ika Fujiati,Cimahi,COD,302071,Delivered,Received,32,2026-07-27
+ORD-82545,Tari Zulkarnain,Janet Nainggolan,Makassar,COD,438230,Failed,Rejected/Unreachable,24,2026-07-14
