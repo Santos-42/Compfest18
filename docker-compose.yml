@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: compfest18-backend
+    env_file: .env
+    environment:
+      # Volume SQLite tetap persist di host
+      DATABASE_PATH: /app/data/logistics.db
+    volumes:
+      - ./backend/data:/app/data
+      - ./ai-models:/app/ai-models
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: compfest18-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: unless-stopped
