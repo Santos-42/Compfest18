@@ -3,7 +3,8 @@ FROM node:18-alpine AS build
 
 WORKDIR /app
 COPY package.json ./
-RUN npm install
+# --include=dev penting: react-scripts/tailwind ada di devDependencies
+RUN npm install --include=dev
 COPY . .
 RUN npm run build
 

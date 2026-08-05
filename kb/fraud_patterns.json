@@ -1,0 +1,38 @@
+{
+  "faq": [
+    {
+      "q": "Apa itu fraud COD?",
+      "a": "Fraud COD adalah tindakan kecurangan pada transaksi cash on delivery, misalnya kurir menandai paket terkirim padahal customer tidak menerimanya (Not Received), atau pengiriman ditolak dengan alasan tidak valid."
+    },
+    {
+      "q": "Bagaimana aplikasi mendeteksi fraud?",
+      "a": "Model XGBoost dilatih dari dataset transaksi COD. Fitur seperti nilai barang, jarak GPS kurir dari alamat tujuan, dan laporan customer digunakan untuk menghasilkan skor risiko 0-100%."
+    },
+    {
+      "q": "Apa rekomendasi jika fraud terdeteksi?",
+      "a": "Freeze settlement dana ke kurir dan lakukan investigasi. Pola umum fraud: jarak GPS > 1.500m dari alamat, laporan Not Received, dan nilai barang tinggi."
+    }
+  ],
+  "fraud_patterns": [
+    {
+      "pattern": "GPS JANGGA",
+      "description": "Kurir menandai Delivered dari lokasi jauh (>1.500m) dari alamat customer.",
+      "risk": "tinggi"
+    },
+    {
+      "pattern": "NOT RECEIVED",
+      "description": "Customer melaporkan tidak menerima paket meskipun status Delivered.",
+      "risk": "tinggi"
+    },
+    {
+      "pattern": "REJECTED/UNREACHABLE",
+      "description": "Pengiriman gagal karena customer tidak dapat dihubungi; rawan disalahgunakan.",
+      "risk": "sedang"
+    },
+    {
+      "pattern": "NILAI TINGGI",
+      "description": "Barang bernilai > Rp500.000 lebih rentan menjadi target fraud.",
+      "risk": "sedang"
+    }
+  ]
+}
