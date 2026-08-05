@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 
@@ -13,7 +13,7 @@
 /out/
 
 # production
-/build
+build/
 
 # misc
 .DS_Store
@@ -34,3 +34,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.commandcode
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Database (auto-generated saat startup)
+logistics.db
+*.sqlite3
+
+# Data hasil training (regenerasi via training-scripts)
+data/cod_fraud_labeled.csv
