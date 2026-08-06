@@ -14,6 +14,7 @@ from services import (
     fraud_service,
     geocoding_service,
     routing_service,
+    suggest_service,
     weather_service,
 )
 
@@ -24,10 +25,19 @@ ORIGIN_LAT = -6.2
 ORIGIN_LNG = 106.816666
 
 
+class AddressInput(BaseModel):
+    """Alamat tujuan; lat/lng opsional (dari hasil autocomplete user)."""
+
+    address: str
+    lat: Optional[float] = None
+    lng: Optional[float] = None
+
+
 class SimulationRequest(BaseModel):
-    addresses: list[str] = Field(..., min_length=1)
+    addresses: list[AddressInput] = Field(..., min_length=1)
     cod_amounts: Optional[list[float]] = None
     traffic_condition: str = "normal"
+    optimization: str = "distance"  # 'distance' | 'time'
 
 
 class SimulationResponse(BaseModel):
@@ -60,48 +70,65 @@ def run_simulation(req: SimulationRequest):
     if n > 15:
         raise HTTPException(status_code=400, detail="Maksimal 15 alamat per simulasi.")
 
-    traffic = req.traffic_condition if req.traffic_condition in ("normal", "congested") else "normal"
+    traffic = req.traffic_condition if req.traffic_condition in ("normal", "congested", "hujan") else "normal"
     cod_amounts = _parse_cod(req.cod_amounts, n)
 
-    # 1. Geocoding
+    # 1. Geocoding (pakai koordinat dari autocomplete bila ada)
     try:
-        points = [geocoding_service.geocode(a) for a in req.addresses]
+        points = []
+        for a in req.addresses:
+            if a.lat is not None and a.lng is not None:
+                points.append({"lat": a.lat, "lng": a.lng})
+            else:
+                points.append(geocoding_service.geocode(a.address))
     except Exception as exc:
         raise HTTPException(status_code=502, detail=f"Geocoding gagal: {exc}")
     origin = {"lat": ORIGIN_LAT, "lng": ORIGIN_LNG}
     all_points = [origin] + points  # index 0 = gudang
 
     # 2. Cuaca per titik (parallelize sederhana)
-    weather_list = [weather_service.get_weather_for_address(a) for a in req.addresses]
+    weather_list = [weather_service.get_weather_for_address(a.address) for a in req.addresses]
 
     # 3. Distance matrix (n+1 x n+1)
     distances, durations = distance_service.get_distance_matrix(all_points)
 
-    # 4. Routing OR-Tools
-    route_order = routing_service.optimize_route(distances)  # [0, ...stops]
+    # 4. Routing OR-Tools (mode: jarak atau waktu)
+    opt_mode = req.optimization if req.optimization in ("distance", "time") else "distance"
+    route_order = routing_service.optimize_route(distances, durations, opt_mode)  # [0, ...stops]
 
     # 5. ETA
     eta_list = eta_service.build_eta_timestamps(
-        route_order, all_points, durations, traffic, weather_list
+        route_order, all_points, distances, durations, traffic, weather_list
     )
 
     # 6. Fraud detection per stop (nominal acak bila tidak diisi)
     fraud_alerts = []
+    # is_weekend: hari ini Sabtu/Minggu? (pola penipuan)
+    is_weekend = 1 if time.localtime().tm_wday >= 5 else 0
     for idx, node in enumerate(route_order):
         if node == 0:
             continue
         stop_index = node  # indeks asli input
         gps_dist = distances[0][node]  # jarak gudang -> stop
         item_value = cod_amounts[stop_index - 1] if stop_index > 0 else 0.0
-        report = "Not Received" if (gps_dist > 1500 and item_value > 500_000) else "Received"
-        result = fraud_service.analyze_order(item_value, gps_dist, report)
+        # Aturan simulasi laporan customer & status sistem.
+        # Mayoritas order normal (Received); fraud hanya untuk anomali gabungan:
+        # jarak sangat jauh + nilai tinggi, atau rejected dengan jarak ekstrem.
+        if gps_dist > 10_000 and item_value > 500_000:
+            report, status = "Not Received", "Delivered"
+        elif gps_dist > 5_000 and item_value > 1_000_000:
+            report, status = "Rejected/Unreachable", "Failed"
+        else:
+            report, status = "Received", "Delivered"
+        result = fraud_service.analyze_order(item_value, gps_dist, report, status, is_weekend)
         fraud_alerts.append(
             {
                 "order_index": stop_index,
-                "address": req.addresses[stop_index - 1],
+                "address": req.addresses[stop_index - 1].address,
                 "cod_amount": item_value,
                 "gps_distance_m": round(gps_dist, 0),
                 "customer_report": report,
+                "system_status": status,
                 **result,
             }
         )
@@ -123,11 +150,21 @@ def run_simulation(req: SimulationRequest):
     }
 
     try:
-        save_simulation(req.addresses, response)
+        save_simulation(
+            [a.model_dump() if hasattr(a, "model_dump") else dict(a) for a in req.addresses],
+            response,
+        )
     except Exception as exc:
         logger.warning("Gagal simpan history: %s", exc)
 
     return response
+
+
+@router.get("/geosuggest")
+def geosuggest(q: str = "", limit: int = 6):
+    """Autocomplete alamat ala Google Maps (Photon + fallback OpenCage)."""
+    suggestions = suggest_service.suggest(q, limit=min(max(limit, 1), 10))
+    return {"query": q, "results": suggestions}
 
 
 @router.get("/health")

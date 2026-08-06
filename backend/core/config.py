@@ -3,8 +3,23 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# Root repo: D:\Hackathons\Compfest18 (backend/core/config.py -> parents[2])
-REPO_ROOT = Path(__file__).resolve().parents[2]
+
+def _find_repo_root() -> Path:
+    """Temukan root repo secara robust (host & Docker).
+
+    Host:      D:/Hackathons/Compfest18/backend/core/config.py -> parents[2] = root repo
+    Docker:    /app/core/config.py                              -> parents[2] = / (salah)
+               Fallback cek parents[1] = /app yang berisi data/wilayah.sql
+    """
+    here = Path(__file__).resolve()
+    for parent in here.parents:
+        if (parent / "data" / "wilayah.sql").exists():
+            return parent
+    return here.parents[2]
+
+
+# Root repo: D:\Hackathons\Compfest18 (host) atau /app (Docker)
+REPO_ROOT = _find_repo_root()
 
 # Muat .env dari root repo (atau CWD)
 load_dotenv(REPO_ROOT / ".env")

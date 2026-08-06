@@ -5,7 +5,7 @@
 const API_BASE =
   process.env.REACT_APP_API_URL || "http://localhost:8000";
 
-export async function runSimulation({ addresses, codAmounts, trafficCondition }) {
+export async function runSimulation({ addresses, codAmounts, trafficCondition, optimization }) {
   const res = await fetch(`${API_BASE}/api/run-simulation`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -13,6 +13,7 @@ export async function runSimulation({ addresses, codAmounts, trafficCondition })
       addresses,
       cod_amounts: codAmounts,
       traffic_condition: trafficCondition,
+      optimization,
     }),
   });
 
@@ -27,6 +28,14 @@ export async function runSimulation({ addresses, codAmounts, trafficCondition })
     throw new Error(detail);
   }
 
+  return res.json();
+}
+
+export async function geoSuggest(query) {
+  const res = await fetch(
+    `${API_BASE}/api/geosuggest?q=${encodeURIComponent(query)}&limit=6`
+  );
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
 }
 
