@@ -1,11 +1,6 @@
-"""Geocoding Service — Photon (komoot) primary, OpenCage fallback.
-
-Photon (OSM, gratis, search-as-you-type) jauh lebih akurat untuk alamat
-Indonesia yang ambigu (Jl. Sudirman, dll) karena bisa dibias ke Jakarta.
-Fallback terakhir: koordinat deterministik Jakarta Pusat (bukan random),
-agar simulasi tetap stabil.
-"""
+import hashlib
 import logging
+import re
 
 import httpx
 
@@ -15,30 +10,53 @@ logger = logging.getLogger(__name__)
 
 PHOTON_URL = "https://photon.komoot.io/api/"
 OPENCAGE_URL = "https://api.opencagedata.com/geocode/v1/json"
-
-# Photon memblokir User-Agent non-browser (403) — pakai UA browser.
-BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
-
-# Jakarta (lokasi gudang) — bias geocoding & fallback deterministik
-JAKARTA_CENTER = {"lat": settings.ORIGIN_LAT, "lng": settings.ORIGIN_LNG}
-
-# Bounding box Jabodetabek (minLon,minLat,maxLon,maxLat) — filter keras
+BROWSER_UA = "Mozilla/5.0 (compatible; Compfest18/1.0)"
 JABODETABEK_BBOX = "106.6,-6.5,107.1,-5.9"
 
 
+def _validated_coordinates(lat, lng):
+    lat = float(lat)
+    lng = float(lng)
+    if not -90 <= lat <= 90 or not -180 <= lng <= 180:
+        raise ValueError("Koordinat geocoding berada di luar range valid.")
+    return lat, lng
+
+
+def _metadata(properties: dict, source: str, confidence: float) -> dict:
+    return {
+        "source": source,
+        "confidence": confidence,
+        "city": properties.get("city") or properties.get("town") or properties.get("state"),
+        "county": properties.get("county"),
+        "state": properties.get("state"),
+        "district": properties.get("district") or properties.get("suburb"),
+        "locality": properties.get("locality"),
+        "postcode": properties.get("postcode"),
+    }
+
+
 def _fallback_coordinates(address: str) -> dict:
-    """Koordinat deterministik (Jakarta Pusat). Bukan random."""
-    return dict(JAKARTA_CENTER)
+    digest = hashlib.sha256(re.sub(r"\s+", " ", address.strip().lower()).encode()).digest()
+    lat = -6.245 + (digest[0] / 255) * 0.09
+    lng = 106.74 + (digest[1] / 255) * 0.14
+    if abs(lat - settings.ORIGIN_LAT) < 0.001 and abs(lng - settings.ORIGIN_LNG) < 0.001:
+        lng += 0.01
+    return {
+        "lat": round(lat, 6),
+        "lng": round(lng, 6),
+        "source": "mock",
+        "confidence": 0.0,
+        "is_fallback": True,
+    }
 
 
-def _geocode_photon(address: str) -> dict:
-    """Geocode via Photon; bias ke Jakarta, hanya ambil hasil terbaik."""
-    resp = httpx.get(
+def _geocode_photon(address: str) -> dict | None:
+    response = httpx.get(
         PHOTON_URL,
         params={
             "q": address,
-            "lat": JAKARTA_CENTER["lat"],
-            "lon": JAKARTA_CENTER["lng"],
+            "lat": settings.ORIGIN_LAT,
+            "lon": settings.ORIGIN_LNG,
             "limit": 1,
             "countrycode": "id",
             "bbox": JABODETABEK_BBOX,
@@ -46,19 +64,22 @@ def _geocode_photon(address: str) -> dict:
         headers={"User-Agent": BROWSER_UA},
         timeout=settings.REQUEST_TIMEOUT,
     )
-    resp.raise_for_status()
-    features = resp.json().get("features", [])
+    response.raise_for_status()
+    features = response.json().get("features", [])
     if not features:
         return None
-    coords = features[0].get("geometry", {}).get("coordinates", [])
-    if len(coords) < 2:
+    feature = features[0]
+    coordinates = feature.get("geometry", {}).get("coordinates", [])
+    if len(coordinates) < 2:
         return None
-    return {"lat": coords[1], "lng": coords[0]}
+    lat, lng = _validated_coordinates(coordinates[1], coordinates[0])
+    result = {"lat": lat, "lng": lng}
+    result.update(_metadata(feature.get("properties", {}), "photon", 0.8))
+    return result
 
 
-def _geocode_opencage(address: str) -> dict:
-    """Fallback geocode via OpenCage dengan proximity Jakarta."""
-    resp = httpx.get(
+def _geocode_opencage(address: str) -> dict | None:
+    response = httpx.get(
         OPENCAGE_URL,
         params={
             "q": address,
@@ -66,45 +87,43 @@ def _geocode_opencage(address: str) -> dict:
             "limit": 1,
             "language": "id",
             "countrycode": "id",
-            "proximity": f"{JAKARTA_CENTER['lat']},{JAKARTA_CENTER['lng']}",
+            "proximity": f"{settings.ORIGIN_LAT},{settings.ORIGIN_LNG}",
             "bounds": JABODETABEK_BBOX,
         },
         timeout=settings.REQUEST_TIMEOUT,
     )
-    resp.raise_for_status()
-    data = resp.json()
-    if data.get("results"):
-        geom = data["results"][0]["geometry"]
-        return {"lat": geom["lat"], "lng": geom["lng"]}
-    return None
+    response.raise_for_status()
+    results = response.json().get("results", [])
+    if not results:
+        return None
+    result = results[0]
+    geometry = result.get("geometry", {})
+    lat, lng = _validated_coordinates(geometry["lat"], geometry["lng"])
+    output = {"lat": lat, "lng": lng}
+    output.update(_metadata(result.get("components", {}), "opencage", 0.85))
+    return output
 
 
-def geocode(address: str) -> dict:
-    """Alamat -> {lat, lng}. Photon -> OpenCage -> Jakarta Pusat."""
+def geocode(address: str, allow_mock: bool = False) -> dict:
     if settings.USE_MOCK_MODE:
         return _fallback_coordinates(address)
 
-    # 1. Photon
     try:
         result = _geocode_photon(address)
         if result:
             return result
-        logger.warning("Photon: tidak ada hasil untuk '%s'", address)
     except Exception as exc:
-        logger.warning("Photon API gagal (%s), coba OpenCage.", exc)
+        logger.warning("Photon geocoding gagal: %s", exc)
 
-    # 2. OpenCage
     if settings.OPENCAGE_API_KEY:
         try:
             result = _geocode_opencage(address)
             if result:
                 return result
-            logger.warning("OpenCage: tidak ada hasil untuk '%s'", address)
         except Exception as exc:
-            logger.warning("OpenCage API gagal (%s).", exc)
+            logger.warning("OpenCage geocoding gagal: %s", exc)
 
-    # 3. Fallback deterministik
-    if settings.ENABLE_FALLBACK:
-        logger.warning("Geocoding gagal untuk '%s', pakai Jakarta Pusat.", address)
+    if allow_mock:
+        logger.warning("Geocoding gagal untuk '%s', menggunakan koordinat mock.", address)
         return _fallback_coordinates(address)
-    raise RuntimeError(f"Geocoding gagal untuk: {address}")
+    raise RuntimeError(f"Alamat tidak dapat diverifikasi: {address}")

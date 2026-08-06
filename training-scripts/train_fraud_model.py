@@ -11,6 +11,18 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
 
+EXPECTED_FEATURES = [
+    "item_value",
+    "gps_distance_meters",
+    "value_per_km",
+    "is_weekend",
+    "customer_report_Not Received",
+    "customer_report_Received",
+    "customer_report_Rejected/Unreachable",
+    "system_status_Delivered",
+    "system_status_Failed",
+]
+
 ROOT = Path(__file__).resolve().parents[1]
 CSV_PATH = ROOT / "data" / "cod_fraud_labeled.csv"
 OUT_PATH = ROOT / "ai-models" / "fraud_model.pkl"
@@ -52,6 +64,7 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
     ]:
         if col not in features.columns:
             features[col] = 0
+    features = features.reindex(columns=EXPECTED_FEATURES, fill_value=0)
     return features
 
 
@@ -72,7 +85,6 @@ def main():
         colsample_bytree=0.8,
         random_state=42,
         eval_metric="logloss",
-        use_label_encoder=False,
     )
     model.fit(X_train, y_train)
 

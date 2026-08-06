@@ -1,0 +1,9 @@
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+BACKEND_ROOT = PROJECT_ROOT / "backend"
+TRAINING_ROOT = PROJECT_ROOT / "training-scripts"
+for path in (BACKEND_ROOT, TRAINING_ROOT):
+    if str(path) not in sys.path:
+        sys.path.insert(0, str(path))

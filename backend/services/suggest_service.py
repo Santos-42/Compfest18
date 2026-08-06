@@ -45,6 +45,12 @@ def _to_suggestion(feature: dict) -> dict:
         "address": road or label,
         "lat": coords[1] if len(coords) >= 2 else None,
         "lng": coords[0] if len(coords) >= 2 else None,
+        "district": district or None,
+        "city": city or None,
+        "county": props.get("county"),
+        "state": props.get("state"),
+        "locality": props.get("locality"),
+        "postcode": props.get("postcode"),
     }
 
 
@@ -108,12 +114,18 @@ def suggest_opencage(query: str, limit: int = 6) -> list[dict]:
         geom = r.get("geometry", {})
         if not geom:
             continue
+        components = r.get("components", {})
         out.append(
             {
                 "label": r.get("formatted", ""),
                 "address": r.get("formatted", ""),
                 "lat": geom.get("lat"),
                 "lng": geom.get("lng"),
+                "city": components.get("city") or components.get("town"),
+                "county": components.get("county"),
+                "state": components.get("state"),
+                "district": components.get("suburb") or components.get("neighbourhood"),
+                "locality": components.get("village") or components.get("town"),
             }
         )
     return out

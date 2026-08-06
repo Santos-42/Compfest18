@@ -1,71 +1,51 @@
-"""Directions Service — ORS Directions API -> polyline encoded, fallback garis lurus."""
 import logging
 
 import httpx
 
 from core.config import settings
-from services.distance_service import haversine_m
 
 logger = logging.getLogger(__name__)
-
 ORS_DIRECTIONS_URL = "https://api.openrouteservice.org/v2/directions/driving-car/json"
 
 
 def encode_polyline(coords: list[tuple[float, float]]) -> str:
-    """Encode polyline5 (format Google/ORS) dari list (lat, lng)."""
-    precision = 5
-    factor = 10**precision
-    out = []
-    prev_lat = prev_lng = 0
+    factor = 100000
+    output = []
+    previous_lat = previous_lng = 0
     for lat, lng in coords:
-        lat5 = round(lat * factor)
-        lng5 = round(lng * factor)
-
-        def _enc(delta):
-            delta <<= 1
-            if delta < 0:
-                delta = ~delta
-            chunk = []
-            while delta >= 0x20:
-                chunk.append(chr((0x20 | (delta & 0x1F)) + 63))
-                delta >>= 5
-            chunk.append(chr(delta + 63))
-            return "".join(chunk)
-
-        out.append(_enc(lat5 - prev_lat))
-        out.append(_enc(lng5 - prev_lng))
-        prev_lat, prev_lng = lat5, lng5
-    return "".join(out)
-
-
-def _fallback_polyline(coords: list[tuple[float, float]]) -> str:
-    """Garis lurus antar titik (visualisasi saja)."""
-    return encode_polyline(coords)
+        lat_value = round(lat * factor)
+        lng_value = round(lng * factor)
+        for delta in (lat_value - previous_lat, lng_value - previous_lng):
+            value = ~(delta << 1) if delta < 0 else delta << 1
+            while value >= 0x20:
+                output.append(chr((0x20 | (value & 0x1F)) + 63))
+                value >>= 5
+            output.append(chr(value + 63))
+        previous_lat, previous_lng = lat_value, lng_value
+    return "".join(output)
 
 
 def get_polyline(coords: list[tuple[float, float]]) -> str:
-    """coords: list (lat, lng) urut rute -> encoded polyline."""
     if not coords:
         return ""
     if settings.USE_MOCK_MODE or not settings.ORS_API_KEY:
-        return _fallback_polyline(coords)
-
-    locations = [[lng, lat] for lat, lng in coords]
+        return encode_polyline(coords)
     try:
-        resp = httpx.post(
+        response = httpx.post(
             ORS_DIRECTIONS_URL,
             headers={"Authorization": settings.ORS_API_KEY},
-            json={"coordinates": locations, "instructions": False},
+            json={
+                "coordinates": [[lng, lat] for lat, lng in coords],
+                "instructions": False,
+            },
             timeout=max(settings.REQUEST_TIMEOUT * 4, 20),
         )
-        resp.raise_for_status()
-        data = resp.json()
-        geometry = data["routes"][0]["geometry"]
+        response.raise_for_status()
+        geometry = response.json()["routes"][0]["geometry"]
         if geometry:
             return geometry
     except Exception as exc:
-        logger.warning("ORS Directions API gagal (%s), fallback polyline lurus.", exc)
-
+        logger.warning("ORS Directions gagal: %s", exc)
     if settings.ENABLE_FALLBACK:
-        return _fallback_polyline(coords)
+        return encode_polyline(coords)
     raise RuntimeError("Directions gagal dibuat.")

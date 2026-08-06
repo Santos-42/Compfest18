@@ -13,6 +13,8 @@ import csv
 import random
 from pathlib import Path
 
+from fraud_label_rules import is_fraud
+
 ROOT = Path(__file__).resolve().parents[1]
 SRC_PATH = ROOT / "cod_fraud_synthetic_data.csv"
 OUT_PATH = ROOT / "data" / "cod_fraud_labeled.csv"
@@ -44,27 +46,6 @@ def _row(order_id, value, gps, report, status):
         "gps_distance_meters": gps,
         "delivery_date": f"2026-{random.randint(6, 7):02d}-{random.randint(1, 28):02d}",
     }
-
-
-def is_fraud(row: dict) -> int:
-    report = (row.get("customer_report") or "").strip()
-    try:
-        gps = float(row.get("gps_distance_meters") or 0)
-    except ValueError:
-        gps = 0.0
-    try:
-        value = float(row.get("item_value") or 0)
-    except ValueError:
-        value = 0.0
-
-    if report == "Not Received":
-        return 1
-    if report in ("Rejected/Unreachable", "Failed") and gps > 1500:
-        return 1
-    # POLA BARU: Received tapi jarak sangat jauh + nilai tinggi = fraud
-    if report == "Received" and gps > 5000 and value > 750_000:
-        return 1
-    return 0
 
 
 def main():

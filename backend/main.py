@@ -1,7 +1,3 @@
-"""Compfest18 — Smart Logistics & Fraud Detection (Backend FastAPI).
-
-Startup: init database (wilayah.sql) + load model XGBoost sekali, bukan per request.
-"""
 import logging
 from contextlib import asynccontextmanager
 
@@ -19,27 +15,25 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # ===== STARTUP =====
     init_database()
     fraud_service.load_model()
-    logger.info(" Backend siap. MOCK_MODE=%s", settings.USE_MOCK_MODE)
+    logger.info("Backend siap. MOCK_MODE=%s", settings.USE_MOCK_MODE)
     yield
-    # ===== SHUTDOWN =====
     logger.info("Server dimatikan.")
 
 
 app = FastAPI(
     title="Compfest18 — Smart Logistics & Fraud Detection",
-    version="3.0.0",
+    version="4.0.0",
     lifespan=lifespan,
 )
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=list(settings.FRONTEND_ORIGINS),
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type"],
 )
 
 app.include_router(router)

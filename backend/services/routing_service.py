@@ -1,8 +1,3 @@
-"""Routing Service — OR-Tools CP-SAT (TSP) untuk optimasi urutan pengiriman.
-
-Node 0 = origin (gudang). Cari urutan kunjungan yang meminimalkan total jarak.
-Fallback: nearest-neighbor greedy jika ortools tidak tersedia.
-"""
 import logging
 
 logger = logging.getLogger(__name__)
@@ -13,7 +8,7 @@ try:
     ORTOOLS_AVAILABLE = True
 except ImportError:
     ORTOOLS_AVAILABLE = False
-    logger.warning("ortools tidak terpasang — pakai greedy nearest-neighbor.")
+    logger.warning("ortools tidak tersedia; menggunakan greedy route")
 
 
 def optimize_route(
@@ -21,48 +16,43 @@ def optimize_route(
     durations: list[list[float]] | None = None,
     mode: str = "distance",
 ) -> list[int]:
-    """Return urutan indeks titik (0 = origin, lalu stop 1..n) yang optimal.
-
-    Jarak satuan bebas (meter/detik) — yang penting relatifnya.
-    mode: 'distance' minimalkan jarak; 'time' minimalkan durasi/waktu.
-    """
-    costs = durations if (mode == "time" and durations) else distances
-    n = len(costs)
-    if n <= 2:
-        return list(range(n))
+    costs = durations if mode == "time" and durations is not None else distances
+    _validate_matrix(costs)
+    node_count = len(costs)
+    if node_count == 0:
+        return []
+    if node_count == 1:
+        return [0]
+    if node_count == 2:
+        return [0, 1, 0]
 
     if ORTOOLS_AVAILABLE:
         try:
             return _cp_sat_route(costs)
         except Exception as exc:
-            logger.warning("CP-SAT gagal (%s), fallback greedy.", exc)
-
+            logger.warning("CP-SAT gagal: %s; menggunakan greedy", exc)
     return _greedy_route(costs)
 
 
-def _cp_sat_route(distances: list[list[float]]) -> list[int]:
-    """TSP via circuit constraint. n kecil (<20), selesai cepat."""
-    n = len(distances)
+def _validate_matrix(matrix):
+    if not matrix or any(len(row) != len(matrix) for row in matrix):
+        raise ValueError("Matrix routing harus persegi dan tidak kosong.")
+    if any(value < 0 for row in matrix for value in row):
+        raise ValueError("Biaya routing tidak boleh negatif.")
+
+
+def _cp_sat_route(costs: list[list[float]]) -> list[int]:
+    node_count = len(costs)
     model = cp_model.CpModel()
-
-    int_max = max(
-        int(max((d for row in distances for d in row), default=0)) * n + 1000, 1000
-    )
-    next_var = [model.NewIntVar(0, n - 1, f"next_{i}") for i in range(n)]
     arcs = []
-    for i in range(n):
-        for j in range(n):
-            if i == j:
-                continue
-            arcs.append((i, j, model.NewBoolVar(f"arc_{i}_{j}")))
+    for source in range(node_count):
+        for target in range(node_count):
+            if source != target:
+                arcs.append((source, target, model.NewBoolVar(f"arc_{source}_{target}")))
     model.AddCircuit(arcs)
-
-    # jumlahkan jarak edge yang terpilih: biaya arc * jarak
-    edge_cost = []
-    for i, j, arc in arcs:
-        cost = int(round(distances[i][j]))
-        edge_cost.append(arc * cost)
-    model.Minimize(sum(edge_cost))
+    model.Minimize(
+        sum(arc * int(round(costs[source][target])) for source, target, arc in arcs)
+    )
 
     solver = cp_model.CpSolver()
     solver.parameters.max_time_in_seconds = 5.0
@@ -70,39 +60,37 @@ def _cp_sat_route(distances: list[list[float]]) -> list[int]:
     if status not in (cp_model.OPTIMAL, cp_model.FEASIBLE):
         raise RuntimeError("CP-SAT tidak menemukan solusi")
 
-    # Rekonstruksi siklus dari node 0
-    next_of = {}
-    for i, j, arc in arcs:
-        if solver.Value(arc):
-            next_of[i] = j
+    next_of = {
+        source: target
+        for source, target, arc in arcs
+        if solver.Value(arc)
+    }
     route = [0]
     current = 0
-    while len(route) < n:
+    while len(route) < node_count:
         current = next_of[current]
         route.append(current)
+    route.append(0)
     return route
 
 
-def _greedy_route(distances: list[list[float]]) -> list[int]:
-    n = len(distances)
+def _greedy_route(costs: list[list[float]]) -> list[int]:
     visited = {0}
     route = [0]
     current = 0
-    while len(route) < n:
+    while len(visited) < len(costs):
         candidates = [
-            (distances[current][j], j)
-            for j in range(n)
-            if j not in visited and distances[current][j] > 0
+            (costs[current][target], target)
+            for target in range(1, len(costs))
+            if target not in visited
         ]
-        if not candidates:
-            # sisanya tidak terjangkau — tambahkan berurutan
-            for j in range(n):
-                if j not in visited:
-                    route.append(j)
-                    visited.add(j)
-            return route
-        _, nxt = min(candidates)
-        route.append(nxt)
-        visited.add(nxt)
-        current = nxt
+        _, target = min(candidates, key=lambda item: (item[0], item[1]))
+        route.append(target)
+        visited.add(target)
+        current = target
+    route.append(0)
     return route
+
+
+def route_totals(route: list[int], matrix: list[list[float]]) -> float:
+    return sum(matrix[source][target] for source, target in zip(route, route[1:]))
