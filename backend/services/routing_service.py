@@ -16,22 +16,28 @@ except ImportError:
     logger.warning("ortools tidak terpasang — pakai greedy nearest-neighbor.")
 
 
-def optimize_route(distances: list[list[float]]) -> list[int]:
+def optimize_route(
+    distances: list[list[float]],
+    durations: list[list[float]] | None = None,
+    mode: str = "distance",
+) -> list[int]:
     """Return urutan indeks titik (0 = origin, lalu stop 1..n) yang optimal.
 
     Jarak satuan bebas (meter/detik) — yang penting relatifnya.
+    mode: 'distance' minimalkan jarak; 'time' minimalkan durasi/waktu.
     """
-    n = len(distances)
+    costs = durations if (mode == "time" and durations) else distances
+    n = len(costs)
     if n <= 2:
         return list(range(n))
 
     if ORTOOLS_AVAILABLE:
         try:
-            return _cp_sat_route(distances)
+            return _cp_sat_route(costs)
         except Exception as exc:
             logger.warning("CP-SAT gagal (%s), fallback greedy.", exc)
 
-    return _greedy_route(distances)
+    return _greedy_route(costs)
 
 
 def _cp_sat_route(distances: list[list[float]]) -> list[int]:

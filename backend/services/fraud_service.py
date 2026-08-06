@@ -56,21 +56,31 @@ def predict_fraud_score(
     item_value: float,
     gps_distance_m: float,
     customer_report: str,
+    system_status: str = "Delivered",
+    is_weekend: int = 0,
 ) -> float:
     """Skor probabilitas fraud 0..1."""
     try:
         if _model is not None:
             import pandas as pd
 
+            # Rasio nilai per km jarak (fitur paling penting)
+            value_per_km = float(item_value) / max(float(gps_distance_m) / 1000.0, 0.1)
+
             df = pd.DataFrame(
                 [
                     {
                         "item_value": float(item_value),
-                        "gps_distance_m": float(gps_distance_m),
+                        "gps_distance_meters": float(gps_distance_m),
+                        "value_per_km": value_per_km,
+                        "is_weekend": int(is_weekend),
                         "customer_report_Not Received": int(customer_report == "Not Received"),
+                        "customer_report_Received": int(customer_report == "Received"),
                         "customer_report_Rejected/Unreachable": int(
                             customer_report in ("Rejected/Unreachable", "Failed")
                         ),
+                        "system_status_Delivered": int(system_status == "Delivered"),
+                        "system_status_Failed": int(system_status != "Delivered"),
                     }
                 ]
             )
@@ -122,9 +132,13 @@ def analyze_order(
     item_value: float,
     gps_distance_m: float,
     customer_report: str,
+    system_status: str = "Delivered",
+    is_weekend: int = 0,
 ) -> dict:
     """Kembalikan dict fraud_alert untuk satu order."""
-    score = predict_fraud_score(item_value, gps_distance_m, customer_report)
+    score = predict_fraud_score(
+        item_value, gps_distance_m, customer_report, system_status, is_weekend
+    )
     is_fraud = score >= settings.FRAUD_THRESHOLD
     reason = (
         _deepseek_explain(score, item_value, gps_distance_m, customer_report)
