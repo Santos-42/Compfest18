@@ -9,8 +9,8 @@ import { runSimulation } from "./services/api";
  * App — container utama 1 halaman. Kelola semua state.
  */
 export default function App() {
-  const [addresses, setAddresses] = useState("");
   const [trafficCondition, setTrafficCondition] = useState("normal");
+  const [optimization, setOptimization] = useState("distance");
   const [loading, setLoading] = useState(false);
   const [routeData, setRouteData] = useState(null); // { polyline, markers }
   const [polyline, setPolyline] = useState("");
@@ -19,20 +19,21 @@ export default function App() {
   const [error, setError] = useState(null);
   const [lastInput, setLastInput] = useState([]);
 
-  const handleSubmit = async (lines) => {
+  const handleSubmit = async (addressRows) => {
     setLoading(true);
     setError(null);
     setRouteData(null);
     setPolyline("");
     setEtaList([]);
     setFraudAlerts([]);
-    setLastInput(lines);
+    setLastInput(addressRows);
 
     try {
       const result = await runSimulation({
-        addresses: lines,
+        addresses: addressRows, // [{ address, lat, lng }, ...]
         codAmounts: null, // backend generate otomatis
         trafficCondition,
+        optimization,
       });
       setRouteData(result.route);
       setPolyline(result.polyline);
@@ -65,10 +66,10 @@ export default function App() {
       <main className="max-w-5xl mx-auto px-4 py-6 space-y-6">
         {/* Block 1: Input */}
         <InputPanel
-          addresses={addresses}
-          setAddresses={setAddresses}
           trafficCondition={trafficCondition}
           setTrafficCondition={setTrafficCondition}
+          optimization={optimization}
+          setOptimization={setOptimization}
           loading={loading}
           onSubmit={handleSubmit}
           error={error}
@@ -86,6 +87,7 @@ export default function App() {
               routeData={routeData}
               polyline={polyline}
               etaList={etaList}
+              addresses={lastInput}
             />
           ) : (
             <div className="h-96 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">

@@ -1,7 +1,11 @@
-"""Geocoding Service — OpenCage API dengan fallback mock + random sekitar Jakarta."""
-import json
+"""Geocoding Service — Photon (komoot) primary, OpenCage fallback.
+
+Photon (OSM, gratis, search-as-you-type) jauh lebih akurat untuk alamat
+Indonesia yang ambigu (Jl. Sudirman, dll) karena bisa dibias ke Jakarta.
+Fallback terakhir: koordinat deterministik Jakarta Pusat (bukan random),
+agar simulasi tetap stabil.
+"""
 import logging
-import random
 
 import httpx
 
@@ -9,67 +13,98 @@ from core.config import settings
 
 logger = logging.getLogger(__name__)
 
+PHOTON_URL = "https://photon.komoot.io/api/"
 OPENCAGE_URL = "https://api.opencagedata.com/geocode/v1/json"
-JAKARTA_CENTER = (-6.2, 106.816666)
-JITTER = 0.05
 
-# Koordinat landmark populer untuk demo (biar deterministik)
-MOCK_COORDINATES = {
-    "sudirman": {"lat": -6.2244, "lng": 106.8090},
-    "gatot subroto": {"lat": -6.2222, "lng": 106.8292},
-    "thamrin": {"lat": -6.1953, "lng": 106.8231},
-    "bandung": {"lat": -6.9175, "lng": 107.6191},
-    "surabaya": {"lat": -7.2575, "lng": 112.7521},
-    "yogyakarta": {"lat": -7.7956, "lng": 110.3695},
-    "semarang": {"lat": -6.9667, "lng": 110.4167},
-    "medan": {"lat": 3.5952, "lng": 98.6722},
-    "makassar": {"lat": -5.1477, "lng": 119.4327},
-    "palembang": {"lat": -2.9761, "lng": 104.7754},
-    "denpasar": {"lat": -8.6705, "lng": 115.2126},
-    "malang": {"lat": -7.9666, "lng": 112.6326},
-    "bogor": {"lat": -6.5971, "lng": 106.8060},
-    "depok": {"lat": -6.4025, "lng": 106.7942},
-    "bekasi": {"lat": -6.2383, "lng": 106.9756},
-    "tangerang": {"lat": -6.1783, "lng": 106.6319},
-}
+# Photon memblokir User-Agent non-browser (403) — pakai UA browser.
+BROWSER_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+
+# Jakarta (lokasi gudang) — bias geocoding & fallback deterministik
+JAKARTA_CENTER = {"lat": settings.ORIGIN_LAT, "lng": settings.ORIGIN_LNG}
+
+# Bounding box Jabodetabek (minLon,minLat,maxLon,maxLat) — filter keras
+JABODETABEK_BBOX = "106.6,-6.5,107.1,-5.9"
 
 
-def get_mock_coordinates(address: str) -> dict:
-    addr_lower = address.lower()
-    for key, coord in MOCK_COORDINATES.items():
-        if key in addr_lower:
-            return dict(coord)
-    lat = JAKARTA_CENTER[0] + random.uniform(-JITTER, JITTER)
-    lng = JAKARTA_CENTER[1] + random.uniform(-JITTER, JITTER)
-    return {"lat": round(lat, 6), "lng": round(lng, 6)}
+def _fallback_coordinates(address: str) -> dict:
+    """Koordinat deterministik (Jakarta Pusat). Bukan random."""
+    return dict(JAKARTA_CENTER)
+
+
+def _geocode_photon(address: str) -> dict:
+    """Geocode via Photon; bias ke Jakarta, hanya ambil hasil terbaik."""
+    resp = httpx.get(
+        PHOTON_URL,
+        params={
+            "q": address,
+            "lat": JAKARTA_CENTER["lat"],
+            "lon": JAKARTA_CENTER["lng"],
+            "limit": 1,
+            "countrycode": "id",
+            "bbox": JABODETABEK_BBOX,
+        },
+        headers={"User-Agent": BROWSER_UA},
+        timeout=settings.REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    features = resp.json().get("features", [])
+    if not features:
+        return None
+    coords = features[0].get("geometry", {}).get("coordinates", [])
+    if len(coords) < 2:
+        return None
+    return {"lat": coords[1], "lng": coords[0]}
+
+
+def _geocode_opencage(address: str) -> dict:
+    """Fallback geocode via OpenCage dengan proximity Jakarta."""
+    resp = httpx.get(
+        OPENCAGE_URL,
+        params={
+            "q": address,
+            "key": settings.OPENCAGE_API_KEY,
+            "limit": 1,
+            "language": "id",
+            "countrycode": "id",
+            "proximity": f"{JAKARTA_CENTER['lat']},{JAKARTA_CENTER['lng']}",
+            "bounds": JABODETABEK_BBOX,
+        },
+        timeout=settings.REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    if data.get("results"):
+        geom = data["results"][0]["geometry"]
+        return {"lat": geom["lat"], "lng": geom["lng"]}
+    return None
 
 
 def geocode(address: str) -> dict:
-    """Alamat -> {lat, lng}. Pakai OpenCage, fallback ke mock jika gagal."""
-    if settings.USE_MOCK_MODE or not settings.OPENCAGE_API_KEY:
-        return get_mock_coordinates(address)
+    """Alamat -> {lat, lng}. Photon -> OpenCage -> Jakarta Pusat."""
+    if settings.USE_MOCK_MODE:
+        return _fallback_coordinates(address)
 
+    # 1. Photon
     try:
-        resp = httpx.get(
-            OPENCAGE_URL,
-            params={
-                "q": address,
-                "key": settings.OPENCAGE_API_KEY,
-                "limit": 1,
-                "language": "id",
-                "countrycode": "id",
-            },
-            timeout=settings.REQUEST_TIMEOUT,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        if data.get("results"):
-            geom = data["results"][0]["geometry"]
-            return {"lat": geom["lat"], "lng": geom["lng"]}
-        logger.warning("OpenCage: tidak ada hasil untuk '%s'", address)
+        result = _geocode_photon(address)
+        if result:
+            return result
+        logger.warning("Photon: tidak ada hasil untuk '%s'", address)
     except Exception as exc:
-        logger.warning("OpenCage API gagal (%s), fallback ke mock.", exc)
+        logger.warning("Photon API gagal (%s), coba OpenCage.", exc)
 
+    # 2. OpenCage
+    if settings.OPENCAGE_API_KEY:
+        try:
+            result = _geocode_opencage(address)
+            if result:
+                return result
+            logger.warning("OpenCage: tidak ada hasil untuk '%s'", address)
+        except Exception as exc:
+            logger.warning("OpenCage API gagal (%s).", exc)
+
+    # 3. Fallback deterministik
     if settings.ENABLE_FALLBACK:
-        return get_mock_coordinates(address)
+        logger.warning("Geocoding gagal untuk '%s', pakai Jakarta Pusat.", address)
+        return _fallback_coordinates(address)
     raise RuntimeError(f"Geocoding gagal untuk: {address}")

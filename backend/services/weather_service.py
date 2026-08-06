@@ -18,12 +18,14 @@ def _extract_weather(data: dict) -> tuple[str, float]:
     """Parse respons BMKG -> (deskripsi cuaca, suhu).
 
     Struktur asli: {"lokasi": {...}, "data": [{"lokasi":..., "cuaca": [
-        {"datetime":..., "t": 19, "weather": 2, "weather_desc": "Cerah Berawan", ...}
-    ]}]}
+        [{"datetime":..., "t": 19, "weather": 2, "weather_desc": "Cerah Berawan", ...}]
+    ]}]} — cuaca adalah LIST OF LISTS.
     """
     try:
         forecast_list = data["data"][0]["cuaca"]
-        for item in forecast_list:
+        # Normalisasi: bisa [[{...}]] atau [{...}]
+        rows = forecast_list[0] if forecast_list and isinstance(forecast_list[0], list) else forecast_list
+        for item in rows:
             if not isinstance(item, dict):
                 continue
             desc = item.get("weather_desc")

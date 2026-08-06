@@ -26,6 +26,7 @@ export default function ResultPanel({ etaList, fraudAlerts, addresses }) {
                   <th className="py-2 pr-4">No</th>
                   <th className="py-2 pr-4">Alamat</th>
                   <th className="py-2 pr-4">ETA</th>
+                  <th className="py-2 pr-4">Jarak</th>
                   <th className="py-2">Cuaca</th>
                 </tr>
               </thead>
@@ -35,10 +36,19 @@ export default function ResultPanel({ etaList, fraudAlerts, addresses }) {
                     <td className="py-2 pr-4 font-semibold">{eta.stop}</td>
                     <td className="py-2 pr-4">
                       {addresses && addresses[eta.order_index - 1]
-                        ? addresses[eta.order_index - 1]
+                        ? typeof addresses[eta.order_index - 1] === "string"
+                          ? addresses[eta.order_index - 1]
+                          : addresses[eta.order_index - 1].address
                         : `Stop #${eta.stop}`}
                     </td>
                     <td className="py-2 pr-4 font-mono">{eta.eta}</td>
+                    <td className="py-2 pr-4 font-mono">
+                      {eta.cumulative_distance_m != null
+                        ? `${(eta.cumulative_distance_m / 1000).toFixed(1)} km`
+                        : eta.distance_m != null
+                        ? `${(eta.distance_m / 1000).toFixed(1)} km`
+                        : "-"}
+                    </td>
                     <td className="py-2">
                       {eta.weather || "Cerah"} {eta.temperature ? `(${eta.temperature}°C)` : ""}
                     </td>
@@ -112,7 +122,9 @@ function FraudCard({ alert, addresses }) {
         <p>
           📦 Alamat:{" "}
           {addresses && addresses[alert.order_index - 1]
-            ? addresses[alert.order_index - 1]
+            ? typeof addresses[alert.order_index - 1] === "string"
+              ? addresses[alert.order_index - 1]
+              : addresses[alert.order_index - 1].address
             : alert.address}
         </p>
         <p>

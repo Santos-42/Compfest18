@@ -111,13 +111,73 @@ def get_adm2_code(fragment):
     return row[0] if row else None
 
 
-def get_adm4_code_for_token(fragment):
-    """Cari kode adm4 (kelurahan/desa, format 11.01.01.2001) dari nama wilayah."""
+def get_adm3_code(fragment, adm2_prefix=None):
+    """Cari kode kecamatan (adm3, format 11.01.01) dari nama."""
+    conn = _connect()
+    cur = conn.cursor()
+    if adm2_prefix:
+        cur.execute(
+            "SELECT kode_wilayah FROM wilayah WHERE nama LIKE ? AND length(kode_wilayah)=8 AND kode_wilayah LIKE ? LIMIT 1",
+            (f"%{fragment}%", f"{adm2_prefix}.%"),
+        )
+    else:
+        cur.execute(
+            "SELECT kode_wilayah FROM wilayah WHERE nama LIKE ? AND length(kode_wilayah)=8 LIMIT 1",
+            (f"%{fragment}%",),
+        )
+    row = cur.fetchone()
+    conn.close()
+    return row[0] if row else None
+
+
+def get_adm4_code_for_token(fragment, adm2_prefix=None):
+    """Cari kode adm4 (kelurahan/desa) dari nama wilayah.
+
+    adm2_prefix: batasi ke kab/kota tertentu (mis. '31.71' utk Jakarta Pusat)
+    agar 'Setiabudi' tidak jatuh ke desa di Maluku.
+    """
+    conn = _connect()
+    cur = conn.cursor()
+    if adm2_prefix:
+        cur.execute(
+            "SELECT kode_wilayah FROM wilayah WHERE nama LIKE ? AND length(kode_wilayah) >= 9 AND kode_wilayah LIKE ? LIMIT 1",
+            (f"%{fragment}%", f"{adm2_prefix}.%"),
+        )
+    else:
+        cur.execute(
+            "SELECT kode_wilayah FROM wilayah WHERE nama LIKE ? AND length(kode_wilayah) >= 9 LIMIT 1",
+            (f"%{fragment}%",),
+        )
+    row = cur.fetchone()
+    conn.close()
+    return row[0] if row else None
+
+
+# Kata umum di alamat yang TIDAK boleh dipakai mencocokkan nama wilayah
+_ADDR_STOPWORDS = {
+    "jalan", "jl", "jln", "no", "nomor", "rt", "rw", "kav", "kavling",
+    "gang", "gg", "blok", "blk", "perum", "komplek", "kompleks", "gedung",
+    "lantai", "lt", "rt/rw", "gg.", "jl.", "no.", "dsn", "dusun", "kp",
+    "kampung", "pondok", "kota", "kab", "kabupaten", "prov", "provinsi",
+    "indonesia", "barat", "timur", "selatan", "utara", "raya",
+}
+
+# Stopword nama jalan umum — TIDAK dipakai mencocokkan adm4,
+# karena banyak desa/kelurahan bernama sama dengan nama jalan.
+_ADDR_STOPWORDS_ADM4 = _ADDR_STOPWORDS | {
+    "sudirman", "gatot", "subroto", "thamrin", "otista", "kebon", "sayur",
+    "kemang", "senayan", "fatmawati", "rasuna", "mh", "hr", "mt", "jenderal",
+    "jend", "doktor", "dr", "kh", "haji", "h", "letjen", "mayjen", "jendral",
+}
+
+
+def get_adm4_in_adm3(adm3_code):
+    """Ambil adm4 pertama dalam sebuah kecamatan (untuk query BMKG)."""
     conn = _connect()
     cur = conn.cursor()
     cur.execute(
-        "SELECT kode_wilayah FROM wilayah WHERE nama LIKE ? AND length(kode_wilayah) >= 9 LIMIT 1",
-        (f"%{fragment}%",),
+        "SELECT kode_wilayah FROM wilayah WHERE kode_wilayah LIKE ? AND length(kode_wilayah) >= 9 LIMIT 1",
+        (f"{adm3_code}.%",),
     )
     row = cur.fetchone()
     conn.close()
@@ -125,13 +185,40 @@ def get_adm4_code_for_token(fragment):
 
 
 def find_adm4_from_address(address):
-    """Coba pecah alamat jadi token, cocokkan dengan kode adm4 (kelurahan/desa)."""
+    """Cari kode adm4 (kelurahan/desa) dari alamat.
+
+    1. Deteksi kab/kota (adm2) yang disebut di alamat (mis. 'Jakarta').
+    2. Cari adm4 di dalam adm2 itu.
+    3. Jika token adalah kecamatan (adm3), ambil adm4 pertama di kecamatan tsb.
+    4. Fallback bebas (tanpa batas adm2).
+    """
     tokens = [
-        t.strip().rstrip(".,")
+        t.strip().rstrip(".,").lower()
         for t in address.replace(",", " ").split()
-        if len(t.strip()) >= 3
+        if len(t.strip()) >= 4
     ]
+    adm2 = find_adm2_from_address(address)
+
+    # 1. adm4 langsung di dalam adm2
     for token in tokens:
+        if token in _ADDR_STOPWORDS_ADM4:
+            continue
+        code = get_adm4_code_for_token(token, adm2_prefix=adm2)
+        if code:
+            return code
+    # 2. adm3 (kecamatan) di dalam adm2 -> adm4 pertama di kecamatan itu
+    for token in tokens:
+        if token in _ADDR_STOPWORDS_ADM4:
+            continue
+        code3 = get_adm3_code(token, adm2_prefix=adm2)
+        if code3:
+            adm4 = get_adm4_in_adm3(code3)
+            if adm4:
+                return adm4
+    # 3. Fallback bebas
+    for token in tokens:
+        if token in _ADDR_STOPWORDS_ADM4:
+            continue
         code = get_adm4_code_for_token(token)
         if code:
             return code
@@ -139,13 +226,29 @@ def find_adm4_from_address(address):
 
 
 def find_adm2_from_address(address):
-    """Coba pecah alamat jadi token, lalu cocokkan dengan tabel wilayah."""
+    """Cari kode kabupaten/kota (adm2) dari alamat.
+
+    Strategi:
+    1. Jika ada token yang cocok dengan kecamatan (adm3), pakai adm2-nya
+       (mis. 'Setiabudi' -> 31.74 Jakarta Selatan).
+    2. Fallback: token yang cocok dengan nama kabupaten/kota.
+    """
     tokens = [
-        t.strip().rstrip(".,")
+        t.strip().rstrip(".,").lower()
         for t in address.replace(",", " ").split()
         if len(t.strip()) >= 3
     ]
+    # 1. Coba kecamatan (adm3)
     for token in tokens:
+        if token in _ADDR_STOPWORDS:
+            continue
+        code3 = get_adm3_code(token)
+        if code3:
+            return code3[:5]  # ambil adm2 dari kode adm3 (11.01.01 -> 11.01)
+    # 2. Fallback: kabupaten/kota
+    for token in tokens:
+        if token in _ADDR_STOPWORDS:
+            continue
         code = get_adm2_code(token)
         if code:
             return code

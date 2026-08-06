@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from api.routes import router
 from core.config import settings
 from core.database import init_database
-from services import eta_service, fraud_service
+from services import fraud_service
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger(__name__)
@@ -21,7 +21,6 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     # ===== STARTUP =====
     init_database()
-    eta_service.load_model()
     fraud_service.load_model()
     logger.info(" Backend siap. MOCK_MODE=%s", settings.USE_MOCK_MODE)
     yield

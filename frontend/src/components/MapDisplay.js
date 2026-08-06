@@ -12,19 +12,32 @@ import L from "leaflet";
  * MapDisplay — peta Leaflet dengan marker & polyline rute.
  * routeData: { order, coordinates } (coordinates: [lng, lat])
  * polyline: encoded polyline5 dari backend (opsional, dipakai jika ada)
+ * etaList: [{ stop, order_index, eta, weather, temperature }]
+ * addresses: array objek { address, lat, lng } urut input user
  */
-export default function MapDisplay({ routeData, polyline, etaList }) {
+export default function MapDisplay({ routeData, polyline, etaList, addresses }) {
   const coords = routeData?.coordinates || [];
 
   const decoded = useMemo(() => decodePolyline(polyline), [polyline]);
 
-  // Posisi marker: urutan = indeks koordinat (0 = origin)
-  const markers = coords.map(([lng, lat], idx) => ({
-    position: [lat, lng],
-    isOrigin: idx === 0,
-    label: String(idx),
-    eta: etaList && etaList[idx - 1] ? etaList[idx - 1] : null,
-  }));
+  // Posisi marker: coords[0] = origin, coords[1..] = titik kunjungan.
+  // Label marker = nomor STOP kunjungan (dari etaList), bukan indeks fisik,
+  // agar konsisten dengan Tabel Rute & ETA.
+  const markers = coords.map(([lng, lat], idx) => {
+    const eta = etaList && etaList[idx - 1] ? etaList[idx - 1] : null;
+    const orderIdx = eta ? eta.order_index : idx;
+    const stopLabel = eta ? eta.stop : idx; // nomor urutan kunjungan
+    const addrObj = addresses && addresses[orderIdx - 1];
+    const addressLabel =
+      addrObj && typeof addrObj === "object" ? addrObj.address : null;
+    return {
+      position: [lat, lng],
+      isOrigin: idx === 0,
+      label: String(stopLabel),
+      eta,
+      address: addressLabel,
+    };
+  });
 
   const center = coords.length
     ? [coords[0][1], coords[0][0]]
@@ -59,9 +72,15 @@ export default function MapDisplay({ routeData, polyline, etaList }) {
             ) : (
               <div>
                 <b>Stop #{m.label}</b>
+                {m.address && (
+                  <div className="text-sm text-gray-700 mt-0.5">
+                    📍 {m.address}
+                  </div>
+                )}
                 {m.eta && (
                   <div className="text-sm text-gray-700">
                     ETA: {m.eta.eta} — {m.eta.weather}
+                    {m.eta.temperature ? ` (${m.eta.temperature}°C)` : ""}
                   </div>
                 )}
               </div>
@@ -96,21 +115,21 @@ function decodePolyline(str) {
     lng = 0,
     coordinates = [];
   while (index < str.length) {
-    let result = 1,
+    let result = 0,
       shift = 0,
       b;
     do {
       b = str.charCodeAt(index++) - 63;
-      result += (b & 0x1f) << shift;
+      result |= (b & 0x1f) << shift;
       shift += 5;
     } while (b >= 0x20);
     lat += result & 1 ? ~(result >> 1) : result >> 1;
 
-    result = 1;
+    result = 0;
     shift = 0;
     do {
       b = str.charCodeAt(index++) - 63;
-      result += (b & 0x1f) << shift;
+      result |= (b & 0x1f) << shift;
       shift += 5;
     } while (b >= 0x20);
     lng += result & 1 ? ~(result >> 1) : result >> 1;
